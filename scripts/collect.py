@@ -64,15 +64,22 @@ def fetch_all(key: str) -> list[dict]:
             },
             timeout=60,
         )
-        resp.raise_for_status()
         try:
             data = resp.json()
         except ValueError:
-            sys.exit(f"API가 JSON이 아닌 응답을 보냈습니다: {resp.text[:300]}")
+            sys.exit(f"API 오류(HTTP {resp.status_code}): {resp.text[:300]}")
 
         if "OpenAPI_ServiceResponse" in data:  # 인증키 오류 등
             header = data["OpenAPI_ServiceResponse"].get("cmmMsgHeader", {})
-            sys.exit(f"API 오류: {header.get('returnAuthMsg')} ({header.get('errMsg')})")
+            msg = f"API 오류: {header.get('returnAuthMsg')} ({header.get('errMsg')})"
+            if header.get("returnReasonCode") == "30":
+                msg += (
+                    "\n→ 인증키가 아직 등록되지 않았습니다. 승인 직후라면 1~2시간 뒤 다시 실행해 보세요."
+                    "\n→ 그래도 같으면 GitHub Secret 에 넣은 키가 정확한지(앞뒤 공백 없이) 확인해 주세요."
+                )
+            sys.exit(msg)
+        if resp.status_code != 200:
+            sys.exit(f"API 오류(HTTP {resp.status_code}): {resp.text[:300]}")
         if str(data.get("resultCode", "200")) not in ("200", "00"):
             sys.exit(f"API 오류: {data.get('resultCode')} {data.get('resultMsg')}")
 
