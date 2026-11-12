@@ -45,7 +45,16 @@ def get_key() -> str:
     if not key:
         sys.exit("DATA_GO_KR_KEY 환경변수가 비어 있습니다. 공공데이터포털 인증키를 넣어 주세요.")
     # 'Encoding' 키를 넣어도 동작하도록 한 번 풀어 줍니다.
-    return unquote(key)
+    decoded = unquote(key)
+    # 키 값은 보여주지 않고, 문제를 찾는 데 필요한 형태 정보만 보여줍니다.
+    yes = lambda cond: "예" if cond else "아니오"
+    has_space = any(c.isspace() for c in decoded)
+    has_quote = any(c in "\"'" for c in decoded)
+    print(
+        f"  인증키 점검: 길이 {len(decoded)}자, 공백 포함 {yes(has_space)}, "
+        f"따옴표 포함 {yes(has_quote)}, Encoding 키 여부 {yes('%' in key)}"
+    )
+    return "".join(decoded.split()).strip("\"'")
 
 
 def fetch_all(key: str) -> list[dict]:
