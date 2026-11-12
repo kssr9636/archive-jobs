@@ -6,6 +6,11 @@ on:
     - cron: "7 22 * * *"
     - cron: "7 4 * * *"
   workflow_dispatch: # Actions 화면에서 직접 실행할 수도 있습니다
+  push: # 수집 프로그램이 바뀌면 바로 한 번 실행합니다
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update.yml"
 
 permissions:
   contents: write
