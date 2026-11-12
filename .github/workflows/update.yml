@@ -1,0 +1,36 @@
+name: 채용공고 자동 업데이트
+
+on:
+  schedule:
+    # 한국시간 오전 7시, 오후 1시 (GitHub는 UTC 기준이라 9시간을 뺍니다)
+    - cron: "7 22 * * *"
+    - cron: "7 4 * * *"
+  workflow_dispatch: # Actions 화면에서 직접 실행할 수도 있습니다
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: 공고 수집
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: python scripts/collect.py
+
+      - name: 바뀐 내용 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/jobs.json
+          git diff --cached --quiet || git commit -m "채용공고 업데이트"
+          git push
