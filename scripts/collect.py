@@ -6,7 +6,8 @@ docs/data/jobs.json 파일로 저장합니다.
 수집처
   1) 한국지역정보개발원_채용정보 조회 서비스 (클린아이 잡플러스, 지방공공기관)
   2) 공공기관 채용정보 조회서비스 (잡알리오, 공기업·준정부기관)
-     → 활용신청을 하지 않았으면 건너뜁니다.
+  3) 인사혁신처_공공취업정보 조회 서비스 (나라일터, 국가·지자체·교육청)
+     → 2), 3)은 활용신청을 하지 않았거나 오류가 나면 건너뜁니다.
 
 실행 전에 환경변수 DATA_GO_KR_KEY 에 공공데이터포털 인증키를 넣어야 합니다.
 """
@@ -170,10 +171,75 @@ def fetch_alio(key: str) -> list[dict]:
     return jobs
 
 
+# ------------------------------------------------- 3) 나라일터(국가·지자체·교육청 등)
+NARA_URL = "https://apis.data.go.kr/1760000/PblJobService/getList"
+NARA_PAGE = 100
+NARA_DAYS = 45  # 최근 며칠 동안 등록된 공고까지 볼지
+NARA_MAX_PAGES = 40
+NARA_ORG_TYPE = {"g01": "국가기관", "g02": "지방자치단체", "g03": "공공기관", "g04": "교육청"}
+AREA = {
+    "11": "서울", "26": "부산", "27": "대구", "28": "인천", "29": "광주", "30": "대전",
+    "31": "울산", "36": "세종", "41": "경기", "42": "강원", "51": "강원", "43": "충북",
+    "44": "충남", "45": "전북", "52": "전북", "46": "전남", "47": "경북", "48": "경남", "50": "제주",
+}
+
+
+def nara_page(key: str, page: int, rows: int) -> ET.Element:
+    resp = http_get(NARA_URL, {"serviceKey": key, "numOfRows": rows, "pageNo": page})
+    try:
+        root = ET.fromstring(resp.content)
+    except ET.ParseError:
+        if "SERVICE_KEY_IS_NOT_REGISTERED" in resp.text:
+            raise PermissionError("이 서비스는 아직 활용신청이 안 되어 있습니다")
+        raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+    if root.findtext(".//resultCode") not in ("00", "0"):
+        raise RuntimeError(f"API 오류: {root.findtext('.//resultMsg')}")
+    return root
+
+
+def fetch_nara(key: str) -> list[dict]:
+    # 이 API는 날짜 조건을 무시하고 오래된 순서로만 주므로,
+    # 전체 건수를 먼저 알아낸 뒤 마지막 쪽(최신)부터 거꾸로 읽습니다.
+    total = int(nara_page(key, 1, 1).findtext(".//totalCount") or 0)
+    last_page = (total + NARA_PAGE - 1) // NARA_PAGE
+    oldest = (datetime.now(KST) - timedelta(days=NARA_DAYS)).strftime("%Y%m%d")
+
+    jobs = []
+    for page in range(last_page, max(last_page - NARA_MAX_PAGES, 0), -1):
+        items = nara_page(key, page, NARA_PAGE).findall(".//item")
+        for it in items:
+            g = lambda tag: clean(it.findtext(tag))
+            if not is_archive_job(g("title")):
+                continue
+            area = g("areacode")
+            jobs.append({
+                "id": f"nara-{g('idx')}",
+                "source": "나라일터",
+                "org": g("insttname"),
+                "title": g("title"),
+                "hire_type": NARA_ORG_TYPE.get(g("type02"), ""),
+                "status": "",
+                "region": AREA.get(area[:2], "") if area and area != "00000" else "전국",
+                "headcount": "",
+                "start": to_date(g("begindate")),
+                "end": to_date(g("enddate")),
+                "url": f"https://www.gojobs.go.kr/apmView.do?empmnsn={g('idx')}",
+            })
+        dates = [it.findtext("regdate") or "" for it in items]
+        print(f"  {page}쪽 (등록일 {min(dates, default='-')}~{max(dates, default='-')})")
+        if not items or min(dates) < oldest:
+            break
+    return jobs
+
+
 SOURCES = [
     ("클린아이 잡플러스", fetch_cleaneye, True),  # True = 꼭 성공해야 함
     ("잡알리오", fetch_alio, False),  # False = 실패해도 건너뜀
+    ("나라일터", fetch_nara, False),
 ]
+
+# 채용공고가 아닌 안내글(합격자 발표 등)은 뺍니다.
+NOT_POSTING = ["합격자", "결과발표", "결과 발표", "채용후보자", "면접시험", "서류전형 결과"]
 
 
 # ---------------------------------------------------------------- 실행
@@ -207,10 +273,16 @@ def main() -> None:
         found.extend(jobs)
         sources.append(name)
 
-    jobs = {}
+    jobs, titles = {}, set()
     for job in found:
         if job["end"] and job["end"] < today:  # 마감 지난 공고 제외
             continue
+        if any(w in job["title"] for w in NOT_POSTING):  # 합격자 발표 등 제외
+            continue
+        same = "".join(job["title"].split())  # 여러 사이트에 같은 제목으로 올라온 공고는 하나만
+        if same in titles:
+            continue
+        titles.add(same)
         job["first_seen"] = old.get(job["id"], {}).get("first_seen", today)
         jobs[job["id"]] = job
 
