@@ -323,7 +323,13 @@ def fetch_nara(key: str) -> list[dict]:
     for g in unclear:
         res = cache.get(g("idx"))
         if res and res.get("hit"):
-            jobs.append(to_job(g, res.get("note", "")))
+            note = res.get("note", "")
+            # 본문에서 찾은 경우, '도서관'이 시설 이름으로만 나온 것은 빼고
+            # '사서'·'기록물' 같은 직무 단어가 있을 때만 보여줍니다.
+            if note.startswith("본문:") and not (
+                    is_archive_job(note).count("기록물") or LIBRARIAN_RE.search(note)):
+                continue
+            jobs.append(to_job(g, note))
 
     # 마감 지난 공고는 기억 파일에서 지웁니다.
     cache = {k: v for k, v in cache.items() if (v.get("end") or "0") >= today_s}
