@@ -56,6 +56,14 @@ BOARDS = [
         "id_re": r"goView\('(\d+)'\)",
         "view": "https://www.sdm.go.kr/news/notice/notice.do?mode=view&sdmBoardSeq={id}",
     },
+    {
+        "name": "법원도서관", "region": "경기 고양",  # 공지사항 (관심 기관)
+        "list": "https://library.scourt.go.kr/openspace/parti/notice/list?pageIndex={page}",
+        "id_re": r'data-seq-no="(\d+)"',
+        "view": "https://library.scourt.go.kr/openspace/parti/notice/detail?seqNo={id}",
+        # 기록물·사서 단어가 없어도, 이 단어가 들어간 글은 모두 보여줍니다.
+        "watch": ["채용", "근로자", "공무직", "임기제", "직원 모집", "인력 모집"],
+    },
 ]
 
 DATE_RE = re.compile(r"(20\d\d)\s*[.\-/년]\s*(\d{1,2})\s*[.\-/월]\s*(\d{1,2})")

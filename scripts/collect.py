@@ -27,9 +27,14 @@ import requests
 OUT_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "jobs.json"
 KST = timezone(timedelta(hours=9))
 
-# 이 단어 중 하나라도 들어 있으면 기록물관리 공고로 봅니다.
+# 분야별로 이 단어 중 하나라도 들어 있으면 해당 분야 공고로 봅니다.
 # (띄어쓰기를 지우고 비교하므로 '기록물 관리'도 찾습니다.)
-KEYWORDS = ["기록물", "기록연구", "기록관리", "기록관", "아키비스트", "archivist"]
+CATEGORIES = {
+    "기록물": ["기록물", "기록연구", "기록관리", "기록관", "아키비스트", "archivist"],
+    "사서·도서관": ["사서", "도서관"],
+}
+# 이 기관의 공고는 단어와 상관없이 모두 보여줍니다(관심 기관).
+WATCH_ORGS = ["법원도서관"]
 
 
 # ---------------------------------------------------------------- 공통 도구
@@ -53,9 +58,14 @@ def http_get(url: str, params: dict) -> requests.Response:
     raise RuntimeError(f"연결 실패: {last_error}")
 
 
-def is_archive_job(*texts) -> bool:
+def is_archive_job(*texts) -> list[str]:
+    """해당하는 분야 이름 목록을 돌려줍니다. 하나도 없으면 빈 목록(=관련 없음)."""
     text = "".join("".join(str(t or "").split()) for t in texts).lower()
-    return any(k.lower() in text for k in KEYWORDS)
+    return [cat for cat, words in CATEGORIES.items() if any(w.lower() in text for w in words)]
+
+
+def watched(org: str) -> list[str]:
+    return ["관심기관"] if any(w in (org or "") for w in WATCH_ORGS) else []
 
 
 def to_date(value) -> str | None:
@@ -103,13 +113,15 @@ def fetch_cleaneye(key: str) -> list[dict]:
         print(f"  시도코드 {code}: {len(items)}건")
         for it in items:
             g = lambda tag: clean(it.findtext(tag))
-            if not is_archive_job(
+            cats = watched(g("ENT_NAME")) + is_archive_job(
                 g("ENT_TITLE"), g("ENT_RECRUIT"), g("POSITION"), g("DUTY_DETAIL"),
                 g("ENT_LICENSE1"), g("ENT_LICENSE2"), g("ENT_LICENSE3"), g("ENT_LICENSE4"),
                 g("EXHIBIT"), g("JOB_SEEK_ETC"),
-            ):
+            )
+            if not cats:
                 continue
             jobs.append({
+                "category": cats,
                 "id": f"cleaneye-{g('NO')}",
                 "source": "클린아이 잡플러스",
                 "org": g("ENT_NAME"),
@@ -149,11 +161,13 @@ def fetch_alio(key: str) -> list[dict]:
         batch = data.get("result") or []
         seen += len(batch)
         for it in batch:
-            if not is_archive_job(*(it.get(f) for f in
-                                    ("recrutPbancTtl", "aplyQlfcCn", "prefCondCn", "prefCn", "ncsCdNmLst"))):
+            cats = watched(it.get("instNm")) + is_archive_job(*(it.get(f) for f in (
+                "recrutPbancTtl", "aplyQlfcCn", "prefCondCn", "prefCn", "ncsCdNmLst")))
+            if not cats:
                 continue
             sn = str(it.get("recrutPblntSn") or "")
             jobs.append({
+                "category": cats,
                 "id": f"alio-{sn}",
                 "source": "잡알리오",
                 "org": it.get("instNm") or "",
@@ -186,7 +200,7 @@ AREA = {
 
 NARA_DETAIL_URL = "https://apis.data.go.kr/1760000/PblJobService"
 # 한 번 상세 확인한 공고 결과를 기억해 두는 파일 (다음 실행 때 다시 조회하지 않음)
-NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache.json"
+NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache_v2.json"
 NARA_WORKERS = 6  # 상세 조회를 동시에 몇 개씩 할지
 
 
@@ -227,6 +241,7 @@ def fetch_nara(key: str) -> list[dict]:
     def to_job(g, note=""):
         area = g("areacode")
         return {
+            "category": watched(g("insttname")) + is_archive_job(g("title"), note),
             "id": f"nara-{g('idx')}",
             "source": "나라일터",
             "org": g("insttname"),
@@ -260,7 +275,7 @@ def fetch_nara(key: str) -> list[dict]:
         print(f"  {page}쪽: {len(items)}건 (전체 {total}건)")
         for it in items:
             g = (lambda e: lambda tag: clean(e.findtext(tag)))(it)
-            if is_archive_job(g("title")):
+            if is_archive_job(g("title")) or watched(g("insttname")):
                 jobs.append(to_job(g))
             elif (g("enddate") or "0") >= today_s and not any(w in g("title") for w in NOT_POSTING):
                 unclear.append(g)  # 제목만으로는 알 수 없는, 아직 접수 중인 공고
@@ -323,10 +338,18 @@ def fetch_city(key: str) -> list[dict]:
             print(f"  {board['name']}: 건너뜀({str(e)[:80]})")
             continue
         ok += 1
-        hits = [r for r in rows if is_archive_job(r["title"])]
+        hits = []
+        for r in rows:
+            if board.get("watch"):  # 관심 기관 게시판: 채용 관련 글이면 모두
+                cats = ["관심기관"] if any(w in r["title"] for w in board["watch"]) else []
+            else:
+                cats = is_archive_job(r["title"])
+            if cats:
+                hits.append((r, cats))
         print(f"  {board['name']}: {len(rows)}건 중 {len(hits)}건")
-        for r in hits:
+        for r, cats in hits:
             jobs.append({
+                "category": cats,
                 "id": "city-" + r["url"].split("://", 1)[-1],
                 "source": board["name"],
                 "org": board["name"],
@@ -407,6 +430,7 @@ def main() -> None:
             continue
         titles.add(same)
         job["first_seen"] = old.get(job["id"], {}).get("first_seen", today)
+        job.setdefault("category", is_archive_job(job["title"], job.get("note")) or ["기록물"])
         jobs[job["id"]] = job
 
     result = sorted(jobs.values(), key=lambda j: (j["end"] or "9999-12-31", j["org"]))

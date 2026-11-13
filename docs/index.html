@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>기록물관리 채용공고</title>
-<meta name="description" content="기록물관리전문요원·기록연구사 채용공고를 마감일 순으로 모아 보여줍니다.">
+<title>기록물·사서 채용공고</title>
+<meta name="description" content="기록물관리전문요원·기록연구사·사서 채용공고를 마감일 순으로 모아 보여줍니다.">
 <style>
   :root {
     --bg: #f6f7f9; --card: #ffffff; --text: #1d2330; --muted: #667085;
@@ -55,6 +55,7 @@
   .title { font-weight: 600; margin: 2px 0 6px; overflow-wrap: anywhere; }
   .meta { display: flex; gap: 6px; flex-wrap: wrap; font-size: .78rem; color: var(--muted); }
   .meta span { border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+  .meta .cat { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
   .meta .new { color: var(--new); background: var(--new-soft); border-color: transparent; font-weight: 700; }
   .empty { text-align: center; color: var(--muted); padding: 40px 0; }
   footer { margin-top: 28px; color: var(--muted); font-size: .8rem; }
@@ -63,13 +64,19 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>기록물관리 채용공고</h1>
+  <h1>기록물·사서 채용공고</h1>
   <p class="sub" id="updated">불러오는 중...</p>
 
   <div class="summary" id="summary"></div>
 
   <div class="controls">
     <input id="q" type="search" placeholder="기관명·제목 검색 (예: 기록연구사, 서울)" aria-label="검색">
+    <select id="cat" aria-label="분야">
+      <option value="">분야 전체</option>
+      <option value="기록물">기록물</option>
+      <option value="사서·도서관">사서·도서관</option>
+      <option value="관심기관">관심기관 (법원도서관)</option>
+    </select>
     <select id="type" aria-label="고용형태"><option value="">고용형태 전체</option></select>
     <select id="region" aria-label="지역"><option value="">지역 전체</option></select>
   </div>
@@ -105,6 +112,7 @@ function fillSelect(el, values) {
 
 function render() {
   const q = $("q").value.trim().toLowerCase();
+  const cat = $("cat").value;
   const type = $("type").value, region = $("region").value;
   const today = todayKST().toISOString().slice(0, 10);
   const weekAgo = new Date(todayKST() - 6 * 86400000).toISOString().slice(0, 10);
@@ -113,6 +121,7 @@ function render() {
     .map(j => ({ ...j, left: daysLeft(j.end) }))
     .filter(j => j.left === null || j.left >= 0)
     .filter(j => !q || (j.org + " " + j.title + " " + j.region).toLowerCase().includes(q))
+    .filter(j => !cat || (j.category || []).includes(cat))
     .filter(j => !type || (j.hire_type || "").includes(type))
     .filter(j => !region || (j.region || "").includes(region))
     .sort((a, b) => (a.left ?? 9999) - (b.left ?? 9999));
@@ -140,6 +149,7 @@ function render() {
         <div class="title">${esc(j.title)}</div>
         <div class="meta">
           ${isNew ? '<span class="new">NEW</span>' : ""}
+          ${(j.category || []).map(c => `<span class="cat">${esc(c)}</span>`).join("")}
           ${j.status && j.status !== "모집중" ? `<span>${esc(j.status)}</span>` : ""}
           ${j.hire_type ? `<span>${esc(j.hire_type)}</span>` : ""}
           ${j.region ? `<span>${esc(j.region)}</span>` : ""}
@@ -164,7 +174,7 @@ fetch("data/jobs.json?t=" + Date.now())
   })
   .catch(() => { $("updated").textContent = "공고 목록을 불러오지 못했습니다. 잠시 후 다시 열어 주세요."; });
 
-["q", "type", "region"].forEach(id => $(id).addEventListener("input", render));
+["q", "cat", "type", "region"].forEach(id => $(id).addEventListener("input", render));
 </script>
 </body>
 </html>
