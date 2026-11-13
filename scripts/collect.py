@@ -15,6 +15,7 @@ docs/data/jobs.json 파일로 저장합니다.
 
 import json
 import os
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -31,8 +32,11 @@ KST = timezone(timedelta(hours=9))
 # (띄어쓰기를 지우고 비교하므로 '기록물 관리'도 찾습니다.)
 CATEGORIES = {
     "기록물": ["기록물", "기록연구", "기록관리", "기록관", "아키비스트", "archivist"],
-    "사서·도서관": ["사서", "도서관"],
+    "사서·도서관": ["도서관", "정사서", "준사서", "사서교사", "사서보조", "사서직"],
 }
+# '사서'는 '신체검사서', '조사서' 같은 단어 안에도 들어 있으므로,
+# 앞에 다른 한글이 붙지 않은 '사서'만 사서 공고로 봅니다.
+LIBRARIAN_RE = re.compile(r"(?<![가-힣])사서(?!함)")
 # 이 기관의 공고는 단어와 상관없이 모두 보여줍니다(관심 기관).
 WATCH_ORGS = ["법원도서관", "국회도서관", "국립중앙도서관", "고양시도서관센터", "고양도서관센터"]
 
@@ -61,7 +65,10 @@ def http_get(url: str, params: dict) -> requests.Response:
 def is_archive_job(*texts) -> list[str]:
     """해당하는 분야 이름 목록을 돌려줍니다. 하나도 없으면 빈 목록(=관련 없음)."""
     text = "".join("".join(str(t or "").split()) for t in texts).lower()
-    return [cat for cat, words in CATEGORIES.items() if any(w.lower() in text for w in words)]
+    cats = [cat for cat, words in CATEGORIES.items() if any(w.lower() in text for w in words)]
+    if "사서·도서관" not in cats and any(LIBRARIAN_RE.search(str(t or "")) for t in texts):
+        cats.append("사서·도서관")
+    return cats
 
 
 def watched(*texts) -> list[str]:
@@ -202,7 +209,7 @@ AREA = {
 
 NARA_DETAIL_URL = "https://apis.data.go.kr/1760000/PblJobService"
 # 한 번 상세 확인한 공고 결과를 기억해 두는 파일 (다음 실행 때 다시 조회하지 않음)
-NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache_v2.json"
+NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache_v3.json"
 NARA_WORKERS = 6  # 상세 조회를 동시에 몇 개씩 할지
 
 
