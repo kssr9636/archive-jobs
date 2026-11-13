@@ -27,13 +27,18 @@ import requests
 
 OUT_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "jobs.json"
 KST = timezone(timedelta(hours=9))
+MUSEUM = "박물관·역사관·문학관"
 
 # 분야별로 이 단어 중 하나라도 들어 있으면 해당 분야 공고로 봅니다.
 # (띄어쓰기를 지우고 비교하므로 '기록물 관리'도 찾습니다.)
 CATEGORIES = {
     "기록물": ["기록물", "기록연구", "기록관리", "기록관", "아키비스트", "archivist"],
     "사서·도서관": ["도서관", "정사서", "준사서", "사서교사", "사서보조", "사서직"],
+    MUSEUM: ["역사관", "박물관", "기념관", "사료관", "문서관", "문학관", "아카이브",
+             "학예", "소장품", "자료정리"],
 }
+# 박물관·역사관·문학관 분야에서, 제목에 이런 단어가 있으면 (자료 업무가 아니므로) 뺍니다.
+MUSEUM_EXCLUDE = re.compile(r"시설|청소|미화|환경관리|경비|방호|안내|주차|조리|운전|해설")
 # '사서'는 '신체검사서', '조사서' 같은 단어 안에도 들어 있으므로,
 # 앞에 다른 한글이 붙지 않은 '사서'만 사서 공고로 봅니다.
 LIBRARIAN_RE = re.compile(r"(?<![가-힣])사서(?!함)")
@@ -209,7 +214,7 @@ AREA = {
 
 NARA_DETAIL_URL = "https://apis.data.go.kr/1760000/PblJobService"
 # 한 번 상세 확인한 공고 결과를 기억해 두는 파일 (다음 실행 때 다시 조회하지 않음)
-NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache_v3.json"
+NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache_v4.json"
 NARA_WORKERS = 6  # 상세 조회를 동시에 몇 개씩 할지
 
 
@@ -327,7 +332,8 @@ def fetch_nara(key: str) -> list[dict]:
             # 본문에서 찾은 경우, '도서관'이 시설 이름으로만 나온 것은 빼고
             # '사서'·'기록물' 같은 직무 단어가 있을 때만 보여줍니다.
             if note.startswith("본문:") and not (
-                    is_archive_job(note).count("기록물") or LIBRARIAN_RE.search(note)):
+                    is_archive_job(note).count("기록물") or LIBRARIAN_RE.search(note)
+                    or re.search(r"학예|소장품|자료정리|아카이브|사료", note)):
                 continue
             jobs.append(to_job(g, note))
 
@@ -440,6 +446,11 @@ def main() -> None:
             continue
         if any(w in job["title"] for w in NOT_POSTING):  # 합격자 발표 등 제외
             continue
+        job.setdefault("category", is_archive_job(job["title"], job.get("note")) or ["기록물"])
+        if MUSEUM in job["category"] and MUSEUM_EXCLUDE.search(job["title"]):
+            job["category"] = [c for c in job["category"] if c != MUSEUM]
+            if not job["category"]:
+                continue  # 박물관 시설관리·청소·안내 등은 제외
         same = "".join(job["title"].split())  # 여러 사이트에 같은 제목으로 올라온 공고는 하나만
         if same in titles:
             continue
