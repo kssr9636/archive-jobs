@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 14:27",
+  "updated_at": "2026-11-13 14:52",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -251,24 +251,6 @@
       "start": "2026-11-10",
       "end": "2026-11-25",
       "url": "https://keis.or.kr/keis/ko/bbs/236/list.do",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "nara-306739",
-      "source": "나라일터",
-      "org": "서울대학교 기타기관",
-      "title": "조리팀 직원 채용 안내(계약직)",
-      "hire_type": "국가기관",
-      "status": "",
-      "region": "서울",
-      "headcount": "",
-      "start": "2026-10-27",
-      "end": "2026-11-26",
-      "note": "본문: 9) 서울대학교 시설(어린이집, 도서관, S-CARD 발급 등) 이용 가능  끝.",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306739&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13"
     },
     {
