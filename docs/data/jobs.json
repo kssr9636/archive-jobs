@@ -1,7 +1,8 @@
 {
-  "updated_at": "2026-11-13 12:02",
+  "updated_at": "2026-11-13 12:09",
   "sources": [
-    "클린아이 잡플러스"
+    "클린아이 잡플러스",
+    "잡알리오"
   ],
   "jobs": [
     {
@@ -16,6 +17,34 @@
       "start": "2026-11-11",
       "end": "2026-11-18",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80793",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "id": "alio-306791",
+      "source": "잡알리오",
+      "org": "한국산업은행",
+      "title": "한국산업은행 전문직원(기록연구사(대체채용)) 채용공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 1,
+      "start": "2026-11-09",
+      "end": "2026-11-23",
+      "url": "https://recruit.kdb.co.kr",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "id": "alio-306807",
+      "source": "잡알리오",
+      "org": "한국고용정보원",
+      "title": "2026년도 한국고용정보원 3차 직원(기록물관리) 채용 공고",
+      "hire_type": "정규직",
+      "status": "모집중",
+      "region": "충북",
+      "headcount": 1,
+      "start": "2026-11-10",
+      "end": "2026-11-25",
+      "url": "https://keis.or.kr/keis/ko/bbs/236/list.do",
       "first_seen": "2026-11-13"
     }
   ]
