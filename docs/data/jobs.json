@@ -1,11 +1,26 @@
 {
-  "updated_at": "2026-11-13 12:40",
+  "updated_at": "2026-11-13 12:58",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
     "나라일터"
   ],
   "jobs": [
+    {
+      "id": "nara-306572",
+      "source": "나라일터",
+      "org": "전남광주통합특별시 광산구",
+      "title": "2026년 제9회 광산구 임기제공무원 경력경쟁임용시험 시행 계획 재공고",
+      "hire_type": "지방자치단체",
+      "status": "",
+      "region": "",
+      "headcount": "",
+      "start": "2026-11-11",
+      "end": "2026-11-13",
+      "note": "본문: 모집분야 : 전자기록물관리 정보공개제도운영",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306572&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
     {
       "id": "nara-307636",
       "source": "나라일터",
@@ -17,7 +32,23 @@
       "headcount": "",
       "start": "2026-11-05",
       "end": "2026-11-13",
+      "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307636&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "id": "nara-307484",
+      "source": "나라일터",
+      "org": "문화체육관광부 국립중앙도서관",
+      "title": "[장애인 제한경쟁] 국립중앙도서관 지식정보서비스과 기간제 근로자 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-11-11",
+      "end": "2026-11-16",
+      "note": "본문: 모집분야 : 사서 및 기록물정리원",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307484&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13"
     },
     {
@@ -32,6 +63,21 @@
       "start": "2026-11-11",
       "end": "2026-11-18",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80793",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "id": "nara-308436",
+      "source": "나라일터",
+      "org": "강원특별자치도 동해시",
+      "title": "2026년 제4회 동해시 지방임기제공무원 채용계획 공고",
+      "hire_type": "지방자치단체",
+      "status": "",
+      "region": "전국",
+      "headcount": "",
+      "start": "2026-11-19",
+      "end": "2026-11-23",
+      "note": "직급: 지방일반임기제(기록물관리사, 7급상당)",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308436&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13"
     },
     {
