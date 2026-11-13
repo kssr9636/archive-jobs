@@ -183,8 +183,37 @@ AREA = {
 }
 
 
+NARA_DETAIL_URL = "https://apis.data.go.kr/1760000/PblJobService"
+# 한 번 상세 확인한 공고 결과를 기억해 두는 파일 (다음 실행 때 다시 조회하지 않음)
+NARA_CACHE = Path(__file__).resolve().parent.parent / "data" / "nara_detail_cache.json"
+NARA_WORKERS = 6  # 상세 조회를 동시에 몇 개씩 할지
+
+
+def nara_detail(key: str, idx: str) -> dict:
+    """공고 본문(getItem)과 채용 직급(getItemPosition)을 받아 기록물 관련인지 확인합니다."""
+    texts = {}
+    for func in ("getItemPosition", "getItem"):
+        resp = http_get(f"{NARA_DETAIL_URL}/{func}", {"serviceKey": key, "idx": idx, "numOfRows": 100})
+        root = ET.fromstring(resp.content)
+        if root.findtext(".//resultCode") not in ("00", "0"):
+            raise RuntimeError(root.findtext(".//resultMsg"))
+        if func == "getItemPosition":
+            texts["positions"] = [clean(n.text) for n in root.iter("name") if clean(n.text)]
+        else:
+            texts["contents"] = clean(root.findtext(".//contents"))
+
+    hit_pos = [p for p in texts["positions"] if is_archive_job(p)]
+    if hit_pos:
+        return {"hit": True, "note": "직급: " + ", ".join(hit_pos)}
+    if is_archive_job(texts["contents"]):
+        line = next((ln.strip(" ○·-\u3000") for ln in texts["contents"].splitlines() if is_archive_job(ln)), "")
+        return {"hit": True, "note": ("본문: " + line)[:80]}
+    return {"hit": False}
+
+
 def fetch_nara(key: str) -> list[dict]:
     today = datetime.now(KST)
+    today_s = today.strftime("%Y%m%d")
     params = {
         "serviceKey": key,
         "numOfRows": NARA_PAGE,
@@ -193,7 +222,26 @@ def fetch_nara(key: str) -> list[dict]:
         "Begin_de": (today - timedelta(days=NARA_DAYS)).strftime("%Y-%m-%d"),  # 등록일 범위
         "End_de": today.strftime("%Y-%m-%d"),
     }
-    jobs, page, seen = [], 1, 0
+
+    def to_job(g, note=""):
+        area = g("areacode")
+        return {
+            "id": f"nara-{g('idx')}",
+            "source": "나라일터",
+            "org": g("insttname"),
+            "title": g("title"),
+            "hire_type": NARA_ORG_TYPE.get(g("type02"), ""),
+            "status": "",
+            "region": AREA.get(area[:2], "") if area and area != "00000" else "전국",
+            "headcount": "",
+            "start": to_date(g("begindate")),
+            "end": to_date(g("enddate")),
+            "note": note,
+            "url": f"https://www.gojobs.go.kr/apmView.do?empmnsn={g('idx')}"
+                   "&searchJobsecode=020&menuNo=401&selMenuNo=400",
+        }
+
+    jobs, unclear, page, seen = [], [], 1, 0
     while True:
         resp = http_get(NARA_URL, {**params, "pageNo": page})
         try:
@@ -210,27 +258,52 @@ def fetch_nara(key: str) -> list[dict]:
         total = int(root.findtext(".//totalCount") or 0)
         print(f"  {page}쪽: {len(items)}건 (전체 {total}건)")
         for it in items:
-            g = lambda tag: clean(it.findtext(tag))
-            if not is_archive_job(g("title")):
-                continue
-            area = g("areacode")
-            jobs.append({
-                "id": f"nara-{g('idx')}",
-                "source": "나라일터",
-                "org": g("insttname"),
-                "title": g("title"),
-                "hire_type": NARA_ORG_TYPE.get(g("type02"), ""),
-                "status": "",
-                "region": AREA.get(area[:2], "") if area and area != "00000" else "전국",
-                "headcount": "",
-                "start": to_date(g("begindate")),
-                "end": to_date(g("enddate")),
-                "url": f"https://www.gojobs.go.kr/apmView.do?empmnsn={g('idx')}"
-                       "&searchJobsecode=020&menuNo=401&selMenuNo=400",
-            })
+            g = (lambda e: lambda tag: clean(e.findtext(tag)))(it)
+            if is_archive_job(g("title")):
+                jobs.append(to_job(g))
+            elif (g("enddate") or "0") >= today_s and not any(w in g("title") for w in NOT_POSTING):
+                unclear.append(g)  # 제목만으로는 알 수 없는, 아직 접수 중인 공고
         if not items or seen >= total:
             break
         page += 1
+
+    # 제목에 단어가 없는 공고는 상세 직급·본문까지 확인합니다.
+    try:
+        cache = json.loads(NARA_CACHE.read_text("utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    todo = [g for g in unclear if g("idx") not in cache]
+    print(f"  상세 확인: 접수 중 {len(unclear)}건 중 새로 확인할 공고 {len(todo)}건")
+
+    from concurrent.futures import ThreadPoolExecutor
+
+    def work(g):
+        try:
+            return g("idx"), nara_detail(key, g("idx"))
+        except Exception as e:  # noqa: BLE001  다음 실행 때 다시 시도
+            return g("idx"), {"error": str(e)[:100]}
+
+    errors = 0
+    with ThreadPoolExecutor(NARA_WORKERS) as pool:
+        for n, (idx, res) in enumerate(pool.map(work, todo), 1):
+            if "error" in res:
+                errors += 1
+                continue
+            cache[idx] = {**res, "end": next(g("enddate") for g in todo if g("idx") == idx)}
+            if n % 100 == 0:
+                print(f"    {n}/{len(todo)}건 확인")
+    if errors:
+        print(f"  상세 확인 실패 {errors}건 (다음 실행 때 다시 확인)")
+
+    for g in unclear:
+        res = cache.get(g("idx"))
+        if res and res.get("hit"):
+            jobs.append(to_job(g, res.get("note", "")))
+
+    # 마감 지난 공고는 기억 파일에서 지웁니다.
+    cache = {k: v for k, v in cache.items() if (v.get("end") or "0") >= today_s}
+    NARA_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    NARA_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     return jobs
 
 

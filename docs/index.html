@@ -143,6 +143,7 @@ function render() {
           ${j.status && j.status !== "모집중" ? `<span>${esc(j.status)}</span>` : ""}
           ${j.hire_type ? `<span>${esc(j.hire_type)}</span>` : ""}
           ${j.region ? `<span>${esc(j.region)}</span>` : ""}
+          ${j.note ? `<span>${esc(j.note)}</span>` : ""}
           ${j.start ? `<span>접수 ${esc(j.start)} ~ ${esc(j.end || "")}</span>` : ""}
           <span>${esc(j.source)}</span>
         </div>
