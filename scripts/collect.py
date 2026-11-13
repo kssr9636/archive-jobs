@@ -173,9 +173,8 @@ def fetch_alio(key: str) -> list[dict]:
 
 # ------------------------------------------------- 3) 나라일터(국가·지자체·교육청 등)
 NARA_URL = "https://apis.data.go.kr/1760000/PblJobService/getList"
-NARA_PAGE = 100
+NARA_PAGE = 1000
 NARA_DAYS = 45  # 최근 며칠 동안 등록된 공고까지 볼지
-NARA_MAX_PAGES = 40
 NARA_ORG_TYPE = {"g01": "국가기관", "g02": "지방자치단체", "g03": "공공기관", "g04": "교육청"}
 AREA = {
     "11": "서울", "26": "부산", "27": "대구", "28": "인천", "29": "광주", "30": "대전",
@@ -184,29 +183,32 @@ AREA = {
 }
 
 
-def nara_page(key: str, page: int, rows: int) -> ET.Element:
-    resp = http_get(NARA_URL, {"serviceKey": key, "numOfRows": rows, "pageNo": page})
-    try:
-        root = ET.fromstring(resp.content)
-    except ET.ParseError:
-        if "SERVICE_KEY_IS_NOT_REGISTERED" in resp.text:
-            raise PermissionError("이 서비스는 아직 활용신청이 안 되어 있습니다")
-        raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
-    if root.findtext(".//resultCode") not in ("00", "0"):
-        raise RuntimeError(f"API 오류: {root.findtext('.//resultMsg')}")
-    return root
-
-
 def fetch_nara(key: str) -> list[dict]:
-    # 이 API는 날짜 조건을 무시하고 오래된 순서로만 주므로,
-    # 전체 건수를 먼저 알아낸 뒤 마지막 쪽(최신)부터 거꾸로 읽습니다.
-    total = int(nara_page(key, 1, 1).findtext(".//totalCount") or 0)
-    last_page = (total + NARA_PAGE - 1) // NARA_PAGE
-    oldest = (datetime.now(KST) - timedelta(days=NARA_DAYS)).strftime("%Y%m%d")
+    today = datetime.now(KST)
+    params = {
+        "serviceKey": key,
+        "numOfRows": NARA_PAGE,
+        "Pblanc_ty": "",
+        "Instt_se": "",
+        "Begin_de": (today - timedelta(days=NARA_DAYS)).strftime("%Y-%m-%d"),  # 등록일 범위
+        "End_de": today.strftime("%Y-%m-%d"),
+    }
+    jobs, page, seen = [], 1, 0
+    while True:
+        resp = http_get(NARA_URL, {**params, "pageNo": page})
+        try:
+            root = ET.fromstring(resp.content)
+        except ET.ParseError:
+            if "SERVICE_KEY_IS_NOT_REGISTERED" in resp.text:
+                raise PermissionError("이 서비스는 아직 활용신청이 안 되어 있습니다")
+            raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+        if root.findtext(".//resultCode") not in ("00", "0"):
+            raise RuntimeError(f"API 오류: {root.findtext('.//resultMsg')}")
 
-    jobs = []
-    for page in range(last_page, max(last_page - NARA_MAX_PAGES, 0), -1):
-        items = nara_page(key, page, NARA_PAGE).findall(".//item")
+        items = root.findall(".//item")
+        seen += len(items)
+        total = int(root.findtext(".//totalCount") or 0)
+        print(f"  {page}쪽: {len(items)}건 (전체 {total}건)")
         for it in items:
             g = lambda tag: clean(it.findtext(tag))
             if not is_archive_job(g("title")):
@@ -223,12 +225,12 @@ def fetch_nara(key: str) -> list[dict]:
                 "headcount": "",
                 "start": to_date(g("begindate")),
                 "end": to_date(g("enddate")),
-                "url": f"https://www.gojobs.go.kr/apmView.do?empmnsn={g('idx')}",
+                "url": f"https://www.gojobs.go.kr/apmView.do?empmnsn={g('idx')}"
+                       "&searchJobsecode=020&menuNo=401&selMenuNo=400",
             })
-        dates = [it.findtext("regdate") or "" for it in items]
-        print(f"  {page}쪽 (등록일 {min(dates, default='-')}~{max(dates, default='-')})")
-        if not items or min(dates) < oldest:
+        if not items or seen >= total:
             break
+        page += 1
     return jobs
 
 

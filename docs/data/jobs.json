@@ -1,10 +1,25 @@
 {
-  "updated_at": "2026-11-13 12:27",
+  "updated_at": "2026-11-13 12:38",
   "sources": [
     "클린아이 잡플러스",
-    "잡알리오"
+    "잡알리오",
+    "나라일터"
   ],
   "jobs": [
+    {
+      "id": "nara-307636",
+      "source": "나라일터",
+      "org": "행정안전부 대통령기록관",
+      "title": "2026년도 제3회 대통령기록관 공무직 및 기간제 근로자 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "세종",
+      "headcount": "",
+      "start": "2026-11-05",
+      "end": "2026-11-13",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307636&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
     {
       "id": "cleaneye-80793",
       "source": "클린아이 잡플러스",
