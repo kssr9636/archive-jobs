@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 14:19",
+  "updated_at": "2026-11-13 14:27",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -7,24 +7,6 @@
     "시·구청 홈페이지"
   ],
   "jobs": [
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "nara-308046",
-      "source": "나라일터",
-      "org": "경기도교육청 라온고등학교",
-      "title": "2026학년도 2학기 라온고등학교 기간제교원(대체) 채용 공고",
-      "hire_type": "교육청",
-      "status": "",
-      "region": "경기",
-      "headcount": "",
-      "start": "2026-11-10",
-      "end": "2026-11-13",
-      "note": "본문: 공무원 채용신체검사서",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308046&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
     {
       "category": [
         "사서·도서관"
@@ -117,24 +99,6 @@
     },
     {
       "category": [
-        "사서·도서관"
-      ],
-      "id": "nara-308404",
-      "source": "나라일터",
-      "org": "경기도교육청 안산공업고등학교",
-      "title": "2026학년도 2학기 시간강사 신규 채용 공고(정보, 컴퓨터)",
-      "hire_type": "교육청",
-      "status": "",
-      "region": "경기",
-      "headcount": "",
-      "start": "2026-11-12",
-      "end": "2026-11-17",
-      "note": "본문: 바. 공무원신체검사서 1부(최종 합격자에 한함)",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308404&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
         "기록물"
       ],
       "id": "cleaneye-80793",
@@ -200,108 +164,6 @@
       "end": "2026-11-20",
       "note": "직급: 사서서기, 전산서기",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307934&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "alio-306778",
-      "source": "잡알리오",
-      "org": "한국도로공사서비스(주)",
-      "title": "한국도로공사서비스(주) 부산경남서부권역본부 기간제근로자 채용 공고",
-      "hire_type": "비정규직",
-      "status": "모집중",
-      "region": "경남",
-      "headcount": 44,
-      "start": "2026-11-06",
-      "end": "2026-11-20",
-      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4895",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "alio-306777",
-      "source": "잡알리오",
-      "org": "한국도로공사서비스(주)",
-      "title": "한국도로공사서비스(주) 부산경남동부권역본부 기간제근로자 채용 공고",
-      "hire_type": "비정규직",
-      "status": "모집중",
-      "region": "경남",
-      "headcount": 6,
-      "start": "2026-11-06",
-      "end": "2026-11-20",
-      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4894",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "alio-306775",
-      "source": "잡알리오",
-      "org": "한국도로공사서비스(주)",
-      "title": "한국도로공사서비스(주) 전북권역본부 기간제근로자 채용 공고",
-      "hire_type": "비정규직",
-      "status": "모집중",
-      "region": "전북",
-      "headcount": 6,
-      "start": "2026-11-06",
-      "end": "2026-11-20",
-      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4893",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "alio-306773",
-      "source": "잡알리오",
-      "org": "한국도로공사서비스(주)",
-      "title": "한국도로공사서비스(주) 대전충남권역본부 기간제근로자 채용 공고",
-      "hire_type": "비정규직",
-      "status": "모집중",
-      "region": "충남",
-      "headcount": 9,
-      "start": "2026-11-06",
-      "end": "2026-11-20",
-      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4892",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "alio-306772",
-      "source": "잡알리오",
-      "org": "한국도로공사서비스(주)",
-      "title": "한국도로공사서비스(주) 충북권역본부 기간제근로자 채용 공고",
-      "hire_type": "비정규직",
-      "status": "모집중",
-      "region": "충북",
-      "headcount": 5,
-      "start": "2026-11-06",
-      "end": "2026-11-20",
-      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4891",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "alio-306771",
-      "source": "잡알리오",
-      "org": "한국도로공사서비스(주)",
-      "title": "한국도로공사서비스(주) 수도권동부권역본부 기간제근로자 채용 공고",
-      "hire_type": "비정규직",
-      "status": "모집중",
-      "region": "서울,경기",
-      "headcount": 6,
-      "start": "2026-11-06",
-      "end": "2026-11-20",
-      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4890",
       "first_seen": "2026-11-13"
     },
     {
@@ -405,7 +267,7 @@
       "headcount": "",
       "start": "2026-10-27",
       "end": "2026-11-26",
-      "note": "본문: 6) 자사 서비스 이용 할인: 50~20% (숙박, 레스토랑, 예식, 연회 등)",
+      "note": "본문: 9) 서울대학교 시설(어린이집, 도서관, S-CARD 발급 등) 이용 가능  끝.",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306739&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13"
     },
