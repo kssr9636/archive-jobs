@@ -7,7 +7,8 @@ docs/data/jobs.json 파일로 저장합니다.
   1) 한국지역정보개발원_채용정보 조회 서비스 (클린아이 잡플러스, 지방공공기관)
   2) 공공기관 채용정보 조회서비스 (잡알리오, 공기업·준정부기관)
   3) 인사혁신처_공공취업정보 조회 서비스 (나라일터, 국가·지자체·교육청)
-     → 2), 3)은 활용신청을 하지 않았거나 오류가 나면 건너뜁니다.
+  4) 통근 가능한 시·구청 홈페이지 채용·고시공고 게시판 (scripts/city_boards.py)
+     → 2)~4)는 활용신청을 하지 않았거나 오류가 나면 건너뜁니다.
 
 실행 전에 환경변수 DATA_GO_KR_KEY 에 공공데이터포털 인증키를 넣어야 합니다.
 """
@@ -307,10 +308,48 @@ def fetch_nara(key: str) -> list[dict]:
     return jobs
 
 
+# ------------------------------------------------- 4) 통근 가능한 시·구청 홈페이지
+CITY_KEEP_DAYS = 30  # 마감일을 모르는 공고는 게시일로부터 며칠 동안 보여줄지
+
+
+def fetch_city(key: str) -> list[dict]:
+    import city_boards
+
+    jobs, ok = [], 0
+    for board in city_boards.BOARDS:
+        try:
+            rows = city_boards.fetch_board(board)
+        except Exception as e:  # noqa: BLE001  한 곳이 안 돼도 나머지는 계속
+            print(f"  {board['name']}: 건너뜀({str(e)[:80]})")
+            continue
+        ok += 1
+        hits = [r for r in rows if is_archive_job(r["title"])]
+        print(f"  {board['name']}: {len(rows)}건 중 {len(hits)}건")
+        for r in hits:
+            jobs.append({
+                "id": "city-" + r["url"].split("://", 1)[-1],
+                "source": board["name"],
+                "org": board["name"],
+                "title": r["title"],
+                "hire_type": "",
+                "status": "",
+                "region": board["region"],
+                "headcount": "",
+                "start": r["posted"],
+                "end": r["end"],
+                "url": r["url"],
+                "sticky": True,  # 게시판에서 밀려나도 마감 때까지 기억
+            })
+    if not ok:
+        raise RuntimeError("시·구청 홈페이지에 하나도 접속하지 못했습니다")
+    return jobs
+
+
 SOURCES = [
     ("클린아이 잡플러스", fetch_cleaneye, True),  # True = 꼭 성공해야 함
     ("잡알리오", fetch_alio, False),  # False = 실패해도 건너뜀
     ("나라일터", fetch_nara, False),
+    ("시·구청 홈페이지", fetch_city, False),
 ]
 
 # 채용공고가 아닌 안내글(합격자 발표 등)은 뺍니다.
@@ -348,8 +387,17 @@ def main() -> None:
         found.extend(jobs)
         sources.append(name)
 
+    # 시·구청 게시판에서 밀려난 공고도 마감 전까지는 계속 보여줍니다.
+    keep_from = (now - timedelta(days=CITY_KEEP_DAYS)).strftime("%Y-%m-%d")
+    found_ids = {j["id"] for j in found}
+    for j in old.values():
+        if j.get("sticky") and j["id"] not in found_ids and (j.get("end") or (j.get("start") or "") >= keep_from):
+            found.append(j)
+
     jobs, titles = {}, set()
     for job in found:
+        if not job["end"] and job.get("sticky") and (job.get("start") or "") < keep_from:
+            continue  # 마감일을 모르는 시·구청 공고는 게시 후 30일까지만
         if job["end"] and job["end"] < today:  # 마감 지난 공고 제외
             continue
         if any(w in job["title"] for w in NOT_POSTING):  # 합격자 발표 등 제외
