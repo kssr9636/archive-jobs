@@ -77,7 +77,7 @@
   <div class="list" id="list"></div>
 
   <footer>
-    매일 자동으로 업데이트됩니다. 출처: 공공데이터포털 공공기관 채용정보(잡알리오).<br>
+    매일 자동으로 업데이트됩니다. 출처: 공공데이터포털 <span id="sources">채용정보</span>.<br>
     지원 전에는 반드시 공고 원문에서 기간과 자격요건을 다시 확인해 주세요.
   </footer>
 </div>
@@ -140,6 +140,7 @@ function render() {
         <div class="title">${esc(j.title)}</div>
         <div class="meta">
           ${isNew ? '<span class="new">NEW</span>' : ""}
+          ${j.status && j.status !== "모집중" ? `<span>${esc(j.status)}</span>` : ""}
           ${j.hire_type ? `<span>${esc(j.hire_type)}</span>` : ""}
           ${j.region ? `<span>${esc(j.region)}</span>` : ""}
           ${j.start ? `<span>접수 ${esc(j.start)} ~ ${esc(j.end || "")}</span>` : ""}
@@ -155,6 +156,7 @@ fetch("data/jobs.json?t=" + Date.now())
   .then(data => {
     jobs = data.jobs || [];
     $("updated").textContent = "마지막 업데이트: " + (data.updated_at || "-") + " (한국시간)";
+    if (data.sources && data.sources.length) $("sources").textContent = data.sources.join(", ");
     fillSelect($("type"), jobs.map(j => j.hire_type));
     fillSelect($("region"), jobs.map(j => j.region));
     render();

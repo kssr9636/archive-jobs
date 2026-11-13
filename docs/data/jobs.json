@@ -1,4 +1,22 @@
 {
-  "updated_at": "아직 수집 전",
-  "jobs": []
+  "updated_at": "2026-11-13 12:01",
+  "sources": [
+    "클린아이 잡플러스"
+  ],
+  "jobs": [
+    {
+      "id": "cleaneye-80793",
+      "source": "클린아이 잡플러스",
+      "org": "서울물재생시설공단",
+      "title": "2027년 기록물 관리 전문요원 채용공고",
+      "hire_type": "전문계약직",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-11",
+      "end": "2026-11-18",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80793",
+      "first_seen": "2026-11-13"
+    }
+  ]
 }

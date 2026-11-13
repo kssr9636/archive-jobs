@@ -1,8 +1,12 @@
 """기록물관리 채용공고 수집기.
 
-공공데이터포털의 '공공기관 채용정보 조회서비스'(잡알리오 데이터)에서
-진행 중인 공고를 모두 받아, 기록물관리 관련 공고만 골라
+공공데이터포털 API에서 채용공고를 받아, 기록물관리 관련 공고만 골라
 docs/data/jobs.json 파일로 저장합니다.
+
+수집처
+  1) 한국지역정보개발원_채용정보 조회 서비스 (클린아이 잡플러스, 지방공공기관)
+  2) 공공기관 채용정보 조회서비스 (잡알리오, 공기업·준정부기관)
+     → 활용신청을 하지 않았으면 건너뜁니다.
 
 실행 전에 환경변수 DATA_GO_KR_KEY 에 공공데이터포털 인증키를 넣어야 합니다.
 """
@@ -10,105 +14,50 @@ docs/data/jobs.json 파일로 저장합니다.
 import json
 import os
 import sys
+import time
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import unquote
 
 import requests
 
-API_URL = "https://apis.data.go.kr/1051000/recruitment/list"
 OUT_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "jobs.json"
 KST = timezone(timedelta(hours=9))
 
 # 이 단어 중 하나라도 들어 있으면 기록물관리 공고로 봅니다.
-KEYWORDS = [
-    "기록물",
-    "기록연구",
-    "기록관리",
-    "기록관",
-    "아키비스트",
-    "archivist",
-]
-
-# 제목 외에 단어를 찾아볼 항목(자격요건, 우대조건 등)
-TEXT_FIELDS = [
-    "recrutPbancTtl",  # 공고 제목
-    "aplyQlfcCn",  # 응시 자격
-    "prefCondCn",  # 우대 조건
-    "prefCn",  # 우대 내용
-    "ncsCdNmLst",  # 직무 분류
-]
+# (띄어쓰기를 지우고 비교하므로 '기록물 관리'도 찾습니다.)
+KEYWORDS = ["기록물", "기록연구", "기록관리", "기록관", "아키비스트", "archivist"]
 
 
+# ---------------------------------------------------------------- 공통 도구
 def get_key() -> str:
     key = os.environ.get("DATA_GO_KR_KEY", "").strip()
     if not key:
         sys.exit("DATA_GO_KR_KEY 환경변수가 비어 있습니다. 공공데이터포털 인증키를 넣어 주세요.")
-    # 'Encoding' 키를 넣어도 동작하도록 한 번 풀어 줍니다.
-    decoded = unquote(key)
-    # 키 값은 보여주지 않고, 문제를 찾는 데 필요한 형태 정보만 보여줍니다.
-    yes = lambda cond: "예" if cond else "아니오"
-    has_space = any(c.isspace() for c in decoded)
-    has_quote = any(c in "\"'" for c in decoded)
-    print(
-        f"  인증키 점검: 길이 {len(decoded)}자, 공백 포함 {yes(has_space)}, "
-        f"따옴표 포함 {yes(has_quote)}, Encoding 키 여부 {yes('%' in key)}"
-    )
-    return "".join(decoded.split()).strip("\"'")
+    # 'Encoding' 키를 넣어도 동작하도록 한 번 풀고, 공백·따옴표를 지웁니다.
+    return "".join(unquote(key).split()).strip("\"'")
 
 
-def fetch_all(key: str) -> list[dict]:
-    """진행 중인 공고를 페이지별로 모두 받아옵니다."""
-    items: list[dict] = []
-    page = 1
-    while True:
-        resp = requests.get(
-            API_URL,
-            params={
-                "serviceKey": key,
-                "resultType": "json",
-                "numOfRows": 100,
-                "pageNo": page,
-                "ongoingYn": "Y",
-            },
-            timeout=60,
-        )
+def http_get(url: str, params: dict) -> requests.Response:
+    """공공데이터포털은 가끔 연결이 끊기므로 몇 번 다시 시도합니다."""
+    last_error = None
+    for attempt in range(5):
         try:
-            data = resp.json()
-        except ValueError:
-            sys.exit(f"API 오류(HTTP {resp.status_code}): {resp.text[:300]}")
-
-        if "OpenAPI_ServiceResponse" in data:  # 인증키 오류 등
-            header = data["OpenAPI_ServiceResponse"].get("cmmMsgHeader", {})
-            msg = f"API 오류: {header.get('returnAuthMsg')} ({header.get('errMsg')})"
-            if header.get("returnReasonCode") == "30":
-                msg += (
-                    "\n→ 인증키가 아직 등록되지 않았습니다. 승인 직후라면 1~2시간 뒤 다시 실행해 보세요."
-                    "\n→ 그래도 같으면 GitHub Secret 에 넣은 키가 정확한지(앞뒤 공백 없이) 확인해 주세요."
-                )
-            sys.exit(msg)
-        if resp.status_code != 200:
-            sys.exit(f"API 오류(HTTP {resp.status_code}): {resp.text[:300]}")
-        if str(data.get("resultCode", "200")) not in ("200", "00"):
-            sys.exit(f"API 오류: {data.get('resultCode')} {data.get('resultMsg')}")
-
-        batch = data.get("result") or []
-        items.extend(batch)
-        total = int(data.get("totalCount") or 0)
-        print(f"  {page}쪽: {len(batch)}건 (전체 {total}건)")
-        if not batch or len(items) >= total:
-            break
-        page += 1
-    return items
+            return requests.get(url, params=params, timeout=60)
+        except requests.RequestException as e:
+            last_error = e
+            time.sleep(3 * (attempt + 1))
+    raise RuntimeError(f"연결 실패: {last_error}")
 
 
-def is_archive_job(item: dict) -> bool:
-    text = " ".join(str(item.get(f) or "") for f in TEXT_FIELDS).lower()
+def is_archive_job(*texts) -> bool:
+    text = "".join("".join(str(t or "").split()) for t in texts).lower()
     return any(k.lower() in text for k in KEYWORDS)
 
 
 def to_date(value) -> str | None:
-    """'20261130' 같은 값을 '2026-11-30' 으로 바꿉니다."""
+    """'20261130', '2026-11-30' 같은 값을 '2026-11-30' 으로 바꿉니다."""
     digits = "".join(ch for ch in str(value or "") if ch.isdigit())
     if len(digits) < 8:
         return None
@@ -118,29 +67,120 @@ def to_date(value) -> str | None:
         return None
 
 
-def normalize(item: dict) -> dict:
-    sn = str(item.get("recrutPblntSn") or "")
-    link = item.get("srcUrl") or (
-        f"https://job.alio.go.kr/recruitview.do?idx={sn}" if sn else ""
-    )
-    return {
-        "id": f"alio-{sn}" if sn else f"alio-{item.get('recrutPbancTtl')}",
-        "source": "잡알리오",
-        "org": item.get("instNm") or "",
-        "title": (item.get("recrutPbancTtl") or "").strip(),
-        "hire_type": item.get("hireTypeNmLst") or "",
-        "recruit_type": item.get("recrutSeNm") or "",
-        "region": item.get("workRgnNmLst") or "",
-        "headcount": item.get("recrutNope") or "",
-        "start": to_date(item.get("pbancBgngYmd")),
-        "end": to_date(item.get("pbancEndYmd")),
-        "url": link,
-    }
+def clean(value) -> str:
+    value = (value or "").strip()
+    return "" if value in ("-", "null", "None") else value
 
 
+# ------------------------------------------------- 1) 클린아이 잡플러스(지방공공기관)
+CLEANEYE_URL = "https://apis.data.go.kr/B551982/openApiEmployInfo/openXmlEmployInfo"
+# 시·도 코드 (007005 광주는 전남광주통합특별시 007013 으로 합쳐졌습니다)
+SIDO_CODES = [f"0070{n:02d}" for n in range(1, 18)]
+
+
+def fetch_cleaneye(key: str) -> list[dict]:
+    jobs = []
+    for code in SIDO_CODES:
+        resp = http_get(
+            CLEANEYE_URL,
+            {"serviceKey": key, "type": "xml", "pageNo": 1, "numOfRows": 1000, "sidoCd": code},
+        )
+        try:
+            root = ET.fromstring(resp.content)
+        except ET.ParseError:
+            raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+
+        result_code = root.findtext(".//resultCode")
+        if result_code == "3":  # 해당 지역에 공고 없음
+            continue
+        if result_code != "0":
+            msg = root.findtext(".//resultMsg") or root.findtext(".//returnAuthMsg") or resp.text[:200]
+            raise RuntimeError(f"API 오류({result_code}): {msg}")
+
+        items = root.findall(".//item")
+        print(f"  시도코드 {code}: {len(items)}건")
+        for it in items:
+            g = lambda tag: clean(it.findtext(tag))
+            if not is_archive_job(
+                g("ENT_TITLE"), g("ENT_RECRUIT"), g("POSITION"), g("DUTY_DETAIL"),
+                g("ENT_LICENSE1"), g("ENT_LICENSE2"), g("ENT_LICENSE3"), g("ENT_LICENSE4"),
+                g("EXHIBIT"), g("JOB_SEEK_ETC"),
+            ):
+                continue
+            jobs.append({
+                "id": f"cleaneye-{g('NO')}",
+                "source": "클린아이 잡플러스",
+                "org": g("ENT_NAME"),
+                "title": g("ENT_TITLE"),
+                "hire_type": g("JOB_TYPE"),
+                "status": g("STATUS"),
+                "region": g("SIDO_CD"),
+                "headcount": g("EMPLOY_NUM"),
+                "start": to_date(g("PUB_DATE")),
+                "end": to_date(g("PUB_END_DATE")),
+                "url": g("URL"),
+            })
+    return jobs
+
+
+# ------------------------------------------------- 2) 잡알리오(공기업·준정부기관)
+ALIO_URL = "https://apis.data.go.kr/1051000/recruitment/list"
+
+
+def fetch_alio(key: str) -> list[dict]:
+    jobs, page, seen = [], 1, 0
+    while True:
+        resp = http_get(
+            ALIO_URL,
+            {"serviceKey": key, "resultType": "json", "numOfRows": 100, "pageNo": page, "ongoingYn": "Y"},
+        )
+        try:
+            data = resp.json()
+        except ValueError:
+            raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+        if "OpenAPI_ServiceResponse" in data:
+            h = data["OpenAPI_ServiceResponse"].get("cmmMsgHeader", {})
+            if h.get("returnReasonCode") == "30":
+                raise PermissionError("이 서비스는 아직 활용신청이 안 되어 있습니다")
+            raise RuntimeError(f"API 오류: {h.get('returnAuthMsg')} ({h.get('errMsg')})")
+
+        batch = data.get("result") or []
+        seen += len(batch)
+        for it in batch:
+            if not is_archive_job(*(it.get(f) for f in
+                                    ("recrutPbancTtl", "aplyQlfcCn", "prefCondCn", "prefCn", "ncsCdNmLst"))):
+                continue
+            sn = str(it.get("recrutPblntSn") or "")
+            jobs.append({
+                "id": f"alio-{sn}",
+                "source": "잡알리오",
+                "org": it.get("instNm") or "",
+                "title": (it.get("recrutPbancTtl") or "").strip(),
+                "hire_type": it.get("hireTypeNmLst") or "",
+                "status": "모집중",
+                "region": it.get("workRgnNmLst") or "",
+                "headcount": it.get("recrutNope") or "",
+                "start": to_date(it.get("pbancBgngYmd")),
+                "end": to_date(it.get("pbancEndYmd")),
+                "url": it.get("srcUrl") or (f"https://job.alio.go.kr/recruitview.do?idx={sn}" if sn else ""),
+            })
+        if not batch or seen >= int(data.get("totalCount") or 0):
+            break
+        page += 1
+    return jobs
+
+
+SOURCES = [
+    ("클린아이 잡플러스", fetch_cleaneye, True),  # True = 꼭 성공해야 함
+    ("잡알리오", fetch_alio, False),  # False = 실패해도 건너뜀
+]
+
+
+# ---------------------------------------------------------------- 실행
 def main() -> None:
     now = datetime.now(KST)
     today = now.strftime("%Y-%m-%d")
+    key = get_key()
 
     # 이전 결과를 읽어서 '처음 발견한 날'을 이어 받습니다(NEW 표시용).
     old: dict[str, dict] = {}
@@ -150,28 +190,41 @@ def main() -> None:
         except (ValueError, KeyError):
             old = {}
 
-    print("공공기관 채용정보를 받아오는 중...")
-    raw = fetch_all(get_key())
-    matched = [normalize(i) for i in raw if is_archive_job(i)]
+    found, sources = [], []
+    for name, fetch, required in SOURCES:
+        print(f"[{name}] 받아오는 중...")
+        try:
+            jobs = fetch(key)
+        except PermissionError as e:
+            print(f"  건너뜀: {e}")
+            continue
+        except Exception as e:  # noqa: BLE001
+            if required:
+                sys.exit(f"  [{name}] 실패: {e}")
+            print(f"  건너뜀(오류): {e}")
+            continue
+        print(f"  → 기록물관리 관련 {len(jobs)}건")
+        found.extend(jobs)
+        sources.append(name)
 
     jobs = {}
-    for job in matched:
+    for job in found:
         if job["end"] and job["end"] < today:  # 마감 지난 공고 제외
             continue
         job["first_seen"] = old.get(job["id"], {}).get("first_seen", today)
-        jobs[job["id"]] = job  # 같은 공고 중복 제거
+        jobs[job["id"]] = job
 
     result = sorted(jobs.values(), key=lambda j: (j["end"] or "9999-12-31", j["org"]))
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(
         json.dumps(
-            {"updated_at": now.strftime("%Y-%m-%d %H:%M"), "jobs": result},
+            {"updated_at": now.strftime("%Y-%m-%d %H:%M"), "sources": sources, "jobs": result},
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
-    print(f"전체 {len(raw)}건 중 기록물관리 관련 {len(result)}건 저장 완료 → {OUT_FILE}")
+    print(f"총 {len(result)}건 저장 완료 → {OUT_FILE}")
 
 
 if __name__ == "__main__":
