@@ -389,11 +389,73 @@ def fetch_city(key: str) -> list[dict]:
     return jobs
 
 
+# ------------------------------------------------- 5) 아트모아(예술분야 채용, 민간 문화재단 등)
+ARTMORE_URL = "https://www.artmore.kr/sub/recruit/search_list.do?page={page}"
+ARTMORE_PAGES = 15  # 한 쪽에 10건, 하루 약 10건 올라옴 → 약 2주 치
+FOUNDATION = "문화재단"
+# 재단 공고 중 자료·기획 업무가 아닌 것은 뺍니다.
+FOUNDATION_EXCLUDE = re.compile(r"안내원|어텐던트|매표|청소|미화|경비|주차|조리|운전|시설관리|임원|이사\b|비상임")
+
+
+def fetch_artmore(key: str) -> list[dict]:
+    import city_boards
+    import html as htmllib
+
+    jobs, seen = [], set()
+    for page in range(1, ARTMORE_PAGES + 1):
+        page_html = city_boards._get(ARTMORE_URL.format(page=page))
+        rows = re.findall(r"<tr>.*?</tr>", page_html, re.S)
+        found = 0
+        for tr in rows:
+            m_id = re.search(r"search_view\.do\?rec_idx=(\d+)", tr)
+            m_co = re.search(r'jobs_cname">\s*([^<]+)', tr)
+            m_ti = re.search(r'class="jobs_title">(.*?)</a>', tr, re.S)
+            if not (m_id and m_co and m_ti) or m_id.group(1) in seen:
+                continue
+            seen.add(m_id.group(1))
+            found += 1
+            raw_title = city_boards._text(m_ti.group(1))
+            if raw_title.startswith("마감"):
+                continue
+            title = re.sub(r"^(진행중|상시)\s*", "", raw_title)
+            org = htmllib.unescape(m_co.group(1)).strip()
+            place = re.search(r'jobs_wkplace">([^<]*)', tr)
+            reg = re.search(r"(20\d\d-\d\d-\d\d) 등록", tr)
+            end = re.search(r"(20\d\d-\d\d-\d\d) 마감", tr)
+            emp = re.search(r'jobs_regular">([^<]*)', tr)
+
+            cats = watched(org, title) + is_archive_job(title)
+            if "재단" in org and not FOUNDATION_EXCLUDE.search(title):
+                cats.append(FOUNDATION)
+            if not cats:
+                continue
+            jobs.append({
+                "category": cats,
+                "id": f"artmore-{m_id.group(1)}",
+                "source": "아트모아",
+                "org": org,
+                "title": title,
+                "hire_type": (emp.group(1).strip() if emp else ""),
+                "status": "",
+                "region": " ".join((place.group(1).split() if place else [])[:2]),
+                "headcount": "",
+                "start": reg.group(1) if reg else None,
+                "end": end.group(1) if end else None,
+                "url": f"https://www.artmore.kr/sub/recruit/search_view.do?rec_idx={m_id.group(1)}",
+                "sticky": True,
+            })
+        if not found:
+            break
+        time.sleep(1)
+    return jobs
+
+
 SOURCES = [
     ("클린아이 잡플러스", fetch_cleaneye, True),  # True = 꼭 성공해야 함
     ("잡알리오", fetch_alio, False),  # False = 실패해도 건너뜀
     ("나라일터", fetch_nara, False),
     ("시·구청 홈페이지", fetch_city, False),
+    ("아트모아", fetch_artmore, False),
 ]
 
 # 채용공고가 아닌 안내글(합격자 발표 등)은 뺍니다.
