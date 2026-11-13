@@ -34,7 +34,7 @@ CATEGORIES = {
     "사서·도서관": ["사서", "도서관"],
 }
 # 이 기관의 공고는 단어와 상관없이 모두 보여줍니다(관심 기관).
-WATCH_ORGS = ["법원도서관"]
+WATCH_ORGS = ["법원도서관", "국회도서관", "국립중앙도서관", "고양시도서관센터", "고양도서관센터"]
 
 
 # ---------------------------------------------------------------- 공통 도구
@@ -64,8 +64,10 @@ def is_archive_job(*texts) -> list[str]:
     return [cat for cat, words in CATEGORIES.items() if any(w.lower() in text for w in words)]
 
 
-def watched(org: str) -> list[str]:
-    return ["관심기관"] if any(w in (org or "") for w in WATCH_ORGS) else []
+def watched(*texts) -> list[str]:
+    """기관명(또는 제목)에 관심 기관 이름이 있으면 ['관심기관']."""
+    text = "".join("".join(str(t or "").split()) for t in texts)
+    return ["관심기관"] if any(w in text for w in WATCH_ORGS) else []
 
 
 def to_date(value) -> str | None:
@@ -241,7 +243,7 @@ def fetch_nara(key: str) -> list[dict]:
     def to_job(g, note=""):
         area = g("areacode")
         return {
-            "category": watched(g("insttname")) + is_archive_job(g("title"), note),
+            "category": watched(g("insttname"), g("title")) + is_archive_job(g("title"), note),
             "id": f"nara-{g('idx')}",
             "source": "나라일터",
             "org": g("insttname"),
@@ -275,7 +277,7 @@ def fetch_nara(key: str) -> list[dict]:
         print(f"  {page}쪽: {len(items)}건 (전체 {total}건)")
         for it in items:
             g = (lambda e: lambda tag: clean(e.findtext(tag)))(it)
-            if is_archive_job(g("title")) or watched(g("insttname")):
+            if is_archive_job(g("title")) or watched(g("insttname"), g("title")):
                 jobs.append(to_job(g))
             elif (g("enddate") or "0") >= today_s and not any(w in g("title") for w in NOT_POSTING):
                 unclear.append(g)  # 제목만으로는 알 수 없는, 아직 접수 중인 공고
@@ -343,7 +345,7 @@ def fetch_city(key: str) -> list[dict]:
             if board.get("watch"):  # 관심 기관 게시판: 채용 관련 글이면 모두
                 cats = ["관심기관"] if any(w in r["title"] for w in board["watch"]) else []
             else:
-                cats = is_archive_job(r["title"])
+                cats = watched(r["title"]) + is_archive_job(r["title"])
             if cats:
                 hits.append((r, cats))
         print(f"  {board['name']}: {len(rows)}건 중 {len(hits)}건")

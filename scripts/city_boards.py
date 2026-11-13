@@ -64,6 +64,13 @@ BOARDS = [
         # 기록물·사서 단어가 없어도, 이 단어가 들어간 글은 모두 보여줍니다.
         "watch": ["채용", "근로자", "공무직", "임기제", "직원 모집", "인력 모집"],
     },
+    {
+        "name": "고양시 도서관센터", "region": "경기 고양",  # 모집공고 (관심 기관, 자원봉사 모집은 제외)
+        "list": "https://www.goyanglib.or.kr/center/menu/130332/bbs/20005/bbsPostList.do?currentPageNo={page}",
+        "id_re": r"fnDetail\('(\d+)'\)",
+        "view": "https://www.goyanglib.or.kr/center/menu/130332/bbs/20005/bbsPostDetail.do?postIdx={id}",
+        "watch": ["채용", "근로자", "공무직", "임기제", "기간제", "사서 모집", "직원 모집"],
+    },
 ]
 
 DATE_RE = re.compile(r"(20\d\d)\s*[.\-/년]\s*(\d{1,2})\s*[.\-/월]\s*(\d{1,2})")

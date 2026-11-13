@@ -15,11 +15,18 @@ on:
 permissions:
   contents: write
 
+# 실행이 겹치면 앞의 실행이 끝날 때까지 기다립니다.
+concurrency:
+  group: update-jobs
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main # 기다리는 동안 바뀐 최신 내용으로 시작
 
       - uses: actions/setup-python@v6
         with:
