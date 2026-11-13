@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 23:08",
+  "updated_at": "2026-11-14 07:45",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -7,96 +7,6 @@
     "시·구청 홈페이지"
   ],
   "jobs": [
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "nara-307224",
-      "source": "나라일터",
-      "org": "문화체육관광부",
-      "title": "문화체육관광부 과장급 공모직위 공개모집(대한민국역사박물관 교류홍보과)",
-      "hire_type": "국가기관",
-      "status": "",
-      "region": "서울",
-      "headcount": "",
-      "start": "2026-11-02",
-      "end": "2026-11-13",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307224&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "nara-307942",
-      "source": "나라일터",
-      "org": "서울특별시교육청 서울특별시성동광진교육지원청",
-      "title": "(성동광진) 2026년 11월 교육공무직원 대체 직원 채용 공고-(성수초)교육실무사[늘봄], (자양중) 사서",
-      "hire_type": "교육청",
-      "status": "",
-      "region": "서울",
-      "headcount": "",
-      "start": "2026-11-09",
-      "end": "2026-11-13",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307942&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "기록물"
-      ],
-      "id": "nara-306572",
-      "source": "나라일터",
-      "org": "전남광주통합특별시 광산구",
-      "title": "2026년 제9회 광산구 임기제공무원 경력경쟁임용시험 시행 계획 재공고",
-      "hire_type": "지방자치단체",
-      "status": "",
-      "region": "",
-      "headcount": "",
-      "start": "2026-11-11",
-      "end": "2026-11-13",
-      "note": "본문: 모집분야 : 전자기록물관리 정보공개제도운영",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306572&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "nara-307068",
-      "source": "나라일터",
-      "org": "충청남도 예산군",
-      "title": "2026년 제3회 예산군 지방임기제공무원 임용시험 변경 시행계획  공고(보건관리자, 환경오염 지도단속, 학예연구사, 치매안심센터 운영 인력, 한시임기제)",
-      "hire_type": "지방자치단체",
-      "status": "",
-      "region": "충남",
-      "headcount": "",
-      "start": "2026-11-10",
-      "end": "2026-11-13",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307068&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
-    {
-      "category": [
-        "기록물"
-      ],
-      "id": "nara-307636",
-      "source": "나라일터",
-      "org": "행정안전부 대통령기록관",
-      "title": "2026년도 제3회 대통령기록관 공무직 및 기간제 근로자 채용 공고",
-      "hire_type": "국가기관",
-      "status": "",
-      "region": "세종",
-      "headcount": "",
-      "start": "2026-11-05",
-      "end": "2026-11-13",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307636&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
-    },
     {
       "category": [
         "사서·도서관"
