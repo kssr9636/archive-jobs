@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 13:43",
+  "updated_at": "2026-11-13 13:56",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -8,6 +8,45 @@
   ],
   "jobs": [
     {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-308046",
+      "source": "나라일터",
+      "org": "경기도교육청 라온고등학교",
+      "title": "2026학년도 2학기 라온고등학교 기간제교원(대체) 채용 공고",
+      "hire_type": "교육청",
+      "status": "",
+      "region": "경기",
+      "headcount": "",
+      "start": "2026-11-10",
+      "end": "2026-11-13",
+      "note": "본문: 공무원 채용신체검사서",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308046&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-307942",
+      "source": "나라일터",
+      "org": "서울특별시교육청 서울특별시성동광진교육지원청",
+      "title": "(성동광진) 2026년 11월 교육공무직원 대체 직원 채용 공고-(성수초)교육실무사[늘봄], (자양중) 사서",
+      "hire_type": "교육청",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-11-09",
+      "end": "2026-11-13",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307942&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "기록물"
+      ],
       "id": "nara-306572",
       "source": "나라일터",
       "org": "전남광주통합특별시 광산구",
@@ -23,6 +62,9 @@
       "first_seen": "2026-11-13"
     },
     {
+      "category": [
+        "기록물"
+      ],
       "id": "nara-307636",
       "source": "나라일터",
       "org": "행정안전부 대통령기록관",
@@ -38,6 +80,26 @@
       "first_seen": "2026-11-13"
     },
     {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-80994",
+      "source": "클린아이 잡플러스",
+      "org": "동작문화재단",
+      "title": "2026년 제11차 직원 채용 공고",
+      "hire_type": "일반정규직",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-06",
+      "end": "2026-11-16",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80994",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
       "id": "nara-307484",
       "source": "나라일터",
       "org": "문화체육관광부 국립중앙도서관",
@@ -48,11 +110,32 @@
       "headcount": "",
       "start": "2026-11-11",
       "end": "2026-11-16",
-      "note": "본문: 모집분야 : 사서 및 기록물정리원",
+      "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307484&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13"
     },
     {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-308404",
+      "source": "나라일터",
+      "org": "경기도교육청 안산공업고등학교",
+      "title": "2026학년도 2학기 시간강사 신규 채용 공고(정보, 컴퓨터)",
+      "hire_type": "교육청",
+      "status": "",
+      "region": "경기",
+      "headcount": "",
+      "start": "2026-11-12",
+      "end": "2026-11-17",
+      "note": "본문: 바. 공무원신체검사서 1부(최종 합격자에 한함)",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308404&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "기록물"
+      ],
       "id": "cleaneye-80793",
       "source": "클린아이 잡플러스",
       "org": "서울물재생시설공단",
@@ -67,6 +150,180 @@
       "first_seen": "2026-11-13"
     },
     {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-80963",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 송파문화재단",
+      "title": "(재)송파문화재단 도서관지원팀 2026년 6차 기간제 및 단시간근로자 채용 공고(공개경쟁)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "7",
+      "start": "2026-11-10",
+      "end": "2026-11-19",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80963",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81097",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 강동문화재단",
+      "title": "(재)강동문화재단 2026년 제9차 채용공고(공개경쟁채용)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "4",
+      "start": "2026-11-13",
+      "end": "2026-11-20",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81097",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-307934",
+      "source": "나라일터",
+      "org": "통일부",
+      "title": "2026년 제4회 통일부 일반직 공무원 전입 희망자 모집",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "전국",
+      "headcount": "",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "note": "직급: 사서서기, 전산서기",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307934&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "alio-306778",
+      "source": "잡알리오",
+      "org": "한국도로공사서비스(주)",
+      "title": "한국도로공사서비스(주) 부산경남서부권역본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "경남",
+      "headcount": 44,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4895",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "alio-306777",
+      "source": "잡알리오",
+      "org": "한국도로공사서비스(주)",
+      "title": "한국도로공사서비스(주) 부산경남동부권역본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "경남",
+      "headcount": 6,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4894",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "alio-306775",
+      "source": "잡알리오",
+      "org": "한국도로공사서비스(주)",
+      "title": "한국도로공사서비스(주) 전북권역본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "전북",
+      "headcount": 6,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4893",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "alio-306773",
+      "source": "잡알리오",
+      "org": "한국도로공사서비스(주)",
+      "title": "한국도로공사서비스(주) 대전충남권역본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "충남",
+      "headcount": 9,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4892",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "alio-306772",
+      "source": "잡알리오",
+      "org": "한국도로공사서비스(주)",
+      "title": "한국도로공사서비스(주) 충북권역본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "충북",
+      "headcount": 5,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4891",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "alio-306771",
+      "source": "잡알리오",
+      "org": "한국도로공사서비스(주)",
+      "title": "한국도로공사서비스(주) 수도권동부권역본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "서울,경기",
+      "headcount": 6,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.exservice.co.kr/boad/bd_recruit/egoread.php?bd=1&itm=&txt=&pg=1&seq=4890",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81185",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
+      "title": "동양도서관 2026년 제1회 사서보조, 관리보조 채용",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "인천광역시",
+      "headcount": "3",
+      "start": "2026-11-12",
+      "end": "2026-11-22",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81185",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "기록물"
+      ],
       "id": "nara-308436",
       "source": "나라일터",
       "org": "강원특별자치도 동해시",
@@ -82,6 +339,26 @@
       "first_seen": "2026-11-13"
     },
     {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81184",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
+      "title": "임학도서관 2026년 제1회 사서보조, 관리보조 채용",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "인천광역시",
+      "headcount": "3",
+      "start": "2026-11-12",
+      "end": "2026-11-23",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81184",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "기록물"
+      ],
       "id": "alio-306791",
       "source": "잡알리오",
       "org": "한국산업은행",
@@ -96,6 +373,10 @@
       "first_seen": "2026-11-13"
     },
     {
+      "category": [
+        "기록물",
+        "사서·도서관"
+      ],
       "id": "alio-306807",
       "source": "잡알리오",
       "org": "한국고용정보원",
@@ -107,6 +388,42 @@
       "start": "2026-11-10",
       "end": "2026-11-25",
       "url": "https://keis.or.kr/keis/ko/bbs/236/list.do",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-306739",
+      "source": "나라일터",
+      "org": "서울대학교 기타기관",
+      "title": "조리팀 직원 채용 안내(계약직)",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-10-27",
+      "end": "2026-11-26",
+      "note": "본문: 6) 자사 서비스 이용 할인: 50~20% (숙박, 레스토랑, 예식, 연회 등)",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=306739&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-308273",
+      "source": "나라일터",
+      "org": "재단법인동대문문화재단",
+      "title": "2026년 제3차 동대문문화재단 직원 채용 공고",
+      "hire_type": "공공기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-12-03",
+      "note": "직급: 정규직_사서직8급(사서), 기간제근로자_사서",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308273&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13"
     }
   ]
