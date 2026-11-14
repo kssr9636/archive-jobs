@@ -475,12 +475,74 @@ def fetch_artmore(key: str) -> list[dict]:
     return jobs
 
 
+# ------------------------------------------------- 6) 외교부 국제기구 인턴십 공석정보
+MOFA_URL = "https://apis.data.go.kr/1262000/IntrlInsttVacancyInfoService/getInternshipVacancyInfoList"
+INTL = "국제기구 인턴"
+DATE_RE = re.compile(r"(20\d\d)\s*[.\-/년]\s*(\d{1,2})\s*[.\-/월]\s*(\d{1,2})")
+
+
+def _dates(text: str) -> list[str]:
+    out = []
+    for y, m, d in DATE_RE.findall(text):
+        try:
+            out.append(datetime(int(y), int(m), int(d)).strftime("%Y-%m-%d"))
+        except ValueError:
+            pass
+    return out
+
+
+def fetch_mofa(key: str) -> list[dict]:
+    import html as htmllib
+
+    resp = http_get(MOFA_URL, {"serviceKey": key, "pageNo": 1, "numOfRows": 100})
+    try:
+        root = ET.fromstring(resp.content)
+    except ET.ParseError:
+        if "SERVICE_KEY_IS_NOT_REGISTERED" in resp.text:
+            raise PermissionError("이 서비스는 아직 활용신청이 안 되어 있습니다")
+        raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+    jobs = []
+    for it in root.findall(".//item"):
+        title = clean(it.findtext("title"))
+        if "[국내]" not in title:  # 해외 근무 공고는 제외(통근 불가)
+            continue
+        reg = clean(it.findtext("regDt"))
+        body = htmllib.unescape(re.sub(r"<[^>]+>", " ", htmllib.unescape(it.findtext("content") or "")))
+        body = re.sub(r"\s+", " ", body)
+        # 본문에서 '마감·기한·접수기간' 근처의 날짜를 마감일로 봅니다.
+        near = []
+        for m in re.finditer(r"마감|기한|접수\s*기간|지원\s*기간|[Dd]eadline|까지", body):
+            near += _dates(body[max(0, m.start() - 60):m.end() + 60])
+        latest = (datetime.strptime(reg, "%Y-%m-%d") + timedelta(days=60)).strftime("%Y-%m-%d") if reg else "9999"
+        # 등록 후 60일이 넘는 날짜는 근무 기간 등일 가능성이 커서 마감일로 보지 않습니다.
+        cand = [d for d in (near or _dates(body)) if reg <= d <= latest]
+        contact = clean(it.findtext("linkUrl4")).strip("\u3000 ")
+        jobs.append({
+            "category": [INTL] + is_archive_job(title),
+            "id": f"mofa-{clean(it.findtext('seq'))}",
+            "source": "외교부 국제기구인사센터",
+            "org": re.sub(r"^(\[[^\]]*\]\s*)+", "", title).split(" 인턴")[0][:40],
+            "title": re.sub(r"^(\[[^\]]*\]\s*)+", "", title),
+            "hire_type": "인턴",
+            "status": "",
+            "region": "국내(서울 등)",
+            "headcount": "",
+            "start": reg,
+            "end": max(cand) if cand else None,
+            "note": ("문의: " + contact)[:60] if contact else "",
+            "url": "https://unojobs.mofa.go.kr/",
+            "sticky": True,
+        })
+    return jobs
+
+
 SOURCES = [
     ("클린아이 잡플러스", fetch_cleaneye, True),  # True = 꼭 성공해야 함
     ("잡알리오", fetch_alio, False),  # False = 실패해도 건너뜀
     ("나라일터", fetch_nara, False),
     ("시·구청 홈페이지", fetch_city, False),
     ("아트모아", fetch_artmore, False),
+    ("외교부 국제기구 인턴", fetch_mofa, False),
 ]
 
 # 채용공고가 아닌 안내글(합격자 발표 등)은 뺍니다.
