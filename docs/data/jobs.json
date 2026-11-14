@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 13:49",
+  "updated_at": "2026-11-14 13:56",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -8,23 +8,6 @@
     "아트모아"
   ],
   "jobs": [
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "cleaneye-80879",
-      "source": "클린아이 잡플러스",
-      "org": "양천구시설관리공단",
-      "title": "서울특별시 양천구시설관리공단 주말근무 시니어인턴 공개경쟁채용 공고",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "서울특별시",
-      "headcount": "3",
-      "start": "2026-11-09",
-      "end": "2026-11-15",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80879",
-      "first_seen": "2026-11-14"
-    },
     {
       "category": [
         "청년인턴"
