@@ -84,7 +84,7 @@ INTERN_RE = re.compile(r"인턴")
 
 def intern(title, hire_type="", region="", health_only=False) -> list[str]:
     """통근 가능 지역(서울·경기·인천)의 인턴 공고면 ['청년인턴']. 병원 의료직만 뽑는 공고는 제외."""
-    if health_only or not INTERN_RE.search(f"{title} {hire_type}"):
+    if health_only or not INTERN_RE.search(f"{title} {hire_type}") or re.search(r"시니어|어르신|노인", title):
         return []
     if region and not COMMUTE_RE.search(region):
         return []
