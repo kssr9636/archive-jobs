@@ -1,13 +1,52 @@
 {
-  "updated_at": "2026-11-14 14:30",
+  "updated_at": "2026-11-14 15:20",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
     "나라일터",
     "시·구청 홈페이지",
-    "아트모아"
+    "아트모아",
+    "외교부 국제기구 인턴"
   ],
   "jobs": [
+    {
+      "category": [
+        "국제기구 인턴"
+      ],
+      "id": "mofa-35575",
+      "source": "외교부 국제기구인사센터",
+      "org": "반기문글로벌임팩트(BGI)",
+      "title": "반기문글로벌임팩트(BGI) 인턴 모집 공고",
+      "hire_type": "인턴",
+      "status": "",
+      "region": "국내(서울 등)",
+      "headcount": "",
+      "start": "2026-10-22",
+      "end": "2026-11-15",
+      "note": "문의: recruit@bf4bf.or.kr",
+      "url": "https://unojobs.mofa.go.kr/",
+      "sticky": true,
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "국제기구 인턴"
+      ],
+      "id": "mofa-35600",
+      "source": "외교부 국제기구인사센터",
+      "org": "한-아세안센터(ASEAN-Korea Centre) 문화관광국",
+      "title": "한-아세안센터(ASEAN-Korea Centre) 문화관광국 인턴 채용공고",
+      "hire_type": "인턴",
+      "status": "",
+      "region": "국내(서울 등)",
+      "headcount": "",
+      "start": "2026-10-29",
+      "end": "2026-11-15",
+      "note": "",
+      "url": "https://unojobs.mofa.go.kr/",
+      "sticky": true,
+      "first_seen": "2026-11-14"
+    },
     {
       "category": [
         "청년인턴"
