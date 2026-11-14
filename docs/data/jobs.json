@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 09:03",
+  "updated_at": "2026-11-14 13:49",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -8,6 +8,74 @@
     "아트모아"
   ],
   "jobs": [
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "cleaneye-80879",
+      "source": "클린아이 잡플러스",
+      "org": "양천구시설관리공단",
+      "title": "서울특별시 양천구시설관리공단 주말근무 시니어인턴 공개경쟁채용 공고",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "3",
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80879",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "cleaneye-80987",
+      "source": "클린아이 잡플러스",
+      "org": "과천도시공사",
+      "title": "2026년 과천도시공사 청년인턴(장애인) 직원 채용 재공고",
+      "hire_type": "인턴",
+      "status": "모집중",
+      "region": "경기도",
+      "headcount": "1",
+      "start": "2026-11-05",
+      "end": "2026-11-16",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80987",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306827",
+      "source": "잡알리오",
+      "org": "근로복지공단",
+      "title": "[인천병원] 2026년도 하반기 청년(체험형)인턴 장애전형 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "인천",
+      "headcount": 10,
+      "start": "2026-11-09",
+      "end": "2026-11-16",
+      "url": "https://www.comwel.or.kr/recruit/hp/main.do",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "cleaneye-81005",
+      "source": "클린아이 잡플러스",
+      "org": "동두천시시설관리공단",
+      "title": "2026년 동두천시 시설관리공단 청년 체험형 인턴 채용 공고",
+      "hire_type": "인턴",
+      "status": "모집중",
+      "region": "경기도",
+      "headcount": "3",
+      "start": "2026-11-10",
+      "end": "2026-11-16",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81005",
+      "first_seen": "2026-11-14"
+    },
     {
       "category": [
         "사서·도서관"
@@ -64,6 +132,41 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306355",
+      "source": "잡알리오",
+      "org": "중소기업은행",
+      "title": "2027년 동계 IBK기업은행 체험형 청년인턴 채용공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,전남광주,경북,경남,제주",
+      "headcount": 390,
+      "start": "2026-10-27",
+      "end": "2026-11-16",
+      "url": "https://ibk.incruit.com",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "nara-307340",
+      "source": "나라일터",
+      "org": "한국과학기술연구원",
+      "title": "KIST 2026-6차 행정인턴 공개채용",
+      "hire_type": "공공기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-11-02",
+      "end": "2026-11-16",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307340&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "artmore-95582",
@@ -100,6 +203,23 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306600",
+      "source": "잡알리오",
+      "org": "한국지식재산연구원",
+      "title": "2026년 한국지식재산연구원 제4회 채용 공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 4,
+      "start": "2026-11-02",
+      "end": "2026-11-17",
+      "url": "https://kiip.re.kr/board/notice/view.do?bd_gb=board&bd_cd=1&bd_item=0&po_item_gb=1&po_notice_gb=recruit&po_item_cd=&po_no=15408",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
         "기록물"
       ],
       "id": "cleaneye-80793",
@@ -114,6 +234,23 @@
       "end": "2026-11-18",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80793",
       "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306560",
+      "source": "잡알리오",
+      "org": "한국특허정보원",
+      "title": "2026년 한국특허정보원 체험형 청년인턴 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울,대전",
+      "headcount": 2,
+      "start": "2026-11-03",
+      "end": "2026-11-18",
+      "url": "http://kipi.recruiter.co.kr",
+      "first_seen": "2026-11-14"
     },
     {
       "category": [
@@ -205,6 +342,23 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306729",
+      "source": "잡알리오",
+      "org": "한국해양수산연수원",
+      "title": "한국해양수산연수원 2026년도 제4차 계약직 직원 채용 공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "부산,인천,전남광주",
+      "headcount": 26,
+      "start": "2026-11-05",
+      "end": "2026-11-19",
+      "url": "https://kimft.recruiter.co.kr",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-307882",
@@ -255,6 +409,23 @@
       "end": "2026-11-20",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95599",
       "sticky": true,
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306801",
+      "source": "잡알리오",
+      "org": "예금보험공사",
+      "title": "예금보험공사 제28기 동계 대학생인턴 모집 안내",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 35,
+      "start": "2026-11-06",
+      "end": "2026-11-20",
+      "url": "https://www.kdic.or.kr",
       "first_seen": "2026-11-14"
     },
     {
@@ -493,6 +664,24 @@
       "category": [
         "사서·도서관"
       ],
+      "id": "artmore-95653",
+      "source": "아트모아",
+      "org": "곰달래도서관",
+      "title": "강서구립 곰달래도서관 순회사서 채용 공고 (이메일...",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울특별시 강서구",
+      "headcount": "",
+      "start": "2026-11-09",
+      "end": "2026-11-23",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
+      "sticky": true,
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
       "id": "artmore-95655",
       "source": "아트모아",
       "org": "곰달래도서관",
@@ -509,20 +698,36 @@
     },
     {
       "category": [
-        "사서·도서관"
+        "청년인턴"
       ],
-      "id": "artmore-95653",
-      "source": "아트모아",
-      "org": "곰달래도서관",
-      "title": "강서구립 곰달래도서관 순회사서 채용 공고 (이메일...",
-      "hire_type": "계약직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-09",
+      "id": "cleaneye-81212",
+      "source": "클린아이 잡플러스",
+      "org": "동작구시설관리공단",
+      "title": "동작구시설관리공단 체험형 청년인턴 모집 공고",
+      "hire_type": "인턴",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "8",
+      "start": "2026-11-13",
       "end": "2026-11-23",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
-      "sticky": true,
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81212",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "cleaneye-81226",
+      "source": "클린아이 잡플러스",
+      "org": "용인도시공사",
+      "title": "2026년 제5회 청년 체험형 인턴 공개채용 공고",
+      "hire_type": "인턴",
+      "status": "모집중",
+      "region": "경기도",
+      "headcount": "1",
+      "start": "2026-11-13",
+      "end": "2026-11-23",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81226",
       "first_seen": "2026-11-14"
     },
     {
@@ -616,6 +821,23 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306900",
+      "source": "잡알리오",
+      "org": "공무원연금공단",
+      "title": "사회형평적 체험형 청년인턴 채용 공고(3차)",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울,제주",
+      "headcount": 9,
+      "start": "2026-11-10",
+      "end": "2026-11-24",
+      "url": "https://www.geps.or.kr/notiCommunication_info_incruit/43756?curPage=1",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-308369",
@@ -650,6 +872,40 @@
       "end": "2026-11-25",
       "url": "https://keis.or.kr/keis/ko/bbs/236/list.do",
       "first_seen": "2026-11-13"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306815",
+      "source": "잡알리오",
+      "org": "해양수산과학기술진흥원",
+      "title": "2026년도 제4차 신규직원(개방형직위 및 청년인턴) 채용 공고",
+      "hire_type": "정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 4,
+      "start": "2026-11-09",
+      "end": "2026-11-25",
+      "url": "https://kimst.recruiter.co.kr/",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-306906",
+      "source": "잡알리오",
+      "org": "해양환경공단",
+      "title": "2026년 하반기 해양환경공단 직원 채용 공고(보훈특별채용)",
+      "hire_type": "청년인턴(채용형)",
+      "status": "모집중",
+      "region": "서울,부산,인천,울산,강원,충남,전북,경북,경남,제주",
+      "headcount": 3,
+      "start": "2026-11-11",
+      "end": "2026-11-25",
+      "url": "https://recruit.incruit.com/koem/job",
+      "first_seen": "2026-11-14"
     },
     {
       "category": [
@@ -815,7 +1071,25 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-302097",
+      "source": "잡알리오",
+      "org": "대한무역투자진흥공사",
+      "title": "2026년 하반기 체험형 청년인턴(장애인 전형) 모집",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울,부산,대구,인천,광주,대전,울산,경기,강원,충북,충남,전북,경북,경남",
+      "headcount": "",
+      "start": "2026-07-01",
+      "end": "2026-12-31",
+      "url": "https://kotra.applyin.co.kr/jobs/22547",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
         "관심기관",
+        "청년인턴",
         "문화재단"
       ],
       "id": "artmore-95669",
@@ -865,6 +1139,24 @@
       "start": "2026-11-12",
       "end": null,
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95703",
+      "sticky": true,
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "artmore-95678",
+      "source": "아트모아",
+      "org": "주식회사 월간사진",
+      "title": "[월간사진] 비즈니스 운영 및 Executive Assistant 채용",
+      "hire_type": "인턴",
+      "status": "",
+      "region": "서울 중구",
+      "headcount": "",
+      "start": "2026-11-11",
+      "end": null,
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95678",
       "sticky": true,
       "first_seen": "2026-11-14"
     }
