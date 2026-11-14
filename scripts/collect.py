@@ -77,6 +77,20 @@ def is_archive_job(*texts) -> list[str]:
     return cats
 
 
+INTERN = "청년인턴"
+COMMUTE_RE = re.compile(r"서울|경기|인천|고양|파주|김포|전국")
+INTERN_RE = re.compile(r"인턴")
+
+
+def intern(title, hire_type="", region="", health_only=False) -> list[str]:
+    """통근 가능 지역(서울·경기·인천)의 인턴 공고면 ['청년인턴']. 병원 의료직만 뽑는 공고는 제외."""
+    if health_only or not INTERN_RE.search(f"{title} {hire_type}"):
+        return []
+    if region and not COMMUTE_RE.search(region):
+        return []
+    return [INTERN]
+
+
 def watched(*texts) -> list[str]:
     """기관명(또는 제목)에 관심 기관 이름이 있으면 ['관심기관']."""
     text = "".join("".join(str(t or "").split()) for t in texts)
@@ -132,7 +146,7 @@ def fetch_cleaneye(key: str) -> list[dict]:
                 g("ENT_TITLE"), g("ENT_RECRUIT"), g("POSITION"), g("DUTY_DETAIL"),
                 g("ENT_LICENSE1"), g("ENT_LICENSE2"), g("ENT_LICENSE3"), g("ENT_LICENSE4"),
                 g("EXHIBIT"), g("JOB_SEEK_ETC"),
-            )
+            ) + intern(g("ENT_TITLE"), g("JOB_TYPE"), g("SIDO_CD") or "-")
             if not cats:
                 continue
             jobs.append({
@@ -177,7 +191,9 @@ def fetch_alio(key: str) -> list[dict]:
         seen += len(batch)
         for it in batch:
             cats = watched(it.get("instNm")) + is_archive_job(*(it.get(f) for f in (
-                "recrutPbancTtl", "aplyQlfcCn", "prefCondCn", "prefCn", "ncsCdNmLst")))
+                "recrutPbancTtl", "aplyQlfcCn", "prefCondCn", "prefCn", "ncsCdNmLst"))) + intern(
+                it.get("recrutPbancTtl") or "", it.get("hireTypeNmLst") or "", it.get("workRgnNmLst") or "-",
+                health_only=(it.get("ncsCdNmLst") or "").strip() == "보건.의료")
             if not cats:
                 continue
             sn = str(it.get("recrutPblntSn") or "")
@@ -241,6 +257,11 @@ def nara_detail(key: str, idx: str) -> dict:
     return {"hit": False}
 
 
+def nara_region(g) -> str:
+    area = g("areacode")
+    return AREA.get(area[:2], "-") if area and area != "00000" else "전국"
+
+
 def fetch_nara(key: str) -> list[dict]:
     today = datetime.now(KST)
     today_s = today.strftime("%Y%m%d")
@@ -256,7 +277,8 @@ def fetch_nara(key: str) -> list[dict]:
     def to_job(g, note=""):
         area = g("areacode")
         return {
-            "category": watched(g("insttname"), g("title")) + is_archive_job(g("title"), note),
+            "category": watched(g("insttname"), g("title")) + is_archive_job(g("title"), note)
+            + intern(g("title"), region=nara_region(g)),
             "id": f"nara-{g('idx')}",
             "source": "나라일터",
             "org": g("insttname"),
@@ -290,7 +312,8 @@ def fetch_nara(key: str) -> list[dict]:
         print(f"  {page}쪽: {len(items)}건 (전체 {total}건)")
         for it in items:
             g = (lambda e: lambda tag: clean(e.findtext(tag)))(it)
-            if is_archive_job(g("title")) or watched(g("insttname"), g("title")):
+            if is_archive_job(g("title")) or watched(g("insttname"), g("title")) \
+                    or intern(g("title"), region=nara_region(g)):
                 jobs.append(to_job(g))
             elif (g("enddate") or "0") >= today_s and not any(w in g("title") for w in NOT_POSTING):
                 unclear.append(g)  # 제목만으로는 알 수 없는, 아직 접수 중인 공고
@@ -365,7 +388,7 @@ def fetch_city(key: str) -> list[dict]:
             if board.get("watch"):  # 관심 기관 게시판: 채용 관련 글이면 모두
                 cats = ["관심기관"] if any(w in r["title"] for w in board["watch"]) else []
             else:
-                cats = watched(r["title"]) + is_archive_job(r["title"])
+                cats = watched(r["title"]) + is_archive_job(r["title"]) + intern(r["title"])
             if cats:
                 hits.append((r, cats))
         print(f"  {board['name']}: {len(rows)}건 중 {len(hits)}건")
@@ -425,7 +448,8 @@ def fetch_artmore(key: str) -> list[dict]:
             end = re.search(r"(20\d\d-\d\d-\d\d) 마감", tr)
             emp = re.search(r'jobs_regular">([^<]*)', tr)
 
-            cats = watched(org, title) + is_archive_job(title)
+            cats = watched(org, title) + is_archive_job(title) + intern(
+                title, emp.group(1) if emp else "", place.group(1) if place else "-")
             if "재단" in org and not FOUNDATION_EXCLUDE.search(title):
                 cats.append(FOUNDATION)
             if not cats:
