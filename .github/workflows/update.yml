@@ -39,6 +39,12 @@ jobs:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python scripts/collect.py
 
+      - name: 어머님 페이지 공고 수집
+        continue-on-error: true # 실패해도 기존 페이지 업데이트는 계속
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: python scripts/collect_mom.py
+
       - name: 바뀐 내용 저장
         run: |
           git config user.name "github-actions[bot]"
