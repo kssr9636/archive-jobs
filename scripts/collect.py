@@ -42,6 +42,9 @@ MUSEUM_EXCLUDE = re.compile(r"시설|청소|미화|환경관리|경비|방호|�
 # '사서'는 '신체검사서', '조사서' 같은 단어 안에도 들어 있으므로,
 # 앞에 다른 한글이 붙지 않은 '사서'만 사서 공고로 봅니다.
 LIBRARIAN_RE = re.compile(r"(?<![가-힣])사서(?!함)")
+# 관심 기관이라도 제목에 이런 직무가 있으면 뺍니다(기록·사서·사무와 관련 없는 직무).
+WATCH_EXCLUDE = re.compile(r"환경미화|미화|청소|환경관리|경비|방호|청원경찰|시설관리|시설운영|영선|전기|기계|소방"
+                           r"|보일러|조리|운전|주차|안내원|어텐던트|매표|무대기술|무대기계")
 # 이 기관의 공고는 단어와 상관없이 모두 보여줍니다(관심 기관).
 WATCH_ORGS = ["법원도서관", "국회도서관", "국립중앙도서관", "고양시도서관센터", "고양도서관센터",
               "고양문화재단", "대통령기록관", "국가기록원"]
@@ -600,6 +603,10 @@ def main() -> None:
             job["category"] = [c for c in job["category"] if c != MUSEUM]
             if not job["category"]:
                 continue  # 박물관 시설관리·청소·안내 등은 제외
+        if "관심기관" in job["category"] and WATCH_EXCLUDE.search(job["title"]):
+            job["category"] = [c for c in job["category"] if c != "관심기관"]
+            if not job["category"]:
+                continue  # 관심기관이라도 환경미화·시설관리 등 관련 없는 직무는 제외
         same = "".join(job["title"].split())  # 여러 사이트에 같은 제목으로 올라온 공고는 하나만
         if same in titles:
             continue
