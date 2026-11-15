@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15 07:39",
+  "updated_at": "2026-11-15 13:53",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -686,24 +686,6 @@
       "category": [
         "사서·도서관"
       ],
-      "id": "artmore-95653",
-      "source": "아트모아",
-      "org": "곰달래도서관",
-      "title": "강서구립 곰달래도서관 순회사서 채용 공고 (이메일...",
-      "hire_type": "계약직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-09",
-      "end": "2026-11-23",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
-      "sticky": true,
-      "first_seen": "2026-11-14"
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
       "id": "artmore-95655",
       "source": "아트모아",
       "org": "곰달래도서관",
@@ -715,6 +697,24 @@
       "start": "2026-11-09",
       "end": "2026-11-23",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95655",
+      "sticky": true,
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "artmore-95653",
+      "source": "아트모아",
+      "org": "곰달래도서관",
+      "title": "강서구립 곰달래도서관 순회사서 채용 공고 (이메일...",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울특별시 강서구",
+      "headcount": "",
+      "start": "2026-11-09",
+      "end": "2026-11-23",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
       "sticky": true,
       "first_seen": "2026-11-14"
     },
