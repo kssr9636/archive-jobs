@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15 19:19",
+  "updated_at": "2026-11-15 19:47",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -125,6 +125,21 @@
       "category": [
         "관공서 기간제·공무직"
       ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65445&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "야생동・식물 보호 및 밀렵감시 기간제 근로자 채용 공고(수정)",
+      "region": "안동",
+      "start": "2026-11-12",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65445&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
       "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65435&isLinkage=Y&mId=0401020100",
       "source": "안동시청 고시공고",
       "org": "안동시청",
@@ -180,21 +195,6 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65409&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-15"
-    },
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65445&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
-      "org": "안동시청",
-      "title": "야생동・식물 보호 및 밀렵감시 기간제 근로자 채용 공고(수정)",
-      "region": "안동",
-      "start": "2026-11-12",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65445&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-14"
     },
     {
       "category": [
