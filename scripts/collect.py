@@ -541,6 +541,40 @@ def fetch_mofa(key: str) -> list[dict]:
     return jobs
 
 
+# ------------------------------------------------- 7) 한국관광공사 채용정보
+KTO_URL = "https://apis.data.go.kr/B551011/ktorecruitment/getDatament"
+
+
+def fetch_kto(key: str) -> list[dict]:
+    today = datetime.now(KST)
+    resp = http_get(KTO_URL, {"serviceKey": key,
+                              "startdt": (today - timedelta(days=60)).strftime("%Y%m%d"),
+                              "enddt": today.strftime("%Y%m%d")})
+    try:
+        root = ET.fromstring(resp.content)
+    except ET.ParseError:
+        raise RuntimeError(f"HTTP {resp.status_code}: {resp.text[:200]}")
+    if root.findtext("resultCode") != "00":
+        if "SERVICE_KEY" in resp.text:
+            raise PermissionError("이 서비스는 아직 활용신청이 안 되어 있습니다")
+        raise RuntimeError(f"API 오류: {root.findtext('resultMsg')}")
+    jobs = []
+    for it in root.findall("resultItem"):
+        g = lambda tag: clean(it.findtext(tag))
+        title, org = g("title"), g("orgNm") or "한국관광공사"
+        # 지사 근무 공고는 지역을 알 수 없으므로 통근 지역 판단 없이 인턴으로 봅니다.
+        cats = watched(org, title) + is_archive_job(title) + intern(title)
+        if not cats:
+            continue
+        jobs.append({
+            "category": cats, "id": f"kto-{g('itemId')}", "source": "한국관광공사",
+            "org": org, "title": title, "hire_type": "", "status": "", "region": "",
+            "headcount": "", "start": to_date(g("regDate")), "end": to_date(g("endDate")),
+            "url": g("itemUrl"),
+        })
+    return jobs
+
+
 SOURCES = [
     ("클린아이 잡플러스", fetch_cleaneye, True),  # True = 꼭 성공해야 함
     ("잡알리오", fetch_alio, False),  # False = 실패해도 건너뜀
@@ -548,6 +582,7 @@ SOURCES = [
     ("시·구청 홈페이지", fetch_city, False),
     ("아트모아", fetch_artmore, False),
     ("외교부 국제기구 인턴", fetch_mofa, False),
+    ("한국관광공사", fetch_kto, False),
 ]
 
 # 채용공고가 아닌 안내글(합격자 발표 등)은 뺍니다.
