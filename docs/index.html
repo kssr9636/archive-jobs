@@ -57,6 +57,11 @@
   .meta span { border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
   .meta .cat { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
   .meta .new { color: var(--new); background: var(--new-soft); border-color: transparent; font-weight: 700; }
+  .focus { border: 2px solid var(--soon); background: var(--soon-soft); border-radius: 14px;
+           padding: 14px 16px; margin-bottom: 18px; }
+  .focus h2 { font-size: 1.05rem; margin: 0 0 10px; color: var(--soon); }
+  .focus .job { border-color: var(--soon); }
+  .focus p { margin: 0; font-size: .9rem; color: var(--muted); }
   .empty { text-align: center; color: var(--muted); padding: 40px 0; }
   footer { margin-top: 28px; color: var(--muted); font-size: .8rem; }
   footer a { color: var(--accent); }
@@ -66,6 +71,11 @@
 <div class="wrap">
   <h1>기록물·사서·박물관 채용공고</h1>
   <p class="sub" id="updated">불러오는 중...</p>
+
+  <section class="focus" id="focus">
+    <h2>⭐ 꼭 챙길 공고: 국립한국문학관</h2>
+    <div class="list" id="focusList"><p>지금은 접수 중인 공고가 없습니다. 2027년 1차 채용(1월 임용, 50명 · 학예직 10명) 공고가 올라오면 여기에 바로 나타납니다.</p></div>
+  </section>
 
   <div class="summary" id="summary"></div>
 
@@ -137,11 +147,20 @@ function render() {
     `<span class="chip">마감 임박(3일 이내) <b>${urgent}</b>건</span>` +
     `<span class="chip">최근 7일 새 공고 <b>${fresh}</b>건</span>`;
 
+  const focus = jobs.map(j => ({ ...j, left: daysLeft(j.end) }))
+    .filter(j => j.focus && (j.left === null || j.left >= 0))
+    .sort((a, b) => (a.left ?? 9999) - (b.left ?? 9999));
+  if (focus.length) $("focusList").innerHTML = focus.map(card).join("");
   if (!shown.length) {
     $("list").innerHTML = `<p class="empty">${jobs.length ? "조건에 맞는 공고가 없습니다." : "현재 진행 중인 기록물관리 공고가 없습니다.<br>매일 자동으로 다시 확인합니다."}</p>`;
     return;
   }
-  $("list").innerHTML = shown.map(j => {
+  $("list").innerHTML = shown.map(card).join("");
+}
+
+function card(j) {
+  const weekAgo = new Date(todayKST() - 6 * 86400000).toISOString().slice(0, 10);
+  {
     const cls = j.left !== null && j.left <= 3 ? "urgent" : j.left !== null && j.left <= 7 ? "soon" : "";
     const label = j.left === null ? "상시" : j.left === 0 ? "D-day" : "D-" + j.left;
     const endTxt = j.end ? j.end.slice(5).replace("-", "/") + " 마감" : "마감일 확인";
@@ -163,7 +182,7 @@ function render() {
         </div>
       </div>
     </a>`;
-  }).join("");
+  }
 }
 
 fetch("data/jobs.json?t=" + Date.now())

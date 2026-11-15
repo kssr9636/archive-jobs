@@ -47,7 +47,9 @@ WATCH_EXCLUDE = re.compile(r"환경미화|미화|청소|환경관리|경비|방�
                            r"|보일러|조리|운전|주차|안내원|어텐던트|매표|무대기술|무대기계")
 # 이 기관의 공고는 단어와 상관없이 모두 보여줍니다(관심 기관).
 WATCH_ORGS = ["법원도서관", "국회도서관", "국립중앙도서관", "고양시도서관센터", "고양도서관센터",
-              "고양문화재단", "대통령기록관", "국가기록원"]
+              "고양문화재단", "대통령기록관", "국가기록원", "국립한국문학관", "한국문학관"]
+# 이 기관 공고는 홈페이지 맨 위 '꼭 챙길 공고'에 따로 크게 보여줍니다.
+FOCUS_ORGS = ["국립한국문학관", "한국문학관"]
 
 
 # ---------------------------------------------------------------- 공통 도구
@@ -613,6 +615,7 @@ def main() -> None:
         titles.add(same)
         job["first_seen"] = old.get(job["id"], {}).get("first_seen", today)
         job.setdefault("category", is_archive_job(job["title"], job.get("note")) or ["기록물"])
+        job["focus"] = any(w in "".join((job["org"] + job["title"]).split()) for w in FOCUS_ORGS)
         jobs[job["id"]] = job
 
     result = sorted(jobs.values(), key=lambda j: (j["end"] or "9999-12-31", j["org"]))
