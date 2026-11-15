@@ -1,25 +1,11 @@
 {
-  "updated_at": "2026-11-15 19:47",
+  "updated_at": "2026-11-16 07:44",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
     "시·군청 게시판"
   ],
   "jobs": [
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "cleaneye-80953",
-      "source": "클린아이 잡플러스",
-      "org": "경상북도안동의료원",
-      "title": "계약직 행정사무원(공공보건부) 채용공고",
-      "region": "안동",
-      "start": "2026-11-04",
-      "end": "2026-11-15",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80953",
-      "first_seen": "2026-11-14"
-    },
     {
       "category": [
         "관공서 기간제·공무직"
@@ -195,6 +181,21 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65409&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-15"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2027년도 장애인일자리사업 참여자 모집 공고",
+      "region": "예천",
+      "start": "2026-11-16",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-16"
     },
     {
       "category": [
