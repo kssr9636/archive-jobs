@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15 13:53",
+  "updated_at": "2026-11-15 19:16",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -26,7 +26,8 @@
       "note": "문의: recruit@bf4bf.or.kr",
       "url": "https://unojobs.mofa.go.kr/",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -45,7 +46,8 @@
       "note": "",
       "url": "https://unojobs.mofa.go.kr/",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -62,7 +64,8 @@
       "start": "2026-11-05",
       "end": "2026-11-16",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80987",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -79,7 +82,8 @@
       "start": "2026-11-09",
       "end": "2026-11-16",
       "url": "https://www.comwel.or.kr/recruit/hp/main.do",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -96,7 +100,8 @@
       "start": "2026-11-10",
       "end": "2026-11-16",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81005",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -113,7 +118,8 @@
       "start": "2026-11-06",
       "end": "2026-11-16",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80994",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -132,7 +138,8 @@
       "end": "2026-11-16",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307484&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -150,7 +157,8 @@
       "end": "2026-11-16",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307574&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -167,7 +175,8 @@
       "start": "2026-10-27",
       "end": "2026-11-16",
       "url": "https://ibk.incruit.com",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -185,7 +194,8 @@
       "end": "2026-11-16",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307340&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -203,7 +213,8 @@
       "end": "2026-11-17",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95582",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -221,7 +232,8 @@
       "end": "2026-11-17",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95684",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -238,7 +250,8 @@
       "start": "2026-11-02",
       "end": "2026-11-17",
       "url": "https://kiip.re.kr/board/notice/view.do?bd_gb=board&bd_cd=1&bd_item=0&po_item_gb=1&po_notice_gb=recruit&po_item_cd=&po_no=15408",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -255,7 +268,8 @@
       "start": "2026-11-11",
       "end": "2026-11-18",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80793",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -272,7 +286,8 @@
       "start": "2026-11-03",
       "end": "2026-11-18",
       "url": "http://kipi.recruiter.co.kr",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -290,7 +305,8 @@
       "end": "2026-11-19",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95658",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -308,7 +324,8 @@
       "end": "2026-11-19",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307845&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -326,7 +343,8 @@
       "end": "2026-11-19",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95656",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -343,7 +361,8 @@
       "start": "2026-11-10",
       "end": "2026-11-19",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80963",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -360,7 +379,8 @@
       "start": "2026-11-05",
       "end": "2026-11-19",
       "url": "https://www.arko.or.kr/board/view/4054?bid=&page=&cid=1811368",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -377,7 +397,8 @@
       "start": "2026-11-05",
       "end": "2026-11-19",
       "url": "https://kimft.recruiter.co.kr",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -395,7 +416,8 @@
       "end": "2026-11-20",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307882&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -413,7 +435,8 @@
       "end": "2026-11-20",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308145&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -431,7 +454,8 @@
       "end": "2026-11-20",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95599",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -448,7 +472,8 @@
       "start": "2026-11-06",
       "end": "2026-11-20",
       "url": "https://www.kdic.or.kr",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -465,7 +490,8 @@
       "start": "2026-11-13",
       "end": "2026-11-20",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81097",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -483,7 +509,8 @@
       "end": "2026-11-20",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95698",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -501,7 +528,8 @@
       "end": "2026-11-20",
       "note": "직급: 사서서기, 전산서기",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307934&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -518,7 +546,8 @@
       "start": "2026-11-06",
       "end": "2026-11-20",
       "url": "없음",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -536,7 +565,8 @@
       "end": "2026-11-21",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95680",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -554,7 +584,8 @@
       "end": "2026-11-22",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95709",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -573,7 +604,8 @@
       "end": "2026-11-22",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95708",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -592,7 +624,8 @@
       "end": "2026-11-22",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95662",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -610,7 +643,8 @@
       "end": "2026-11-22",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95660",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -627,7 +661,8 @@
       "start": "2026-11-12",
       "end": "2026-11-22",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81185",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -645,7 +680,8 @@
       "end": "2026-11-22",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95710",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -663,7 +699,8 @@
       "end": "2026-11-23",
       "note": "직급: 지방일반임기제(기록물관리사, 7급상당)",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308436&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -680,7 +717,8 @@
       "start": "2026-11-16",
       "end": "2026-11-23",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81199",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -698,7 +736,8 @@
       "end": "2026-11-23",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95655",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -716,7 +755,8 @@
       "end": "2026-11-23",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -733,7 +773,8 @@
       "start": "2026-11-13",
       "end": "2026-11-23",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81212",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -750,7 +791,8 @@
       "start": "2026-11-13",
       "end": "2026-11-23",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81226",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -767,7 +809,8 @@
       "start": "2026-11-12",
       "end": "2026-11-23",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81184",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -785,7 +828,8 @@
       "end": "2026-11-23",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95683",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -802,7 +846,8 @@
       "start": "2026-11-09",
       "end": "2026-11-23",
       "url": "https://recruit.kdb.co.kr",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -820,7 +865,8 @@
       "end": "2026-11-24",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95595",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -839,7 +885,8 @@
       "end": "2026-11-24",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95647",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -856,7 +903,8 @@
       "start": "2026-11-10",
       "end": "2026-11-24",
       "url": "https://www.geps.or.kr/notiCommunication_info_incruit/43756?curPage=1",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -874,7 +922,8 @@
       "end": "2026-11-25",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308369&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -893,7 +942,8 @@
       "start": "2026-11-10",
       "end": "2026-11-25",
       "url": "https://keis.or.kr/keis/ko/bbs/236/list.do",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -910,7 +960,8 @@
       "start": "2026-11-09",
       "end": "2026-11-25",
       "url": "https://kimst.recruiter.co.kr/",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -927,7 +978,8 @@
       "start": "2026-11-11",
       "end": "2026-11-25",
       "url": "https://recruit.incruit.com/koem/job",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -945,7 +997,8 @@
       "end": "2026-11-26",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95622",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -963,7 +1016,8 @@
       "end": "2026-11-26",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308558&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -981,7 +1035,8 @@
       "end": "2026-11-26",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308560&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -999,7 +1054,8 @@
       "end": "2026-11-26",
       "note": "본문: 모집분야 : 미술 전시 기획 및 운영(학예연구관), 충남도정 메시지 기획 관리(행정6급), 도민리포터 운영 관리(행정7급), 대외협력(시",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308373&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -1017,7 +1073,8 @@
       "end": "2026-11-26",
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308401&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -1035,7 +1092,8 @@
       "end": "2026-11-27",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95713",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1053,7 +1111,8 @@
       "end": "2026-12-03",
       "note": "직급: 정규직_사서직8급(사서), 기간제근로자_사서",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308273&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13"
+      "first_seen": "2026-11-13",
+      "focus": false
     },
     {
       "category": [
@@ -1071,7 +1130,8 @@
       "end": "2026-12-08",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95692",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1089,7 +1149,8 @@
       "end": "2026-12-13",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95707",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1106,7 +1167,8 @@
       "start": "2026-07-01",
       "end": "2026-12-31",
       "url": "https://kotra.applyin.co.kr/jobs/22547",
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1125,7 +1187,8 @@
       "end": null,
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95669",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1143,7 +1206,8 @@
       "end": null,
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95594",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1161,7 +1225,8 @@
       "end": null,
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95703",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     },
     {
       "category": [
@@ -1179,7 +1244,8 @@
       "end": null,
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95678",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-14",
+      "focus": false
     }
   ]
 }
