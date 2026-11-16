@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 07:44",
+  "updated_at": "2026-11-16 14:42",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -47,6 +47,20 @@
       "end": "2026-11-18",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81053",
       "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "nara-308707",
+      "source": "나라일터",
+      "org": "과학기술정보통신부 우정사업본부 경북지방우정청 예천우체국",
+      "title": "2026년도 제4회 예천우체국 기간제 상시계약집배원 채용 공고",
+      "region": "예천",
+      "start": "2026-11-16",
+      "end": "2026-11-19",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308707&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-16"
     },
     {
       "category": [
