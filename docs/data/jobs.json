@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 14:31",
+  "updated_at": "2026-11-17 07:49",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -10,154 +10,6 @@
     "한국관광공사"
   ],
   "jobs": [
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "cleaneye-80987",
-      "source": "클린아이 잡플러스",
-      "org": "과천도시공사",
-      "title": "2026년 과천도시공사 청년인턴(장애인) 직원 채용 재공고",
-      "hire_type": "인턴",
-      "status": "모집중",
-      "region": "경기도",
-      "headcount": "1",
-      "start": "2026-11-05",
-      "end": "2026-11-16",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80987",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "alio-306827",
-      "source": "잡알리오",
-      "org": "근로복지공단",
-      "title": "[인천병원] 2026년도 하반기 청년(체험형)인턴 장애전형 채용 공고",
-      "hire_type": "청년인턴(체험형)",
-      "status": "모집중",
-      "region": "인천",
-      "headcount": 10,
-      "start": "2026-11-09",
-      "end": "2026-11-16",
-      "url": "https://www.comwel.or.kr/recruit/hp/main.do",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "cleaneye-81005",
-      "source": "클린아이 잡플러스",
-      "org": "동두천시시설관리공단",
-      "title": "2026년 동두천시 시설관리공단 청년 체험형 인턴 채용 공고",
-      "hire_type": "인턴",
-      "status": "모집중",
-      "region": "경기도",
-      "headcount": "3",
-      "start": "2026-11-10",
-      "end": "2026-11-16",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81005",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-80994",
-      "source": "클린아이 잡플러스",
-      "org": "동작문화재단",
-      "title": "2026년 제11차 직원 채용 공고",
-      "hire_type": "일반정규직",
-      "status": "모집중",
-      "region": "서울특별시",
-      "headcount": "1",
-      "start": "2026-11-06",
-      "end": "2026-11-16",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80994",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "관심기관",
-        "사서·도서관"
-      ],
-      "id": "nara-307484",
-      "source": "나라일터",
-      "org": "문화체육관광부 국립중앙도서관",
-      "title": "[장애인 제한경쟁] 국립중앙도서관 지식정보서비스과 기간제 근로자 채용 공고",
-      "hire_type": "국가기관",
-      "status": "",
-      "region": "서울",
-      "headcount": "",
-      "start": "2026-11-11",
-      "end": "2026-11-16",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307484&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "nara-307574",
-      "source": "나라일터",
-      "org": "문화체육관광부 국립중앙박물관 공주박물관 학예연구실",
-      "title": "국립공주박물관 학예연구실 공무직근로자(소장품 관리 보조) 채용 공고",
-      "hire_type": "국가기관",
-      "status": "",
-      "region": "충남",
-      "headcount": "",
-      "start": "2026-11-10",
-      "end": "2026-11-16",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307574&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "alio-306355",
-      "source": "잡알리오",
-      "org": "중소기업은행",
-      "title": "2027년 동계 IBK기업은행 체험형 청년인턴 채용공고",
-      "hire_type": "청년인턴(체험형)",
-      "status": "모집중",
-      "region": "서울,부산,대구,인천,대전,울산,세종,경기,강원,충북,충남,전북,전남광주,경북,경남,제주",
-      "headcount": 390,
-      "start": "2026-10-27",
-      "end": "2026-11-16",
-      "url": "https://ibk.incruit.com",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "nara-307340",
-      "source": "나라일터",
-      "org": "한국과학기술연구원",
-      "title": "KIST 2026-6차 행정인턴 공개채용",
-      "hire_type": "공공기관",
-      "status": "",
-      "region": "서울",
-      "headcount": "",
-      "start": "2026-11-02",
-      "end": "2026-11-16",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=307340&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
     {
       "category": [
         "사서·도서관"
@@ -397,6 +249,25 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308145&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95738",
+      "source": "아트모아",
+      "org": "박서보재단",
+      "title": "박서보미술관 전시장 스태프 채용",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "서울 서대문구",
+      "headcount": "",
+      "start": "2026-11-16",
+      "end": "2026-11-20",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95738",
+      "sticky": true,
+      "first_seen": "2026-11-17",
       "focus": false
     },
     {
@@ -832,6 +703,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-308736",
+      "source": "나라일터",
+      "org": "충청남도 홍성군",
+      "title": "2027년 미래교육담당관 공공도서관 기간제근로자 채용 공고",
+      "hire_type": "지방자치단체",
+      "status": "",
+      "region": "충남",
+      "headcount": "",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308736&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95683",
@@ -1152,6 +1042,24 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307096",
+      "source": "잡알리오",
+      "org": "해양환경공단",
+      "title": "2026년 하반기 2차 해양환경공단 체험형 청년인턴(장애인 제한) 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 2,
+      "start": "2026-11-16",
+      "end": "2026-11-26",
+      "url": "https://www.koem.or.kr/site/insa/ex/board/View.do?cbIdx=478&bcIdx=36506",
+      "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-308401",
@@ -1247,6 +1155,25 @@
     },
     {
       "category": [
+        "기록물"
+      ],
+      "id": "nara-308771",
+      "source": "나라일터",
+      "org": "재단법인스포츠윤리센터",
+      "title": "2026년 제3차 직원(기간제) 신규채용 공고",
+      "hire_type": "공공기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-11-11",
+      "end": "2026-11-27",
+      "note": "본문: 모집분야 : 행정지원, 기록물관리, 청문감사, 조사, 전문조사, 변호사",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308771&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95726",
@@ -1286,6 +1213,25 @@
     },
     {
       "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95741",
+      "source": "아트모아",
+      "org": "재단법인 횡성문화관광재단",
+      "title": "횡성문화관광재단 2026년도 제2차 직원(정규직)...",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "강원특별자치도 횡성군",
+      "headcount": "",
+      "start": "2026-11-16",
+      "end": "2026-11-30",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95741",
+      "sticky": true,
+      "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
         "청년인턴"
       ],
       "id": "alio-307056",
@@ -1300,6 +1246,24 @@
       "end": "2026-11-30",
       "url": "http://recruit.kepco.co.kr/sangsi",
       "first_seen": "2026-11-16",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307060",
+      "source": "잡알리오",
+      "org": "한국사회복지협의회",
+      "title": "한국사회복지협의회 2026년 제4차 직원 채용 공고",
+      "hire_type": "무기계약직,비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울,세종",
+      "headcount": 6,
+      "start": "2026-11-17",
+      "end": "2026-12-01",
+      "url": "https://www.bokji.net/not/recru/01_01.bokji?BOARDIDX=33246",
+      "first_seen": "2026-11-17",
       "focus": false
     },
     {
@@ -1338,6 +1302,44 @@
       "note": "직급: 정규직_사서직8급(사서), 기간제근로자_사서",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308273&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95737",
+      "source": "아트모아",
+      "org": "(재)한국문화재단",
+      "title": "[리틀엔젤스예술단] 위촉 무용강사 모집 (한국무용/발레)",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "서울 광진구",
+      "headcount": "",
+      "start": "2026-11-16",
+      "end": "2026-12-07",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95737",
+      "sticky": true,
+      "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95735",
+      "source": "아트모아",
+      "org": "서울문화재단",
+      "title": "2026년 서울문화재단 제3차 직원 공개채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 동대문구",
+      "headcount": "",
+      "start": "2026-11-16",
+      "end": "2026-12-07",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95735",
+      "sticky": true,
+      "first_seen": "2026-11-17",
       "focus": false
     },
     {
