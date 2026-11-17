@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 14:05",
+  "updated_at": "2026-11-18 08:00",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -61,6 +61,34 @@
       "end": "2026-11-20",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81134",
       "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "cleaneye-81325",
+      "source": "클린아이 잡플러스",
+      "org": "한국국학진흥원",
+      "title": "한국국학진흥원 12월 계약직원 추가채용 재공고(26.12.1.임용예정)",
+      "region": "안동",
+      "start": "2026-11-17",
+      "end": "2026-11-23",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81325",
+      "first_seen": "2026-11-18"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "cleaneye-81318",
+      "source": "클린아이 잡플러스",
+      "org": "안동시한국정신문화재단",
+      "title": "2026년 (재)한국정신문화재단 제7회 계약직 직원 공개채용공고(재공고)",
+      "region": "안동",
+      "start": "2026-11-17",
+      "end": "2026-11-26",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81318",
+      "first_seen": "2026-11-18"
     },
     {
       "category": [

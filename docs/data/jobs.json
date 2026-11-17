@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 13:56",
+  "updated_at": "2026-11-18 07:56",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -10,62 +10,6 @@
     "한국관광공사"
   ],
   "jobs": [
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "artmore-95582",
-      "source": "아트모아",
-      "org": "강서구립마곡열린도서관",
-      "title": "강서구립마곡열린도서관 사서9급 직원 채용 공고(이...",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-03",
-      "end": "2026-11-17",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95582",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95684",
-      "source": "아트모아",
-      "org": "재단법인 칠곡문화관광재단",
-      "title": "(재)칠곡문화관광재단 직원 6급(팀장) 채용 공고",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "경북 칠곡군",
-      "headcount": "",
-      "start": "2026-11-11",
-      "end": "2026-11-17",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95684",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "alio-306600",
-      "source": "잡알리오",
-      "org": "한국지식재산연구원",
-      "title": "2026년 한국지식재산연구원 제4회 채용 공고",
-      "hire_type": "비정규직,청년인턴(체험형)",
-      "status": "모집중",
-      "region": "서울",
-      "headcount": 4,
-      "start": "2026-11-02",
-      "end": "2026-11-17",
-      "url": "https://kiip.re.kr/board/notice/view.do?bd_gb=board&bd_cd=1&bd_item=0&po_item_gb=1&po_notice_gb=recruit&po_item_cd=&po_no=15408",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
     {
       "category": [
         "기록물"
@@ -740,6 +684,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "artmore-95752",
+      "source": "아트모아",
+      "org": "강서구립마곡열린도서관",
+      "title": "강서구립마곡열린도서관 시간제근로자(초단시간/주말)...",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울특별시 강서구",
+      "headcount": "",
+      "start": "2026-11-17",
+      "end": "2026-11-24",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95752",
+      "sticky": true,
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "artmore-95595",
@@ -793,6 +756,25 @@
       "end": "2026-11-24",
       "url": "https://www.geps.or.kr/notiCommunication_info_incruit/43756?curPage=1",
       "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "artmore-95750",
+      "source": "아트모아",
+      "org": "사단법인한국사립박물관협회",
+      "title": "[한국사립박물관협회] 2026년 사립 및 사립대학박물관 예비 학예인력 지원사업 11차 인력 모집 공고",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "서울 종로구",
+      "headcount": "",
+      "start": "2026-11-17",
+      "end": "2026-11-24",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95750",
+      "sticky": true,
+      "first_seen": "2026-11-18",
       "focus": false
     },
     {
@@ -1263,6 +1245,42 @@
       "end": "2026-11-30",
       "url": "http://recruit.kepco.co.kr/sangsi",
       "first_seen": "2026-11-16",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307162",
+      "source": "잡알리오",
+      "org": "(재)우체국물류지원단",
+      "title": "2027년도 우체국물류지원단 1분기 정기채용(체험형 청년인턴) 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울,경기,전남광주",
+      "headcount": 13,
+      "start": "2026-11-17",
+      "end": "2026-12-01",
+      "url": "https://pola.plusrecruit.co.kr",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307161",
+      "source": "잡알리오",
+      "org": "(재)우체국물류지원단",
+      "title": "2027년도 우체국물류지원단 1분기 정기채용(채용형 청년인턴) 공고",
+      "hire_type": "청년인턴(채용형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 6,
+      "start": "2026-11-17",
+      "end": "2026-12-01",
+      "url": "https://pola.plusrecruit.co.kr",
+      "first_seen": "2026-11-18",
       "focus": false
     },
     {
