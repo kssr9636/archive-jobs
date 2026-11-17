@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 07:49",
+  "updated_at": "2026-11-17 13:56",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -249,25 +249,6 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308145&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95738",
-      "source": "아트모아",
-      "org": "박서보재단",
-      "title": "박서보미술관 전시장 스태프 채용",
-      "hire_type": "관계없음",
-      "status": "",
-      "region": "서울 서대문구",
-      "headcount": "",
-      "start": "2026-11-16",
-      "end": "2026-11-20",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95738",
-      "sticky": true,
-      "first_seen": "2026-11-17",
       "focus": false
     },
     {
@@ -594,25 +575,6 @@
       "category": [
         "사서·도서관"
       ],
-      "id": "artmore-95655",
-      "source": "아트모아",
-      "org": "곰달래도서관",
-      "title": "강서구립 곰달래도서관 사서(9급) 채용 (~11/...",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-09",
-      "end": "2026-11-23",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95655",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
       "id": "artmore-95653",
       "source": "아트모아",
       "org": "곰달래도서관",
@@ -624,6 +586,25 @@
       "start": "2026-11-09",
       "end": "2026-11-23",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
+      "sticky": true,
+      "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "artmore-95655",
+      "source": "아트모아",
+      "org": "곰달래도서관",
+      "title": "강서구립 곰달래도서관 사서(9급) 채용 (~11/...",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "서울특별시 강서구",
+      "headcount": "",
+      "start": "2026-11-09",
+      "end": "2026-11-23",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95655",
       "sticky": true,
       "first_seen": "2026-11-14",
       "focus": false
@@ -1014,7 +995,7 @@
       "hire_type": "기간제",
       "status": "모집중",
       "region": "인천광역시",
-      "headcount": "3",
+      "headcount": "8",
       "start": "2026-11-16",
       "end": "2026-11-26",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81247",
@@ -1151,6 +1132,42 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308142&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-16",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81293",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
+      "title": "효성도서관 2026년 제2회 관리보조 채용",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "인천광역시",
+      "headcount": "2",
+      "start": "2026-11-17",
+      "end": "2026-11-27",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81293",
+      "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81294",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
+      "title": "서운도서관 2026년 제2회 관리보조 채용",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "인천광역시",
+      "headcount": "6",
+      "start": "2026-11-17",
+      "end": "2026-11-27",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81294",
+      "first_seen": "2026-11-17",
       "focus": false
     },
     {
@@ -1435,6 +1452,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95594",
       "sticky": true,
       "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95738",
+      "source": "아트모아",
+      "org": "박서보재단",
+      "title": "종료 박서보미술관 전시장 스태프 채용",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "서울 서대문구",
+      "headcount": "",
+      "start": "2026-11-16",
+      "end": null,
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95738",
+      "sticky": true,
+      "first_seen": "2026-11-17",
       "focus": false
     },
     {
