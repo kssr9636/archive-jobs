@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 13:58",
+  "updated_at": "2026-11-19 07:54",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -10,42 +10,6 @@
     "한국관광공사"
   ],
   "jobs": [
-    {
-      "category": [
-        "기록물"
-      ],
-      "id": "cleaneye-80793",
-      "source": "클린아이 잡플러스",
-      "org": "서울물재생시설공단",
-      "title": "2027년 기록물 관리 전문요원 채용공고",
-      "hire_type": "전문계약직",
-      "status": "모집중",
-      "region": "서울특별시",
-      "headcount": "1",
-      "start": "2026-11-11",
-      "end": "2026-11-18",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=80793",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "alio-306560",
-      "source": "잡알리오",
-      "org": "한국특허정보원",
-      "title": "2026년 한국특허정보원 체험형 청년인턴 채용 공고",
-      "hire_type": "청년인턴(체험형)",
-      "status": "모집중",
-      "region": "서울,대전",
-      "headcount": 2,
-      "start": "2026-11-03",
-      "end": "2026-11-18",
-      "url": "http://kipi.recruiter.co.kr",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
     {
       "category": [
         "박물관·역사관·문학관"
@@ -798,6 +762,43 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307191",
+      "source": "잡알리오",
+      "org": "근로복지공단",
+      "title": "[경기요양병원] 2026년도 하반기 청년(체험형)인턴 일반전형 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 2,
+      "start": "2026-11-18",
+      "end": "2026-11-25",
+      "url": "https://www.comwel.or.kr/recruit/hp/main.do",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-308932",
+      "source": "나라일터",
+      "org": "문화체육관광부 국립중앙박물관",
+      "title": "국립충주박물관 공무직 근로자 (전기 방재) 채용 결과 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "충북",
+      "headcount": "",
+      "start": null,
+      "end": "2026-11-25",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308932&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-308697",
@@ -1175,6 +1176,25 @@
       "category": [
         "문화재단"
       ],
+      "id": "artmore-95766",
+      "source": "아트모아",
+      "org": "(재)대림문화재단",
+      "title": "[대림문화재단] 대림미술관 크루 모집",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 종로구",
+      "headcount": "",
+      "start": "2026-11-18",
+      "end": "2026-11-30",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95766",
+      "sticky": true,
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
       "id": "artmore-95726",
       "source": "아트모아",
       "org": "(재)한국문화재단",
@@ -1188,6 +1208,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95726",
       "sticky": true,
       "first_seen": "2026-11-16",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-308941",
+      "source": "나라일터",
+      "org": "경상국립대학교",
+      "title": "2026년도 제2회 경상국립대학교  국가공무원 경력경쟁채용시험 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "경남",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-11-30",
+      "note": "직급: 사서",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308941&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-19",
       "focus": false
     },
     {
@@ -1219,7 +1258,7 @@
       "org": "인천광역시부평구문화재단",
       "title": "(재)인천광역시부평구문화재단 도서관본부 2026년 제7회 기간제 직원 채용",
       "hire_type": "기간제",
-      "status": "모집예정",
+      "status": "모집중",
       "region": "인천광역시",
       "headcount": "2",
       "start": "2026-11-19",
@@ -1245,6 +1284,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95741",
       "sticky": true,
       "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-308926",
+      "source": "나라일터",
+      "org": "충청남도 홍성군",
+      "title": "2027년 고암이응노생가기념관 기간제근로자 채용공고",
+      "hire_type": "지방자치단체",
+      "status": "",
+      "region": "충남",
+      "headcount": "",
+      "start": "2026-11-19",
+      "end": "2026-11-30",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308926&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-19",
       "focus": false
     },
     {
@@ -1414,6 +1472,258 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307215",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 자율주행자동차사고조사위원회사무국 기간제근로자 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 1,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307135",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 미래차연구처 기간제근로자 채용공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 6,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307131",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 시흥드론교육센터 기간제근로자 채용공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 5,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307118",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 결함조사본부 기간제근로자 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 4,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307103",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 화성드론자격센터 기간제근로자 채용공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 5,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307100",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 항공자격처 기간제근로자 채용공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 1,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307091",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 안전연구처 기간제근로자 채용 공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 9,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307068",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 자동차인증처 기간제근로자 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 4,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307066",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 건설기계인증처 기간제근로자 채용공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 2,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "kotsa1.career.co.kr",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307063",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 경기남부본부 기간제근로자 채용공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 4,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307047",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 경기북본부 기간제근로자 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 2,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307041",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 자율주행본부 기간제근로자 채용 공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 8,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307025",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "한국교통안전공단 서울본부 기간제근로자 채용(통합5차) 공고",
+      "hire_type": "비정규직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "서울",
+      "headcount": 10,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307012",
+      "source": "잡알리오",
+      "org": "한국교통안전공단",
+      "title": "2026년 제5차 한국교통안전공단 인천본부 기간제근로자 채용 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "인천,경기",
+      "headcount": 4,
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "url": "https://kotsa1.career.co.kr/",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95737",
@@ -1448,6 +1758,44 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95735",
       "sticky": true,
       "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95762",
+      "source": "아트모아",
+      "org": "(재)한국문화재단",
+      "title": "유니버설발레단 공연사업2팀 단원관리 직원 채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 강서구",
+      "headcount": "",
+      "start": "2026-11-18",
+      "end": "2026-12-08",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95762",
+      "sticky": true,
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95765",
+      "source": "아트모아",
+      "org": "여주세종문화재단",
+      "title": "2026년 제4회 (재)여주세종문화관광재단 기간제근로자 채용 공고",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "경기 여주시",
+      "headcount": "",
+      "start": "2026-11-18",
+      "end": "2026-12-08",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95765",
+      "sticky": true,
+      "first_seen": "2026-11-19",
       "focus": false
     },
     {
@@ -1581,6 +1929,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95703",
       "sticky": true,
       "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95759",
+      "source": "아트모아",
+      "org": "재단법인 파마리서치문화재단",
+      "title": "파마리서치문화재단 큐레이터(대리급) 채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "경기 성남시",
+      "headcount": "",
+      "start": "2026-11-18",
+      "end": null,
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95759",
+      "sticky": true,
+      "first_seen": "2026-11-19",
       "focus": false
     },
     {
