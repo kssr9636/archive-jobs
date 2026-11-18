@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 07:56",
+  "updated_at": "2026-11-18 13:58",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -1212,6 +1212,24 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81358",
+      "source": "클린아이 잡플러스",
+      "org": "인천광역시부평구문화재단",
+      "title": "(재)인천광역시부평구문화재단 도서관본부 2026년 제7회 기간제 직원 채용",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "인천광역시",
+      "headcount": "2",
+      "start": "2026-11-19",
+      "end": "2026-11-30",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81358",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95741",
@@ -1318,6 +1336,61 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308692&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-16",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81350",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(제27-2호)성북문화재단 기간직 채용 공고(기간직,(보조금_개관시간연장), 다급상당, 사서)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "서울특별시",
+      "headcount": "5",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81350",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81349",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
+        "기록물",
+        "박물관·역사관·문학관"
+      ],
+      "id": "cleaneye-81348",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
+      "first_seen": "2026-11-18",
       "focus": false
     },
     {

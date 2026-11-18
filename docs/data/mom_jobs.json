@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 08:00",
+  "updated_at": "2026-11-18 14:03",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -270,6 +270,21 @@
       "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32044&dn=",
       "sticky": true,
       "first_seen": "2026-11-14"
+    },
+    {
+      "category": [
+        "사회복지"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=189967",
+      "source": "예천군청 구인정보",
+      "org": "예천군청",
+      "title": "호명읍 소재지 재가복지센터 사회복지사 구합니다.",
+      "region": "예천",
+      "start": "2026-11-18",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=189967",
+      "sticky": true,
+      "first_seen": "2026-11-18"
     },
     {
       "category": [
