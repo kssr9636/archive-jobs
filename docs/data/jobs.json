@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 07:54",
+  "updated_at": "2026-11-19 14:01",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -1724,6 +1724,25 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "nara-400020",
+      "source": "나라일터",
+      "org": "한국교통안전공단",
+      "title": "한국교통안전공단 2026년 제5차 기간제근로자 통합채용(청년인턴, 실무원, 위촉연구원 등)",
+      "hire_type": "공공기관",
+      "status": "",
+      "region": "전국",
+      "headcount": "",
+      "start": "2026-11-19",
+      "end": "2026-12-04",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400020&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-19",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95737",
@@ -1815,6 +1834,24 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95692",
       "sticky": true,
       "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81379",
+      "source": "클린아이 잡플러스",
+      "org": "영등포문화재단",
+      "title": "영등포문화재단 신규직원(블라인드) 채용 공고(27.01.01.임용) 22명",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "서울특별시",
+      "headcount": "22",
+      "start": "2026-12-04",
+      "end": "2026-12-10",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81379",
+      "first_seen": "2026-11-19",
       "focus": false
     },
     {
