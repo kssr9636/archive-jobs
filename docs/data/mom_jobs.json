@@ -1,25 +1,11 @@
 {
-  "updated_at": "2026-11-19 14:09",
+  "updated_at": "2026-11-20 07:58",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
     "시·군청 게시판"
   ],
   "jobs": [
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "nara-308707",
-      "source": "나라일터",
-      "org": "과학기술정보통신부 우정사업본부 경북지방우정청 예천우체국",
-      "title": "2026년도 제4회 예천우체국 기간제 상시계약집배원 채용 공고",
-      "region": "예천",
-      "start": "2026-11-16",
-      "end": "2026-11-19",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308707&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-16"
-    },
     {
       "category": [
         "관공서 기간제·공무직"
@@ -61,6 +47,66 @@
       "end": "2026-11-26",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81318",
       "first_seen": "2026-11-18"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립중앙도서관 기간제근로자(도서관 운영보조) 공개 채용 공고(수정)",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립어린이도서관 기간제근로자(도서관 운영보조) 공개 채용 공고(변경)",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립어린이도서관 기간제 근로자 채용 취소 공고",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65572&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립중앙도서관 기간제 근로자 채용 취소 공고",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65572&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
     },
     {
       "category": [
@@ -200,6 +246,37 @@
     },
     {
       "category": [
+        "사회복지",
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32105&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2027년 아동보호전담요원(기간제근로자)채용 공고",
+      "region": "예천",
+      "start": "2026-11-20",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32105&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32111&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2026년 자동차 온라인 기업지원 기간제근로자 추가채용 공고",
+      "region": "예천",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32111&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
         "관공서 기간제·공무직"
       ],
       "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32086&dn=",
@@ -245,19 +322,18 @@
     },
     {
       "category": [
-        "사회복지",
-        "관공서 기간제·공무직"
+        "사회복지"
       ],
-      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32044&dn=",
-      "source": "예천군청 채용공고",
+      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=190078",
+      "source": "예천군청 구인정보",
       "org": "예천군청",
-      "title": "2027년 아동보호전담요원(기간제근로자)채용 공고",
+      "title": "2027년 예천시니어클럽 노인일자리 및 사회활동지원사업 참여자 모집 공고",
       "region": "예천",
-      "start": "2026-11-11",
+      "start": "2026-11-19",
       "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32044&dn=",
+      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=190078",
       "sticky": true,
-      "first_seen": "2026-11-14"
+      "first_seen": "2026-11-20"
     },
     {
       "category": [
