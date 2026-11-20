@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20 07:51",
+  "updated_at": "2026-11-20 13:57",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -202,7 +202,7 @@
         "박물관·역사관·문학관",
         "문화재단"
       ],
-      "id": "artmore-95708",
+      "id": "artmore-95781",
       "source": "아트모아",
       "org": "국립박물관문화재단",
       "title": "국립중앙박물관 전문 공연장 극장 용 채용 공고(~11.22.(일) 23:59까지)",
@@ -210,11 +210,11 @@
       "status": "",
       "region": "서울 용산구",
       "headcount": "",
-      "start": "2026-11-13",
+      "start": "2026-11-20",
       "end": "2026-11-22",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95708",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95781",
       "sticky": true,
-      "first_seen": "2026-11-14",
+      "first_seen": "2026-11-20",
       "focus": false
     },
     {
@@ -372,25 +372,6 @@
       "category": [
         "사서·도서관"
       ],
-      "id": "artmore-95655",
-      "source": "아트모아",
-      "org": "곰달래도서관",
-      "title": "강서구립 곰달래도서관 사서(9급) 채용 (~11/...",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-09",
-      "end": "2026-11-23",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95655",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
       "id": "artmore-95653",
       "source": "아트모아",
       "org": "곰달래도서관",
@@ -402,6 +383,25 @@
       "start": "2026-11-09",
       "end": "2026-11-23",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95653",
+      "sticky": true,
+      "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "artmore-95655",
+      "source": "아트모아",
+      "org": "곰달래도서관",
+      "title": "강서구립 곰달래도서관 사서(9급) 채용 (~11/...",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "서울특별시 강서구",
+      "headcount": "",
+      "start": "2026-11-09",
+      "end": "2026-11-23",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95655",
       "sticky": true,
       "first_seen": "2026-11-14",
       "focus": false
@@ -1084,7 +1084,7 @@
       "category": [
         "문화재단"
       ],
-      "id": "artmore-95726",
+      "id": "artmore-95777",
       "source": "아트모아",
       "org": "(재)한국문화재단",
       "title": "[리틀엔젤스예술단] 공연사업팀 직원 채용 (육아휴직 대체직)",
@@ -1092,11 +1092,11 @@
       "status": "",
       "region": "서울 광진구",
       "headcount": "",
-      "start": "2026-11-16",
+      "start": "2026-11-20",
       "end": "2026-11-30",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95726",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95777",
       "sticky": true,
-      "first_seen": "2026-11-16",
+      "first_seen": "2026-11-20",
       "focus": false
     },
     {
@@ -1214,6 +1214,25 @@
     },
     {
       "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95779",
+      "source": "아트모아",
+      "org": "(재)구리문화재단",
+      "title": "2026년 2차 구리문화재단 공연장 서비스인력 모집",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "경기 구리시",
+      "headcount": "",
+      "start": "2026-11-20",
+      "end": "2026-12-01",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95779",
+      "sticky": true,
+      "first_seen": "2026-11-20",
+      "focus": false
+    },
+    {
+      "category": [
         "청년인턴"
       ],
       "id": "alio-307162",
@@ -1264,6 +1283,24 @@
       "end": "2026-12-01",
       "url": "https://www.bokji.net/not/recru/01_01.bokji?BOARDIDX=33246",
       "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81431",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 달성교육재단",
+      "title": "달성군립도서관 기간제 근로자(주중, 주말, 환경미화, 개관시간연장지원)채용 공고",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "대구광역시",
+      "headcount": "10",
+      "start": "2026-11-21",
+      "end": "2026-12-02",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81431",
+      "first_seen": "2026-11-20",
       "focus": false
     },
     {
@@ -1342,6 +1379,62 @@
     },
     {
       "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95771",
+      "source": "아트모아",
+      "org": "엘지연암문화재단",
+      "title": "LG아트센터 공연기획팀(기획제작) 정규직 경력사원 채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 강서구",
+      "headcount": "",
+      "start": "2026-11-19",
+      "end": "2026-12-03",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95771",
+      "sticky": true,
+      "first_seen": "2026-11-20",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95770",
+      "source": "아트모아",
+      "org": "엘지연암문화재단",
+      "title": "LG아트센터 무대기술팀(조명감독) 정규직 사원 채용공고",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "서울 강서구",
+      "headcount": "",
+      "start": "2026-11-19",
+      "end": "2026-12-03",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95770",
+      "sticky": true,
+      "first_seen": "2026-11-20",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81427",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 달성교육재단",
+      "title": "2027년 달성어린이숲도서관 기간제근로자 채용 공고( 주중,미화)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "대구광역시",
+      "headcount": "7",
+      "start": "2026-11-21",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81427",
+      "first_seen": "2026-11-20",
+      "focus": false
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "nara-308273",
@@ -1357,44 +1450,6 @@
       "note": "직급: 정규직_사서직8급(사서), 기간제근로자_사서",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308273&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95771",
-      "source": "아트모아",
-      "org": "엘지연암문화재단",
-      "title": "LG아트센터 공연기획팀(기획제작) 정직 경력사원 채용",
-      "hire_type": "계약직",
-      "status": "",
-      "region": "서울 강서구",
-      "headcount": "",
-      "start": "2026-11-19",
-      "end": "2026-12-04",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95771",
-      "sticky": true,
-      "first_seen": "2026-11-20",
-      "focus": false
-    },
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95770",
-      "source": "아트모아",
-      "org": "엘지연암문화재단",
-      "title": "LG아트센터 무대기술팀(조명감독) 정규사원 채용공고",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울 강서구",
-      "headcount": "",
-      "start": "2026-11-19",
-      "end": "2026-12-04",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95770",
-      "sticky": true,
-      "first_seen": "2026-11-20",
       "focus": false
     },
     {
@@ -1691,7 +1746,7 @@
       "category": [
         "문화재단"
       ],
-      "id": "artmore-95737",
+      "id": "artmore-95778",
       "source": "아트모아",
       "org": "(재)한국문화재단",
       "title": "[리틀엔젤스예술단] 위촉 무용강사 모집 (한국무용/발레)",
@@ -1699,11 +1754,11 @@
       "status": "",
       "region": "서울 광진구",
       "headcount": "",
-      "start": "2026-11-16",
+      "start": "2026-11-20",
       "end": "2026-12-07",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95737",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95778",
       "sticky": true,
-      "first_seen": "2026-11-17",
+      "first_seen": "2026-11-20",
       "focus": false
     },
     {
@@ -1723,6 +1778,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95735",
       "sticky": true,
       "first_seen": "2026-11-17",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95780",
+      "source": "아트모아",
+      "org": "성남문화재단",
+      "title": "성남아트센터 하우스매니저(기간제근로자) 채용 공고",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "경기 성남시",
+      "headcount": "",
+      "start": "2026-11-20",
+      "end": "2026-12-07",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95780",
+      "sticky": true,
+      "first_seen": "2026-11-20",
       "focus": false
     },
     {
