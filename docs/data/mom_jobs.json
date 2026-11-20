@@ -1,25 +1,11 @@
 {
-  "updated_at": "2026-11-20 14:04",
+  "updated_at": "2026-11-21 07:56",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
     "시·군청 게시판"
   ],
   "jobs": [
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "cleaneye-81134",
-      "source": "클린아이 잡플러스",
-      "org": "경상북도 농식품유통교육진흥원",
-      "title": "(재)경상북도 농식품유통교육진흥원기간제근로자 공개경쟁 채용 공고",
-      "region": "예천",
-      "start": "2026-11-16",
-      "end": "2026-11-20",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81134",
-      "first_seen": "2026-11-14"
-    },
     {
       "category": [
         "관공서 기간제·공무직"
@@ -67,21 +53,6 @@
       "category": [
         "관공서 기간제·공무직"
       ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
-      "org": "안동시청",
-      "title": "2027년 안동시립어린이도서관 기간제근로자(도서관 운영보조) 공개 채용 공고(변경)",
-      "region": "안동",
-      "start": "2026-11-19",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-20"
-    },
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
       "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
       "source": "안동시청 고시공고",
       "org": "안동시청",
@@ -90,6 +61,21 @@
       "start": "2026-11-19",
       "end": null,
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립어린이도서관 기간제근로자(도서관 운영보조) 공개 채용 공고(변경)",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-20"
     },
