@@ -444,7 +444,7 @@ def fetch_artmore(key: str) -> list[dict]:
             seen.add(m_id.group(1))
             found += 1
             raw_title = city_boards._text(m_ti.group(1))
-            if raw_title.startswith("마감"):
+            if raw_title.startswith(("마감", "종료")):  # 아트모아 상태 표시가 '마감'·'종료'인 공고는 제외
                 continue
             title = re.sub(r"^(진행중|상시)\s*", "", raw_title)
             org = htmllib.unescape(m_co.group(1)).strip()
@@ -585,6 +585,8 @@ SOURCES = [
     ("한국관광공사", fetch_kto, False),
 ]
 
+# 제목에 이미 끝났다고 적힌 공고(예: '종료 ○○ 채용', '[마감]', '(모집완료)')는 뺍니다.
+ENDED_RE = re.compile(r"^\s*[\[(【]?\s*(종료|마감|모집\s*완료|채용\s*완료)\s*[\])】]?\s|[\[(【]\s*(종료|마감|모집\s*완료|채용\s*완료)\s*[\])】]")
 # 채용공고가 아닌 안내글(합격자 발표 등)은 뺍니다.
 NOT_POSTING = ["합격자", "결과발표", "결과 발표", "채용후보자", "면접시험", "서류전형 결과"]
 
@@ -645,6 +647,8 @@ def main() -> None:
         if job["end"] and job["end"] < today:  # 마감 지난 공고 제외
             continue
         if any(w in job["title"] for w in NOT_POSTING):  # 합격자 발표 등 제외
+            continue
+        if ENDED_RE.search(job["title"]):  # 제목에 '종료'·'모집완료' 등이 적힌 끝난 공고 제외
             continue
         job.setdefault("category", is_archive_job(job["title"], job.get("note")) or ["기록물"])
         if MUSEUM in job["category"] and MUSEUM_EXCLUDE.search(job["title"]):
