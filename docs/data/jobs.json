@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 19:15",
+  "updated_at": "2026-11-21 19:26",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -10,25 +10,6 @@
     "한국관광공사"
   ],
   "jobs": [
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95680",
-      "source": "아트모아",
-      "org": "박서보재단",
-      "title": "박서보재단 그래픽 디자이너 모집",
-      "hire_type": "계약직",
-      "status": "",
-      "region": "서울 서대문구",
-      "headcount": "",
-      "start": "2026-11-11",
-      "end": "2026-11-21",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95680",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
     {
       "category": [
         "문화재단"
@@ -1343,25 +1324,6 @@
     },
     {
       "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95770",
-      "source": "아트모아",
-      "org": "엘지연암문화재단",
-      "title": "LG아트센터 무대기술팀(조명감독) 정규직 사원 채용공고",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울 강서구",
-      "headcount": "",
-      "start": "2026-11-19",
-      "end": "2026-12-03",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95770",
-      "sticky": true,
-      "first_seen": "2026-11-20",
-      "focus": false
-    },
-    {
-      "category": [
         "사서·도서관"
       ],
       "id": "cleaneye-81427",
@@ -1953,8 +1915,7 @@
     },
     {
       "category": [
-        "청년인턴",
-        "문화재단"
+        "청년인턴"
       ],
       "id": "artmore-95669",
       "source": "아트모아",
