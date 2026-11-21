@@ -604,6 +604,17 @@ def main() -> None:
             old = {}
 
     found, sources = [], []
+    # 사용자가 직접 찾은 공고(자동 수집처에 없는 곳)를 함께 보여줍니다.
+    manual_file = OUT_FILE.parent.parent.parent / "data" / "manual_jobs.json"
+    try:
+        manual = json.loads(manual_file.read_text("utf-8")).get("jobs", [])
+        for m in manual:
+            m.setdefault("status", ""); m.setdefault("headcount", ""); m.setdefault("hire_type", "")
+            m["sticky"] = True
+        found.extend(manual)
+        print(f"[직접 추가] {len(manual)}건")
+    except (OSError, ValueError) as e:
+        print(f"[직접 추가] 읽지 못함: {e}")
     for name, fetch, required in SOURCES:
         print(f"[{name}] 받아오는 중...")
         try:

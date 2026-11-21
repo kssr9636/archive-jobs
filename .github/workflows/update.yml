@@ -11,6 +11,7 @@ on:
     paths:
       - "scripts/**"
       - ".github/workflows/update.yml"
+      - "data/manual_jobs.json"
 
 permissions:
   contents: write
