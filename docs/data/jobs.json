@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 19:26",
+  "updated_at": "2026-11-21 19:48",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -1172,6 +1172,26 @@
       "end": "2026-12-01",
       "url": "https://pola.plusrecruit.co.kr",
       "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "id": "manual-yonsei-2027-8-records",
+      "source": "직접 추가",
+      "org": "연세대학교",
+      "title": "정규직원(8급) 채용 - 행정 <기록물관리>",
+      "category": [
+        "기록물"
+      ],
+      "hire_type": "정규직",
+      "region": "서울 신촌 또는 인천 송도",
+      "start": "2026-11-23",
+      "end": "2026-12-01",
+      "note": "연봉 약 4,250~4,800만 원 · 기록물관리전문요원(2027.2 취득 예정 포함) · 토익 800+ 필수(지원 시점 보유) · 학점 3.0+ · 마감 12/1 17:00",
+      "url": "https://www.yonsei.ac.kr/sc/212/subview.do",
+      "status": "",
+      "headcount": "",
+      "sticky": true,
+      "first_seen": "2026-11-21",
       "focus": false
     },
     {
