@@ -423,7 +423,7 @@ ARTMORE_URL = "https://www.artmore.kr/sub/recruit/search_list.do?page={page}"
 ARTMORE_PAGES = 15  # 한 쪽에 10건, 하루 약 10건 올라옴 → 약 2주 치
 FOUNDATION = "문화재단"
 # 재단 공고 중 자료·기획 업무가 아닌 것은 뺍니다.
-FOUNDATION_EXCLUDE = re.compile(r"안내원|어텐던트|매표|청소|미화|경비|주차|조리|운전|시설관리|임원|이사\b|비상임")
+FOUNDATION_EXCLUDE = re.compile(r"안내원|어텐던트|매표|청소|미화|경비|주차|조리|운전|시설관리|임원|이사\b|비상임|디자이너|디자인|그래픽|영상편집|촬영|음향|조명|무대")
 
 
 def fetch_artmore(key: str) -> list[dict]:
@@ -655,6 +655,10 @@ def main() -> None:
             job["category"] = [c for c in job["category"] if c != MUSEUM]
             if not job["category"]:
                 continue  # 박물관 시설관리·청소·안내 등은 제외
+        if FOUNDATION in job["category"] and FOUNDATION_EXCLUDE.search(job["title"]):
+            job["category"] = [c for c in job["category"] if c != FOUNDATION]
+            if not job["category"]:
+                continue  # 문화재단 공고 중 디자인·무대·안내 등 자료 업무와 무관한 직무 제외
         if "관심기관" in job["category"] and WATCH_EXCLUDE.search(job["title"]):
             job["category"] = [c for c in job["category"] if c != "관심기관"]
             if not job["category"]:
