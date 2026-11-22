@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22 14:00",
+  "updated_at": "2026-11-23 07:51",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -38,6 +38,21 @@
       "category": [
         "관공서 기간제·공무직"
       ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립중앙도서관 기간제근로자(도서관 운영보조) 공개 채용 공고(수정)",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
       "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65575&isLinkage=Y&mId=0401020100",
       "source": "안동시청 고시공고",
       "org": "안동시청",
@@ -61,21 +76,6 @@
       "start": "2026-11-19",
       "end": null,
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-20"
-    },
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
-      "org": "안동시청",
-      "title": "2027년 안동시립중앙도서관 기간제근로자(도서관 운영보조) 공개 채용 공고(수정)",
-      "region": "안동",
-      "start": "2026-11-19",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-20"
     },
