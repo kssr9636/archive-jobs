@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 14:15",
+  "updated_at": "2026-11-23 16:21",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -157,24 +157,6 @@
       "end": "2026-11-23",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81226",
       "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81184",
-      "source": "클린아이 잡플러스",
-      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
-      "title": "임학도서관 2026년 제1회 사서보조, 관리보조 채용",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "인천광역시",
-      "headcount": "3",
-      "start": "2026-11-12",
-      "end": "2026-11-23",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81184",
-      "first_seen": "2026-11-13",
       "focus": false
     },
     {
@@ -556,24 +538,6 @@
     },
     {
       "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81247",
-      "source": "클린아이 잡플러스",
-      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
-      "title": "작전도서관 2026년 제2회 사서보조, 관리보조 채용",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "인천광역시",
-      "headcount": "8",
-      "start": "2026-11-16",
-      "end": "2026-11-26",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81247",
-      "first_seen": "2026-11-16",
-      "focus": false
-    },
-    {
-      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-308373",
@@ -721,42 +685,6 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308142&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-16",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81293",
-      "source": "클린아이 잡플러스",
-      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
-      "title": "효성도서관 2026년 제2회 관리보조 채용",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "인천광역시",
-      "headcount": "2",
-      "start": "2026-11-17",
-      "end": "2026-11-27",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81293",
-      "first_seen": "2026-11-17",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81294",
-      "source": "클린아이 잡플러스",
-      "org": "재단법인 인천광역시계양구인재양성장학교육재단",
-      "title": "서운도서관 2026년 제2회 관리보조 채용",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "인천광역시",
-      "headcount": "6",
-      "start": "2026-11-17",
-      "end": "2026-11-27",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81294",
-      "first_seen": "2026-11-17",
       "focus": false
     },
     {
@@ -1192,6 +1120,25 @@
     },
     {
       "category": [
+        "기록물",
+        "박물관·역사관·문학관"
+      ],
+      "id": "cleaneye-81348",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "cleaneye-81350",
@@ -1223,25 +1170,6 @@
       "start": "2026-11-24",
       "end": "2026-12-03",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
-      "first_seen": "2026-11-18",
-      "focus": false
-    },
-    {
-      "category": [
-        "기록물",
-        "박물관·역사관·문학관"
-      ],
-      "id": "cleaneye-81348",
-      "source": "클린아이 잡플러스",
-      "org": "성북문화재단",
-      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
-      "hire_type": "기간제",
-      "status": "모집예정",
-      "region": "서울특별시",
-      "headcount": "1",
-      "start": "2026-11-24",
-      "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -1667,6 +1595,42 @@
     },
     {
       "category": [
+        "기록물"
+      ],
+      "id": "alio-307334",
+      "source": "잡알리오",
+      "org": "국방기술진흥연구소",
+      "title": "국방기술진흥연구소 2026년 하반기 기간제 정기채용_전문자격(변호사, 기록물관리자, 안전관리자)",
+      "hire_type": "비정규직",
+      "status": "모집중",
+      "region": "경남",
+      "headcount": 3,
+      "start": "2026-11-23",
+      "end": "2026-12-07",
+      "url": "https://www.krit.re.kr/",
+      "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307331",
+      "source": "잡알리오",
+      "org": "국제식물검역인증원",
+      "title": "2027년 신규직원 및 기간제근로자(장애인) 채용계획 공고",
+      "hire_type": "비정규직,청년인턴(채용형)",
+      "status": "모집중",
+      "region": "부산,인천,울산,경기,전북,전남광주,경북",
+      "headcount": 5,
+      "start": "2026-11-23",
+      "end": "2026-12-07",
+      "url": "https://www.ipab.or.kr/kor/CMS/Board/Board.do?mCode=MN015&mode=view&mgr_seq=50&board_seq=8262",
+      "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95735",
@@ -1736,6 +1700,25 @@
       "start": "2026-11-23",
       "end": "2026-12-07",
       "url": "https://www.kicte.or.kr/portal/community/noticeViewAction.do?buSeqNo=25222",
+      "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95798",
+      "source": "아트모아",
+      "org": "(재)제물포문화재단",
+      "title": "2026년 제3차 (재)제물포문화재단 직원채용(기간제근로자) 공고",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "인천 제물포구",
+      "headcount": "",
+      "start": "2026-11-23",
+      "end": "2026-12-08",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95798",
+      "sticky": true,
       "first_seen": "2026-11-23",
       "focus": false
     },
