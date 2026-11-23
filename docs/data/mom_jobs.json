@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 07:51",
+  "updated_at": "2026-11-23 14:22",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -36,6 +36,35 @@
     },
     {
       "category": [
+        "사회복지"
+      ],
+      "id": "nara-400218",
+      "source": "나라일터",
+      "org": "경상북도 문경시",
+      "title": "2026년도 제8회 문경시 지방임기제공무원(아동보호 전담요원) 임용시험 시행계획 재공고",
+      "region": "문경",
+      "start": "2026-11-30",
+      "end": "2026-12-02",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400218&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시노인종합복지관 상반기 실버교양프로그램 수강생 모집 안내",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-23"
+    },
+    {
+      "category": [
         "관공서 기간제·공무직"
       ],
       "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65576&isLinkage=Y&mId=0401020100",
@@ -68,21 +97,6 @@
       "category": [
         "관공서 기간제·공무직"
       ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
-      "org": "안동시청",
-      "title": "2027년 안동시립어린이도서관 기간제 근로자 채용 취소 공고",
-      "region": "안동",
-      "start": "2026-11-19",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-20"
-    },
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
       "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65572&isLinkage=Y&mId=0401020100",
       "source": "안동시청 고시공고",
       "org": "안동시청",
@@ -91,6 +105,36 @@
       "start": "2026-11-19",
       "end": null,
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65572&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
+      "source": "안동시청 구인구직",
+      "org": "안동시청",
+      "title": "의성주간보호센터 <사회복지사> 채용 공고",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
+      "sticky": true,
+      "first_seen": "2026-11-23"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립어린이도서관 기간제 근로자 채용 취소 공고",
+      "region": "안동",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65574&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-20"
     },

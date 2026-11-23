@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 07:46",
+  "updated_at": "2026-11-23 14:15",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -668,6 +668,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-400254",
+      "source": "나라일터",
+      "org": "국가유산청 국립문화유산연구원 디지털문화유산연구정보팀",
+      "title": "2026년 국립문화유산연구원 기간제근로자(사서) 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "대전",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-11-27",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400254&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-308604",
@@ -819,7 +838,7 @@
       "category": [
         "문화재단"
       ],
-      "id": "artmore-95777",
+      "id": "artmore-95793",
       "source": "아트모아",
       "org": "(재)한국문화재단",
       "title": "[리틀엔젤스예술단] 공연사업팀 직원 채용 (육아휴직 대체직)",
@@ -827,11 +846,11 @@
       "status": "",
       "region": "서울 광진구",
       "headcount": "",
-      "start": "2026-11-20",
+      "start": "2026-11-23",
       "end": "2026-11-30",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95777",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95793",
       "sticky": true,
-      "first_seen": "2026-11-20",
+      "first_seen": "2026-11-23",
       "focus": false
     },
     {
@@ -1041,6 +1060,25 @@
       "focus": false
     },
     {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400238",
+      "source": "나라일터",
+      "org": "문화체육관광부 한국정책방송원",
+      "title": "한국정책방송원 공무직(아카이브) 근로자 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "세종",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-12-01",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400238&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
       "id": "manual-yonsei-2027-8-records",
       "source": "직접 추가",
       "org": "연세대학교",
@@ -1113,6 +1151,24 @@
       "end": "2026-12-02",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81431",
       "first_seen": "2026-11-20",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81485",
+      "source": "클린아이 잡플러스",
+      "org": "동작문화재단",
+      "title": "2026년 제13차 직원 채용 공고",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-23",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81485",
+      "first_seen": "2026-11-23",
       "focus": false
     },
     {
@@ -1243,6 +1299,24 @@
       "note": "직급: 정규직_사서직8급(사서), 기간제근로자_사서",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308273&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "cleaneye-81482",
+      "source": "클린아이 잡플러스",
+      "org": "경기테크노파크",
+      "title": "경기테크노파크 장애인 청년인턴(체험형) 채용 공고",
+      "hire_type": "인턴",
+      "status": "모집중",
+      "region": "경기도",
+      "headcount": "1",
+      "start": "2026-11-23",
+      "end": "2026-12-04",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81482",
+      "first_seen": "2026-11-23",
       "focus": false
     },
     {
@@ -1576,7 +1650,7 @@
       "category": [
         "문화재단"
       ],
-      "id": "artmore-95778",
+      "id": "artmore-95792",
       "source": "아트모아",
       "org": "(재)한국문화재단",
       "title": "[리틀엔젤스예술단] 위촉 무용강사 모집 (한국무용/발레)",
@@ -1584,11 +1658,11 @@
       "status": "",
       "region": "서울 광진구",
       "headcount": "",
-      "start": "2026-11-20",
+      "start": "2026-11-23",
       "end": "2026-12-07",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95778",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95792",
       "sticky": true,
-      "first_seen": "2026-11-20",
+      "first_seen": "2026-11-23",
       "focus": false
     },
     {
@@ -1796,6 +1870,24 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95707",
       "sticky": true,
       "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81484",
+      "source": "클린아이 잡플러스",
+      "org": "동작문화재단",
+      "title": "2026년 제12차 직원 채용 공고",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "13",
+      "start": "2026-11-23",
+      "end": "2026-12-14",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81484",
+      "first_seen": "2026-11-23",
       "focus": false
     },
     {
