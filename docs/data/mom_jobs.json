@@ -1,25 +1,11 @@
 {
-  "updated_at": "2026-11-23 16:34",
+  "updated_at": "2026-11-24 07:59",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
     "시·군청 게시판"
   ],
   "jobs": [
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "cleaneye-81325",
-      "source": "클린아이 잡플러스",
-      "org": "한국국학진흥원",
-      "title": "한국국학진흥원 12월 계약직원 추가채용 재공고(26.12.1.임용예정)",
-      "region": "안동",
-      "start": "2026-11-17",
-      "end": "2026-11-23",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81325",
-      "first_seen": "2026-11-18"
-    },
     {
       "category": [
         "관공서 기간제·공무직"
@@ -50,6 +36,36 @@
     },
     {
       "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시노인종합복지관 상반기 실버교양프로그램 수강생 모집 안내",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-23"
+    },
+    {
+      "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시노인종합복지관 실버교양 프로그램 강사 재모집",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-24"
+    },
+    {
+      "category": [
         "사회복지",
         "신중년·시니어"
       ],
@@ -68,14 +84,14 @@
       "category": [
         "사회복지"
       ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
+      "id": "board-www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
+      "source": "안동시청 구인구직",
       "org": "안동시청",
-      "title": "2027년 안동시노인종합복지관 상반기 실버교양프로그램 수강생 모집 안내",
+      "title": "의성주간보호센터 <사회복지사> 채용 공고",
       "region": "안동",
       "start": "2026-11-23",
       "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
+      "url": "https://www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
       "sticky": true,
       "first_seen": "2026-11-23"
     },
@@ -123,21 +139,6 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65572&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-20"
-    },
-    {
-      "category": [
-        "사회복지"
-      ],
-      "id": "board-www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
-      "source": "안동시청 구인구직",
-      "org": "안동시청",
-      "title": "의성주간보호센터 <사회복지사> 채용 공고",
-      "region": "안동",
-      "start": "2026-11-23",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
-      "sticky": true,
-      "first_seen": "2026-11-23"
     },
     {
       "category": [
@@ -310,21 +311,6 @@
       "category": [
         "관공서 기간제·공무직"
       ],
-      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32111&dn=",
-      "source": "예천군청 채용공고",
-      "org": "예천군청",
-      "title": "2026년 자동차 온라인 기업지원 기간제근로자 추가채용 공고",
-      "region": "예천",
-      "start": "2026-11-19",
-      "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32111&dn=",
-      "sticky": true,
-      "first_seen": "2026-11-20"
-    },
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
       "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32086&dn=",
       "source": "예천군청 채용공고",
       "org": "예천군청",
@@ -350,21 +336,6 @@
       "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
       "sticky": true,
       "first_seen": "2026-11-16"
-    },
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32087&dn=",
-      "source": "예천군청 채용공고",
-      "org": "예천군청",
-      "title": "2026년 풍양면 민원행정도우미 기간제 근로자 채용 공고",
-      "region": "예천",
-      "start": "2026-11-16",
-      "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32087&dn=",
-      "sticky": true,
-      "first_seen": "2026-11-17"
     },
     {
       "category": [
@@ -395,6 +366,36 @@
       "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=189967",
       "sticky": true,
       "first_seen": "2026-11-18"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32111&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2026년 자동차 온라인 기업지원 기간제근로자 추가채용 공고",
+      "region": "예천",
+      "start": "2026-11-19",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32111&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-20"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32087&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2026년 풍양면 민원행정도우미 기간제 근로자 채용 공고",
+      "region": "예천",
+      "start": "2026-11-16",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32087&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-17"
     },
     {
       "category": [
