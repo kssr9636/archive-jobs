@@ -106,6 +106,9 @@ def fetch_cleaneye(key: str) -> list[dict]:
     jobs = []
     for it in ET.fromstring(resp.content).findall(".//item"):
         g = lambda tag: clean(it.findtext(tag))
+        # 지역 제한 공고는 경북(어머님 거주지)이 대상일 때만 보여줍니다.
+        if g("LOCAL_YN") == "Y" and not re.search(r"경상북도|경북|예천|안동|전국", g("LOCAL_NAME")):
+            continue
         m = AREA_RE.search(g("ADDRESS") + " " + g("ENT_NAME"))
         if not m:
             continue

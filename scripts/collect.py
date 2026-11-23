@@ -45,6 +45,8 @@ LIBRARIAN_RE = re.compile(r"(?<![가-힣])사서(?!함)")
 # 관심 기관이라도 제목에 이런 직무가 있으면 뺍니다(기록·사서·사무와 관련 없는 직무).
 WATCH_EXCLUDE = re.compile(r"환경미화|미화|청소|환경관리|경비|방호|청원경찰|시설관리|시설운영|영선|전기|기계|소방"
                            r"|보일러|조리|운전|주차|안내원|어텐던트|매표|무대기술|무대기계")
+# 내가 사는 지역(고양시, 경기도). 지역 제한 공고는 이 지역이 대상일 때만 보여줍니다.
+HOME_AREA_RE = re.compile(r"경기|고양|전국")
 # 이 기관의 공고는 단어와 상관없이 모두 보여줍니다(관심 기관).
 WATCH_ORGS = ["법원도서관", "국회도서관", "국립중앙도서관", "고양시도서관센터", "고양도서관센터",
               "고양문화재단", "대통령기록관", "국가기록원", "국립한국문학관", "한국문학관"]
@@ -147,6 +149,9 @@ def fetch_cleaneye(key: str) -> list[dict]:
         print(f"  시도코드 {code}: {len(items)}건")
         for it in items:
             g = lambda tag: clean(it.findtext(tag))
+            # 지역 제한 공고(해당 지역 거주자만 지원 가능)는 내가 사는 지역이 대상일 때만 보여줍니다.
+            if g("LOCAL_YN") == "Y" and not HOME_AREA_RE.search(g("LOCAL_NAME")):
+                continue
             cats = watched(g("ENT_NAME")) + is_archive_job(
                 g("ENT_TITLE"), g("ENT_RECRUIT"), g("POSITION"), g("DUTY_DETAIL"),
                 g("ENT_LICENSE1"), g("ENT_LICENSE2"), g("ENT_LICENSE3"), g("ENT_LICENSE4"),
