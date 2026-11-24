@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 07:55",
+  "updated_at": "2026-11-24 13:47",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -510,7 +510,7 @@
       "id": "nara-308771",
       "source": "나라일터",
       "org": "재단법인스포츠윤리센터",
-      "title": "2026년 제3차 직원(기간제) 신규채용 공고",
+      "title": "스포츠윤리센터 2026년 제3차 직원(기간제) 신규채용 공고",
       "hire_type": "공공기관",
       "status": "",
       "region": "서울",
@@ -823,6 +823,26 @@
       "focus": false
     },
     {
+      "id": "manual-seoul-gongmu-2027-1-records",
+      "source": "직접 추가",
+      "org": "서울특별시 (공무직)",
+      "title": "2027년 제1차 서울특별시 공무직 채용 - 일반종사원(기록물) 2명",
+      "category": [
+        "기록물"
+      ],
+      "hire_type": "공무직",
+      "region": "서울 (본청 또는 서울·경기 사업장)",
+      "start": "2026-11-27",
+      "end": "2026-12-01",
+      "note": "필수: 컴활 1·2급 또는 워드프로세서 · 공공기관 기록물 경력 우대 · 서류→인성검사→면접 · 마감 12/1 18:00",
+      "url": "https://seoulgongmu.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=272939",
+      "status": "",
+      "headcount": "",
+      "sticky": true,
+      "first_seen": "2026-11-24",
+      "focus": false
+    },
+    {
       "id": "manual-yonsei-2027-8-records",
       "source": "직접 추가",
       "org": "연세대학교",
@@ -954,24 +974,6 @@
     },
     {
       "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81349",
-      "source": "클린아이 잡플러스",
-      "org": "성북문화재단",
-      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "서울특별시",
-      "headcount": "1",
-      "start": "2026-11-24",
-      "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
-      "first_seen": "2026-11-18",
-      "focus": false
-    },
-    {
-      "category": [
         "기록물",
         "박물관·역사관·문학관"
       ],
@@ -986,6 +988,24 @@
       "start": "2026-11-24",
       "end": "2026-12-03",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81349",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -1373,6 +1393,24 @@
     },
     {
       "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "cleaneye-81540",
+      "source": "클린아이 잡플러스",
+      "org": "세미원",
+      "title": "2026년도 (재)세미원 공무직(학예사) 채용 공고",
+      "hire_type": "무기계약직",
+      "status": "모집중",
+      "region": "경기도",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-06",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81540",
+      "first_seen": "2026-11-24",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95769",
@@ -1596,6 +1634,43 @@
     },
     {
       "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "cleaneye-81538",
+      "source": "클린아이 잡플러스",
+      "org": "수성문화재단",
+      "title": "2026 수성문화재단 미술관 전문 학예인력 채용 공고",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "대구광역시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-08",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81538",
+      "first_seen": "2026-11-24",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400402",
+      "source": "나라일터",
+      "org": "수성문화재단",
+      "title": "2026 수성문화재단 미술관 전문 학예인력 채용 공고(학예사, 전문기간제)",
+      "hire_type": "공공기관",
+      "status": "",
+      "region": "대구",
+      "headcount": "",
+      "start": "2026-11-24",
+      "end": "2026-12-08",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400402&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-24",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95765",
@@ -1648,6 +1723,25 @@
       "end": "2026-12-08",
       "url": "https://www.koica.go.kr/koica_kr/984/subview.do",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400392",
+      "source": "나라일터",
+      "org": "경상남도 남해군",
+      "title": "2027년 남해탈공연박물관 기간제근로자 채용 공고",
+      "hire_type": "지방자치단체",
+      "status": "",
+      "region": "경남",
+      "headcount": "",
+      "start": "2026-12-07",
+      "end": "2026-12-09",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400392&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-24",
       "focus": false
     },
     {
