@@ -62,6 +62,21 @@
       "end": "2026-11-26",
       "note": "월 240만 원 · 자격 무관 · 서류→면접 · 방문/이메일 접수 · 마감 11/26 17:00",
       "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K120142611200001&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet"
+    },
+    {
+      "id": "manual-seoul-gongmu-2027-1-records",
+      "source": "직접 추가",
+      "org": "서울특별시 (공무직)",
+      "title": "2027년 제1차 서울특별시 공무직 채용 - 일반종사원(기록물) 2명",
+      "category": [
+        "기록물"
+      ],
+      "hire_type": "공무직",
+      "region": "서울 (본청 또는 서울·경기 사업장)",
+      "start": "2026-11-27",
+      "end": "2026-12-01",
+      "note": "필수: 컴활 1·2급 또는 워드프로세서 · 공공기관 기록물 경력 우대 · 서류→인성검사→면접 · 마감 12/1 18:00",
+      "url": "https://seoulgongmu.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=272939"
     }
   ]
 }
