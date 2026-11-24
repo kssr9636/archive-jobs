@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 14:02",
+  "updated_at": "2026-11-25 07:58",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -10,101 +10,6 @@
     "한국관광공사"
   ],
   "jobs": [
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "artmore-95752",
-      "source": "아트모아",
-      "org": "강서구립마곡열린도서관",
-      "title": "강서구립마곡열린도서관 시간제근로자(초단시간/주말)...",
-      "hire_type": "계약직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-17",
-      "end": "2026-11-24",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95752",
-      "sticky": true,
-      "first_seen": "2026-11-18",
-      "focus": false
-    },
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "artmore-95595",
-      "source": "아트모아",
-      "org": "강서문화원",
-      "title": "서울강서문화원 직원(겸재정선미술관 학예사) 채용 ...",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울특별시 강서구",
-      "headcount": "",
-      "start": "2026-11-04",
-      "end": "2026-11-24",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95595",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "관심기관",
-        "문화재단"
-      ],
-      "id": "artmore-95647",
-      "source": "아트모아",
-      "org": "고양문화재단 고양아람누리",
-      "title": "2026 고양문화재단 어울림문화학교 단시간 근로자 채용 공고",
-      "hire_type": "시간선택제",
-      "status": "",
-      "region": "경기 고양시",
-      "headcount": "",
-      "start": "2026-11-09",
-      "end": "2026-11-24",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95647",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "alio-306900",
-      "source": "잡알리오",
-      "org": "공무원연금공단",
-      "title": "사회형평적 체험형 청년인턴 채용 공고(3차)",
-      "hire_type": "청년인턴(체험형)",
-      "status": "모집중",
-      "region": "서울,제주",
-      "headcount": 9,
-      "start": "2026-11-10",
-      "end": "2026-11-24",
-      "url": "https://www.geps.or.kr/notiCommunication_info_incruit/43756?curPage=1",
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "artmore-95750",
-      "source": "아트모아",
-      "org": "사단법인한국사립박물관협회",
-      "title": "[한국사립박물관협회] 2026년 사립 및 사립대학박물관 예비 학예인력 지원사업 11차 인력 모집 공고",
-      "hire_type": "관계없음",
-      "status": "",
-      "region": "서울 종로구",
-      "headcount": "",
-      "start": "2026-11-17",
-      "end": "2026-11-24",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95750",
-      "sticky": true,
-      "first_seen": "2026-11-18",
-      "focus": false
-    },
     {
       "category": [
         "박물관·역사관·문학관"
@@ -805,6 +710,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "artmore-95823",
+      "source": "아트모아",
+      "org": "곰달래도서관",
+      "title": "[급구] 강서구립 곰달래도서관 개관연장사서 채용 ...",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울특별시 강서구",
+      "headcount": "",
+      "start": "2026-11-24",
+      "end": "2026-12-01",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95823",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-400238",
@@ -974,6 +898,24 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81349",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
         "기록물",
         "박물관·역사관·문학관"
       ],
@@ -988,24 +930,6 @@
       "start": "2026-11-24",
       "end": "2026-12-03",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
-      "first_seen": "2026-11-18",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81349",
-      "source": "클린아이 잡플러스",
-      "org": "성북문화재단",
-      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "서울특별시",
-      "headcount": "1",
-      "start": "2026-11-24",
-      "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -1081,6 +1005,24 @@
       "end": "2026-12-04",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81482",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81572",
+      "source": "클린아이 잡플러스",
+      "org": "성동문화재단",
+      "title": "(재)성동문화재단 직원 채용 공고(기간제/육아대체/사서)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-25",
+      "end": "2026-12-04",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81572",
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
@@ -1411,6 +1353,26 @@
     },
     {
       "category": [
+        "박물관·역사관·문학관",
+        "문화재단"
+      ],
+      "id": "artmore-95822",
+      "source": "아트모아",
+      "org": "재단법인 세미원",
+      "title": "2026년도 공무직(학예사) 채용공고",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "경기도 양평군",
+      "headcount": "",
+      "start": "2026-11-24",
+      "end": "2026-12-06",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95822",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "문화재단"
       ],
       "id": "artmore-95769",
@@ -1426,6 +1388,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95769",
       "sticky": true,
       "first_seen": "2026-11-20",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95812",
+      "source": "아트모아",
+      "org": "재단법인 한화문화재단",
+      "title": "퐁피두센터 한화, 어시스턴트 큐레이터 채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 영등포구",
+      "headcount": "",
+      "start": "2026-11-24",
+      "end": "2026-12-06",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95812",
+      "sticky": true,
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
@@ -1634,6 +1615,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "artmore-95825",
+      "source": "아트모아",
+      "org": "서초청소년도서관",
+      "title": "서초청소년도서관 2027년 개관시간 연장지원사업 ...",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울특별시 서초구",
+      "headcount": "",
+      "start": "2026-11-24",
+      "end": "2026-12-08",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95825",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "cleaneye-81538",
@@ -1727,6 +1727,24 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307403",
+      "source": "잡알리오",
+      "org": "한국보훈복지의료공단",
+      "title": "[수원보훈요양원] 직원(간호조무사, 요양보호사, 미화, 청년인턴) 채용",
+      "hire_type": "정규직,무기계약직,청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 11,
+      "start": "2026-11-24",
+      "end": "2026-12-08",
+      "url": "https://www.bohun.or.kr/main/na/ntt/selectNttInfo.do?mi=37031&bbsId=1158&bbsSysId=main&nttSn=191638",
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-400392",
@@ -1804,6 +1822,25 @@
     },
     {
       "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95816",
+      "source": "아트모아",
+      "org": "(재)양천문화재단",
+      "title": "2026년 제7차 (재)양천문화재단 직원 채용 공고",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "서울 양천구",
+      "headcount": "",
+      "start": "2026-11-24",
+      "end": "2026-12-14",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95816",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "cleaneye-81484",
@@ -1818,6 +1855,25 @@
       "end": "2026-12-14",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81484",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관",
+        "박물관·역사관·문학관"
+      ],
+      "id": "cleaneye-81587",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 양천문화재단",
+      "title": "2026년 제7차 (재)양천문화재단 직원 채용 공고(~12/14)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "11",
+      "start": "2026-11-24",
+      "end": "2026-12-14",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81587",
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
