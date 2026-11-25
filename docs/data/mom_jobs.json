@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 08:06",
+  "updated_at": "2026-11-25 14:11",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -19,6 +19,20 @@
       "end": "2026-11-26",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81318",
       "first_seen": "2026-11-18"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "nara-400513",
+      "source": "나라일터",
+      "org": "국립경국대학교",
+      "title": "2026년 10차 국립경국대학교 글로컬대학 기간제 계약직원 공개채용 채용 공고",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": "2026-11-27",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400513&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-25"
     },
     {
       "category": [
@@ -50,6 +64,21 @@
     },
     {
       "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시노인종합복지관 실버교양 프로그램 강사 재모집",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-24"
+    },
+    {
+      "category": [
         "사회복지",
         "신중년·시니어"
       ],
@@ -63,21 +92,6 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65606&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-23"
-    },
-    {
-      "category": [
-        "사회복지"
-      ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
-      "org": "안동시청",
-      "title": "2027년 안동시노인종합복지관 실버교양 프로그램 강사 재모집",
-      "region": "안동",
-      "start": "2026-11-23",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-24"
     },
     {
       "category": [
@@ -340,31 +354,46 @@
       "category": [
         "사회복지"
       ],
-      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=190078",
+      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=190313",
+      "source": "예천군청 구인정보",
+      "org": "예천군청",
+      "title": "2026년 11월 예천노인전문요양원 사회복지사 공개 채용",
+      "region": "예천",
+      "start": "2026-11-25",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=190313",
+      "sticky": true,
+      "first_seen": "2026-11-25"
+    },
+    {
+      "category": [
+        "사회복지"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=190078&p=2",
       "source": "예천군청 구인정보",
       "org": "예천군청",
       "title": "2027년 예천시니어클럽 노인일자리 및 사회활동지원사업 참여자 모집 공고",
       "region": "예천",
       "start": "2026-11-19",
       "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=190078",
+      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=190078&p=2",
       "sticky": true,
-      "first_seen": "2026-11-20"
+      "first_seen": "2026-11-25"
     },
     {
       "category": [
         "사회복지"
       ],
-      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=189967",
+      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=189967&p=2",
       "source": "예천군청 구인정보",
       "org": "예천군청",
       "title": "호명읍 소재지 재가복지센터 사회복지사 구합니다.",
       "region": "예천",
       "start": "2026-11-18",
       "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=189967",
+      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=189967&p=2",
       "sticky": true,
-      "first_seen": "2026-11-18"
+      "first_seen": "2026-11-25"
     },
     {
       "category": [

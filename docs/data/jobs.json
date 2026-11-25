@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 07:58",
+  "updated_at": "2026-11-25 14:05",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -825,6 +825,25 @@
     },
     {
       "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400498",
+      "source": "나라일터",
+      "org": "문화체육관광부 국립중앙박물관 익산박물관 학예연구실",
+      "title": "[채용]국립익산박물관 공무직[학예보조] 근로자 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "전북",
+      "headcount": "",
+      "start": "2026-11-27",
+      "end": "2026-12-02",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400498&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "cleaneye-81431",
@@ -845,6 +864,25 @@
       "category": [
         "사서·도서관"
       ],
+      "id": "city-www.paju.go.kr/user/board/BD_board.view.do?seq=20261125131603651&bbsCd=1022&q_ctgCd=4064",
+      "source": "파주시청",
+      "org": "파주시청",
+      "title": "2027년 중앙도서관 기간제근로자 채용 공고",
+      "hire_type": "",
+      "status": "",
+      "region": "경기 파주",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-12-02",
+      "url": "https://www.paju.go.kr/user/board/BD_board.view.do?seq=20261125131603651&bbsCd=1022&q_ctgCd=4064",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
       "id": "cleaneye-81485",
       "source": "클린아이 잡플러스",
       "org": "동작문화재단",
@@ -857,6 +895,44 @@
       "end": "2026-12-03",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81485",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400470",
+      "source": "나라일터",
+      "org": "문화체육관광부 국립중앙박물관 부여박물관 학예연구실",
+      "title": "2026년 국립부여박물관 공무직 근로자(학예보조)(일반경쟁/장애인제한경쟁) 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "충남",
+      "headcount": "",
+      "start": "2026-11-30",
+      "end": "2026-12-03",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400470&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400462",
+      "source": "나라일터",
+      "org": "문화체육관광부 국립중앙박물관 청주박물관 학예연구실",
+      "title": "2026년 국립청주박물관 공무직(학예 보조-교육) 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "충북",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400462&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
@@ -898,24 +974,6 @@
     },
     {
       "category": [
-        "사서·도서관"
-      ],
-      "id": "cleaneye-81349",
-      "source": "클린아이 잡플러스",
-      "org": "성북문화재단",
-      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
-      "hire_type": "기간제",
-      "status": "모집중",
-      "region": "서울특별시",
-      "headcount": "1",
-      "start": "2026-11-24",
-      "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
-      "first_seen": "2026-11-18",
-      "focus": false
-    },
-    {
-      "category": [
         "기록물",
         "박물관·역사관·문학관"
       ],
@@ -930,6 +988,24 @@
       "start": "2026-11-24",
       "end": "2026-12-03",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
+      "first_seen": "2026-11-18",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81349",
+      "source": "클린아이 잡플러스",
+      "org": "성북문화재단",
+      "title": "(제27-1호)성북문화재단 기간직 채용 공고(기간직, 나급, 사서)",
+      "hire_type": "기간제",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "1",
+      "start": "2026-11-24",
+      "end": "2026-12-03",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81349",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -991,6 +1067,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "city-www.paju.go.kr/user/board/BD_board.view.do?seq=20261125092958965&bbsCd=1022&q_ctgCd=4064",
+      "source": "파주시청",
+      "org": "파주시청",
+      "title": "2027년 문산도서관 기간제근로자 채용 공고",
+      "hire_type": "",
+      "status": "",
+      "region": "경기 파주",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-12-03",
+      "url": "https://www.paju.go.kr/user/board/BD_board.view.do?seq=20261125092958965&bbsCd=1022&q_ctgCd=4064",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "청년인턴"
       ],
       "id": "cleaneye-81482",
@@ -1005,6 +1100,24 @@
       "end": "2026-12-04",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81482",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81601",
+      "source": "클린아이 잡플러스",
+      "org": "대구공공시설관리공단",
+      "title": "2027년 대구복합문화센터 도서관 겨울방학 문화강좌 강사 공개모집 공고",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "대구광역시",
+      "headcount": "5",
+      "start": "2026-11-26",
+      "end": "2026-12-04",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81601",
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
@@ -1331,6 +1444,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95788",
       "sticky": true,
       "first_seen": "2026-11-21",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95829",
+      "source": "아트모아",
+      "org": "라인문화재단",
+      "title": "[라인문화재단] 미술관 공간기획, 운영기획, 운영관리, 상업시설 판매운영/공익재단 관리팀",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "서울 강남구",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-12-06",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95829",
+      "sticky": true,
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
@@ -1690,6 +1822,24 @@
     },
     {
       "category": [
+        "청년인턴"
+      ],
+      "id": "cleaneye-81605",
+      "source": "클린아이 잡플러스",
+      "org": "종로구시설관리공단",
+      "title": "2026년 제12차 기간제계약직 공개채용 공고 (청년 체험형 인턴)",
+      "hire_type": "인턴",
+      "status": "모집중",
+      "region": "서울특별시",
+      "headcount": "5",
+      "start": "2026-11-25",
+      "end": "2026-12-08",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81605",
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "기록물"
       ],
       "id": "artmore-95692",
@@ -1785,6 +1935,25 @@
     },
     {
       "category": [
+        "기록물"
+      ],
+      "id": "nara-400500",
+      "source": "나라일터",
+      "org": "부산교육대학교",
+      "title": "2026년 부산교육대학교 국가공무원  한시임기제 6호(기록연구사) 경력경쟁채용시험 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "부산",
+      "headcount": "",
+      "start": "2026-12-07",
+      "end": "2026-12-09",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400500&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "cleaneye-81379",
@@ -1873,6 +2042,43 @@
       "start": "2026-11-24",
       "end": "2026-12-14",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81587",
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95827",
+      "source": "아트모아",
+      "org": "재단법인서울시립교향악단",
+      "title": "재단법인 서울시립교향악단 부지휘자 모집",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 종로구",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": "2026-12-15",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95827",
+      "sticky": true,
+      "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81613",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 중랑문화재단",
+      "title": "(재)중랑문화재단 2027년 도서관운영팀 개관시간 연장 지원사업 기간제(사서) 채용공고",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "서울특별시",
+      "headcount": "17",
+      "start": "2026-12-10",
+      "end": "2026-12-16",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81613",
       "first_seen": "2026-11-25",
       "focus": false
     },
@@ -1987,6 +2193,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95703",
       "sticky": true,
       "first_seen": "2026-11-14",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95832",
+      "source": "아트모아",
+      "org": "재단법인 목목문화재단",
+      "title": "[피크닉 piknic] 전시 주중 / 주말 운영 스태프 모집",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "서울 중구",
+      "headcount": "",
+      "start": "2026-11-25",
+      "end": null,
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95832",
+      "sticky": true,
+      "first_seen": "2026-11-25",
       "focus": false
     },
     {
