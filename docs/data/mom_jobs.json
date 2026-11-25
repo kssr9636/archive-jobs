@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 15:45",
+  "updated_at": "2026-11-26 08:00",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -64,6 +64,21 @@
     },
     {
       "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
+      "source": "안동시청 구인구직",
+      "org": "안동시청",
+      "title": "의성주간보호센터 <사회복지사> 채용 공고",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
+      "sticky": true,
+      "first_seen": "2026-11-23"
+    },
+    {
+      "category": [
         "사회복지",
         "신중년·시니어"
       ],
@@ -105,21 +120,6 @@
       "start": "2026-11-23",
       "end": null,
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65594&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-23"
-    },
-    {
-      "category": [
-        "사회복지"
-      ],
-      "id": "board-www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
-      "source": "안동시청 구인구직",
-      "org": "안동시청",
-      "title": "의성주간보호센터 <사회복지사> 채용 공고",
-      "region": "안동",
-      "start": "2026-11-23",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/bbs/view.do?bIdx=782904&ptIdx=69&mId=0602020000",
       "sticky": true,
       "first_seen": "2026-11-23"
     },
@@ -318,6 +318,21 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65409&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-15"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32142&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2027년도 삼강문화단지 기간제근로자(전기안전관리자) 채용공고",
+      "region": "예천",
+      "start": "2026-11-26",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32142&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-26"
     },
     {
       "category": [
