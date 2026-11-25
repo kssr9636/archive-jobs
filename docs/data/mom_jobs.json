@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 14:11",
+  "updated_at": "2026-11-25 15:45",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -64,21 +64,6 @@
     },
     {
       "category": [
-        "사회복지"
-      ],
-      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
-      "source": "안동시청 고시공고",
-      "org": "안동시청",
-      "title": "2027년 안동시노인종합복지관 실버교양 프로그램 강사 재모집",
-      "region": "안동",
-      "start": "2026-11-23",
-      "end": null,
-      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
-      "sticky": true,
-      "first_seen": "2026-11-24"
-    },
-    {
-      "category": [
         "사회복지",
         "신중년·시니어"
       ],
@@ -92,6 +77,21 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65606&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-23"
+    },
+    {
+      "category": [
+        "사회복지"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시노인종합복지관 실버교양 프로그램 강사 재모집",
+      "region": "안동",
+      "start": "2026-11-23",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65608&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-24"
     },
     {
       "category": [
