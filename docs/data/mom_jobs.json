@@ -1,25 +1,11 @@
 {
-  "updated_at": "2026-11-26 14:12",
+  "updated_at": "2026-11-27 08:04",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
     "시·군청 게시판"
   ],
   "jobs": [
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "cleaneye-81318",
-      "source": "클린아이 잡플러스",
-      "org": "안동시한국정신문화재단",
-      "title": "2026년 (재)한국정신문화재단 제7회 계약직 직원 공개채용공고(재공고)",
-      "region": "안동",
-      "start": "2026-11-17",
-      "end": "2026-11-26",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81318",
-      "first_seen": "2026-11-18"
-    },
     {
       "category": [
         "관공서 기간제·공무직"
@@ -411,18 +397,18 @@
     },
     {
       "category": [
-        "관공서 기간제·공무직"
+        "사회복지"
       ],
-      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
-      "source": "예천군청 채용공고",
+      "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=190389",
+      "source": "예천군청 구인정보",
       "org": "예천군청",
-      "title": "2027년도 장애인일자리사업 참여자 모집 공고",
+      "title": "2027년 대한노인회 예천군지회 노인일자리 및 사회활동 지원사업 참여자 모집",
       "region": "예천",
-      "start": "2026-11-16",
+      "start": "2026-11-26",
       "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
+      "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=190389",
       "sticky": true,
-      "first_seen": "2026-11-16"
+      "first_seen": "2026-11-27"
     },
     {
       "category": [
@@ -468,6 +454,21 @@
       "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=189967&p=2",
       "sticky": true,
       "first_seen": "2026-11-25"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2027년도 장애인일자리사업 참여자 모집 공고",
+      "region": "예천",
+      "start": "2026-11-16",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32067&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-16"
     },
     {
       "category": [

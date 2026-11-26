@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 14:04",
+  "updated_at": "2026-11-27 07:59",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -10,178 +10,6 @@
     "한국관광공사"
   ],
   "jobs": [
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95727",
-      "source": "아트모아",
-      "org": "(재)서초문화재단",
-      "title": "2026-09차 서초문화재단 직원 채용 공고",
-      "hire_type": "계약직",
-      "status": "",
-      "region": "서울 서초구",
-      "headcount": "",
-      "start": "2026-11-16",
-      "end": "2026-11-26",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95727",
-      "sticky": true,
-      "first_seen": "2026-11-16",
-      "focus": false
-    },
-    {
-      "id": "manual-gugak-2026-archive",
-      "source": "직접 추가",
-      "org": "국립국악원 국악연구실",
-      "title": "기간제 근로자(휴직대체) - 국악자료 디지털 콘텐츠 구축·디지털 국악아카이브 운영 지원",
-      "category": [
-        "기록물",
-        "박물관·역사관·문학관"
-      ],
-      "hire_type": "기간제 (23개월)",
-      "region": "서울 서초",
-      "start": "2026-11-20",
-      "end": "2026-11-26",
-      "note": "월 240만 원 · 자격 무관 · 서류→면접 · 방문/이메일 접수 · 마감 11/26 17:00",
-      "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?wantedAuthNo=K120142611200001&infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet",
-      "status": "",
-      "headcount": "",
-      "sticky": true,
-      "first_seen": "2026-11-23",
-      "focus": false
-    },
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95622",
-      "source": "아트모아",
-      "org": "당진문화재단",
-      "title": "[2027 아티스트 오브 당진] 객원기획자(큐레이터) 모집공고",
-      "hire_type": "프리랜서",
-      "status": "",
-      "region": "충남 당진시",
-      "headcount": "",
-      "start": "2026-11-06",
-      "end": "2026-11-26",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95622",
-      "sticky": true,
-      "first_seen": "2026-11-14",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "nara-308558",
-      "source": "나라일터",
-      "org": "대구광역시 달서구",
-      "title": "대구광역시달서구 지방임기제공무원(특이민원대응 전문관, 사서, 디지털체험교육시설 운영, 보훈회관 운영, 불법주정차 단속, 금연금주 지도단속 분야) 임용시험 공고",
-      "hire_type": "지방자치단체",
-      "status": "",
-      "region": "대구",
-      "headcount": "",
-      "start": "2026-11-24",
-      "end": "2026-11-26",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308558&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "문화재단"
-      ],
-      "id": "artmore-95733",
-      "source": "아트모아",
-      "org": "용산문화재단",
-      "title": "2026년 제4차 용산문화재단 직원 공개경쟁채용",
-      "hire_type": "정규직",
-      "status": "",
-      "region": "서울 용산구",
-      "headcount": "",
-      "start": "2026-11-16",
-      "end": "2026-11-26",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95733",
-      "sticky": true,
-      "first_seen": "2026-11-16",
-      "focus": false
-    },
-    {
-      "category": [
-        "사서·도서관"
-      ],
-      "id": "nara-308560",
-      "source": "나라일터",
-      "org": "인천광역시 제물포구",
-      "title": "2026년 제6회 인천광역시 제물포구 시간선택제  임기제공무원(사서)임용시험 공고",
-      "hire_type": "지방자치단체",
-      "status": "",
-      "region": "인천",
-      "headcount": "",
-      "start": "2026-11-26",
-      "end": "2026-11-26",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308560&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "nara-308373",
-      "source": "나라일터",
-      "org": "충청남도",
-      "title": "2026년도 제9회 충청남도 임기제공무원(미술 전시 기획 및 운영, 충남도정 메시지기획 작성·관리, 도민리포터 운영 관리, 대외협력) 경력경쟁임용시험 시행계획 공고",
-      "hire_type": "지방자치단체",
-      "status": "",
-      "region": "충남",
-      "headcount": "",
-      "start": "2026-11-24",
-      "end": "2026-11-26",
-      "note": "본문: 모집분야 : 미술 전시 기획 및 운영(학예연구관), 충남도정 메시지 기획 관리(행정6급), 도민리포터 운영 관리(행정7급), 대외협력(시",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308373&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
-    {
-      "category": [
-        "청년인턴"
-      ],
-      "id": "alio-307096",
-      "source": "잡알리오",
-      "org": "해양환경공단",
-      "title": "2026년 하반기 2차 해양환경공단 체험형 청년인턴(장애인 제한) 채용 공고",
-      "hire_type": "청년인턴(체험형)",
-      "status": "모집중",
-      "region": "서울",
-      "headcount": 2,
-      "start": "2026-11-16",
-      "end": "2026-11-26",
-      "url": "https://www.koem.or.kr/site/insa/ex/board/View.do?cbIdx=478&bcIdx=36506",
-      "first_seen": "2026-11-17",
-      "focus": false
-    },
-    {
-      "category": [
-        "박물관·역사관·문학관"
-      ],
-      "id": "nara-308401",
-      "source": "나라일터",
-      "org": "행정중심복합도시국립박물관단지통합운영지원센터",
-      "title": "2026년도 국립박물관단지 통합운영지원센터 4차 채용 공고",
-      "hire_type": "공공기관",
-      "status": "",
-      "region": "세종",
-      "headcount": "",
-      "start": "2026-11-12",
-      "end": "2026-11-26",
-      "note": "",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308401&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-13",
-      "focus": false
-    },
     {
       "category": [
         "박물관·역사관·문학관"
@@ -883,19 +711,20 @@
     },
     {
       "category": [
-        "사서·도서관"
+        "기록물",
+        "박물관·역사관·문학관"
       ],
-      "id": "cleaneye-81350",
+      "id": "cleaneye-81348",
       "source": "클린아이 잡플러스",
       "org": "성북문화재단",
-      "title": "(제27-2호)성북문화재단 기간직 채용 공고(기간직,(보조금_개관시간연장), 다급상당, 사서)",
+      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
       "hire_type": "기간제",
       "status": "모집중",
       "region": "서울특별시",
-      "headcount": "5",
+      "headcount": "1",
       "start": "2026-11-24",
       "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81350",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -919,20 +748,19 @@
     },
     {
       "category": [
-        "기록물",
-        "박물관·역사관·문학관"
+        "사서·도서관"
       ],
-      "id": "cleaneye-81348",
+      "id": "cleaneye-81350",
       "source": "클린아이 잡플러스",
       "org": "성북문화재단",
-      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
+      "title": "(제27-2호)성북문화재단 기간직 채용 공고(기간직,(보조금_개관시간연장), 다급상당, 사서)",
       "hire_type": "기간제",
       "status": "모집중",
       "region": "서울특별시",
-      "headcount": "1",
+      "headcount": "5",
       "start": "2026-11-24",
       "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81350",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -1546,6 +1374,25 @@
       "category": [
         "문화재단"
       ],
+      "id": "artmore-95859",
+      "source": "아트모아",
+      "org": "남양주문화재단",
+      "title": "남양주문화재단 기간제 직원 채용 모집 공고",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "경기 남양주시",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-12-07",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95859",
+      "sticky": true,
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
       "id": "artmore-95841",
       "source": "아트모아",
       "org": "남양주문화재단",
@@ -1633,6 +1480,25 @@
       "end": "2026-12-07",
       "url": "https://www.kicte.or.kr/portal/community/noticeViewAction.do?buSeqNo=25222",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95860",
+      "source": "아트모아",
+      "org": "재단법인 영월문화관광재단",
+      "title": "2026년 (재)영월문화관광재단 제6회 직원 공...",
+      "hire_type": "정규직",
+      "status": "",
+      "region": "강원특별자치도 영월군",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-12-07",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95860",
+      "sticky": true,
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
@@ -2013,6 +1879,25 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-400658",
+      "source": "나라일터",
+      "org": "한국체육대학교",
+      "title": "한국체육대학교 국가공무원(사서8급) 전입(지방공무원 경력경쟁채용) 희망자 모집 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-12-10",
+      "end": "2026-12-10",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400658&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-400618",
@@ -2065,6 +1950,24 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400571&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
+        "청년인턴"
+      ],
+      "id": "alio-307325",
+      "source": "잡알리오",
+      "org": "한국국제협력단",
+      "title": "제30기 KOICA 청년인턴(홍보분야) 모집 공고",
+      "hire_type": "청년인턴(체험형)",
+      "status": "모집중",
+      "region": "경기",
+      "headcount": 4,
+      "start": "2026-11-27",
+      "end": "2026-12-11",
+      "url": "https://koica.recruiter.co.kr/career/jobs/135113",
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
@@ -2170,7 +2073,7 @@
       "org": "고산도서관",
       "title": "2027년 고산도서관 기간제근로자 채용 공고",
       "hire_type": "기간제",
-      "status": "모집예정",
+      "status": "모집중",
       "region": "대구광역시",
       "headcount": "12",
       "start": "2026-11-27",
