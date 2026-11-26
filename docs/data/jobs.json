@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 07:57",
+  "updated_at": "2026-11-26 14:04",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -356,7 +356,7 @@
       "category": [
         "문화재단"
       ],
-      "id": "artmore-95793",
+      "id": "artmore-95855",
       "source": "아트모아",
       "org": "(재)한국문화재단",
       "title": "[리틀엔젤스예술단] 공연사업팀 직원 채용 (육아휴직 대체직)",
@@ -364,11 +364,11 @@
       "status": "",
       "region": "서울 광진구",
       "headcount": "",
-      "start": "2026-11-23",
+      "start": "2026-11-26",
       "end": "2026-11-30",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95793",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95855",
       "sticky": true,
-      "first_seen": "2026-11-23",
+      "first_seen": "2026-11-26",
       "focus": false
     },
     {
@@ -428,6 +428,25 @@
       "headcount": "",
       "sticky": true,
       "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-400596",
+      "source": "나라일터",
+      "org": "인천광역시교육청 신송고등학교",
+      "title": "2026학년도 신송고등학교 계약제 교원(시간강사) 채용 계획",
+      "hire_type": "교육청",
+      "status": "",
+      "region": "인천",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-11-30",
+      "note": "본문: 1. 채용 기간: 2026.12.14. ~ 2026.12.18.(사서)",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400596&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-26",
       "focus": false
     },
     {
@@ -864,20 +883,19 @@
     },
     {
       "category": [
-        "기록물",
-        "박물관·역사관·문학관"
+        "사서·도서관"
       ],
-      "id": "cleaneye-81348",
+      "id": "cleaneye-81350",
       "source": "클린아이 잡플러스",
       "org": "성북문화재단",
-      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
+      "title": "(제27-2호)성북문화재단 기간직 채용 공고(기간직,(보조금_개관시간연장), 다급상당, 사서)",
       "hire_type": "기간제",
       "status": "모집중",
       "region": "서울특별시",
-      "headcount": "1",
+      "headcount": "5",
       "start": "2026-11-24",
       "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81350",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -901,19 +919,20 @@
     },
     {
       "category": [
-        "사서·도서관"
+        "기록물",
+        "박물관·역사관·문학관"
       ],
-      "id": "cleaneye-81350",
+      "id": "cleaneye-81348",
       "source": "클린아이 잡플러스",
       "org": "성북문화재단",
-      "title": "(제27-2호)성북문화재단 기간직 채용 공고(기간직,(보조금_개관시간연장), 다급상당, 사서)",
+      "title": "(재공고)(제26-29호)성북문화재단 기간직 채용 공고(기간직, 휴직대체, 나급, 기록물관리자)",
       "hire_type": "기간제",
       "status": "모집중",
       "region": "서울특별시",
-      "headcount": "5",
+      "headcount": "1",
       "start": "2026-11-24",
       "end": "2026-12-03",
-      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81350",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81348",
       "first_seen": "2026-11-18",
       "focus": false
     },
@@ -971,6 +990,25 @@
       "note": "직급: 정규직_사서직8급(사서), 기간제근로자_사서",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=308273&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-13",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "city-www.paju.go.kr/user/board/BD_board.view.do?seq=20261126091706340&bbsCd=1022&q_ctgCd=4064",
+      "source": "파주시청",
+      "org": "파주시청",
+      "title": "2027년 교하도서관 및 분관3개소 기간제근로자 채용 공고",
+      "hire_type": "",
+      "status": "",
+      "region": "경기 파주",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-12-03",
+      "url": "https://www.paju.go.kr/user/board/BD_board.view.do?seq=20261126091706340&bbsCd=1022&q_ctgCd=4064",
+      "sticky": true,
+      "first_seen": "2026-11-26",
       "focus": false
     },
     {
@@ -1453,7 +1491,7 @@
       "category": [
         "문화재단"
       ],
-      "id": "artmore-95792",
+      "id": "artmore-95856",
       "source": "아트모아",
       "org": "(재)한국문화재단",
       "title": "[리틀엔젤스예술단] 위촉 무용강사 모집 (한국무용/발레)",
@@ -1461,11 +1499,11 @@
       "status": "",
       "region": "서울 광진구",
       "headcount": "",
-      "start": "2026-11-23",
+      "start": "2026-11-26",
       "end": "2026-12-07",
-      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95792",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95856",
       "sticky": true,
-      "first_seen": "2026-11-23",
+      "first_seen": "2026-11-26",
       "focus": false
     },
     {
@@ -1919,6 +1957,25 @@
     },
     {
       "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95857",
+      "source": "아트모아",
+      "org": "재단법인 씨앗",
+      "title": "스토리랩 파트타이머 채용 (~12/9)",
+      "hire_type": "관계없음",
+      "status": "",
+      "region": "서울 종로구",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-12-09",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95857",
+      "sticky": true,
+      "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
         "사서·도서관"
       ],
       "id": "cleaneye-81379",
@@ -1951,6 +2008,43 @@
       "end": "2026-12-10",
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95846",
       "sticky": true,
+      "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400618",
+      "source": "나라일터",
+      "org": "경기도 화성시",
+      "title": "화성시 개방형직위 채용계획 공고[공보실장, 감사관, 독립기념관장]",
+      "hire_type": "지방자치단체",
+      "status": "",
+      "region": "경기",
+      "headcount": "",
+      "start": "2026-12-07",
+      "end": "2026-12-11",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400618&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81635",
+      "source": "클린아이 잡플러스",
+      "org": "재단법인 달성교육재단",
+      "title": "2027년 달성어린이숲도서관 기간제 근로자 채용 공고(주말)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "대구광역시",
+      "headcount": "8",
+      "start": "2026-11-28",
+      "end": "2026-12-11",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81635",
       "first_seen": "2026-11-26",
       "focus": false
     },
@@ -2065,6 +2159,43 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95827",
       "sticky": true,
       "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81688",
+      "source": "클린아이 잡플러스",
+      "org": "고산도서관",
+      "title": "2027년 고산도서관 기간제근로자 채용 공고",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "대구광역시",
+      "headcount": "12",
+      "start": "2026-11-27",
+      "end": "2026-12-16",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81688",
+      "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95853",
+      "source": "아트모아",
+      "org": "논산문화관광재단",
+      "title": "2027년 제1차 (재)논산문화관광재단 직원(기간제) 공개채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "충남 논산시",
+      "headcount": "",
+      "start": "2026-11-26",
+      "end": "2026-12-16",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95853",
+      "sticky": true,
+      "first_seen": "2026-11-26",
       "focus": false
     },
     {
