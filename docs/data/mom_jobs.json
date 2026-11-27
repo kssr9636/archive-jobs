@@ -1,25 +1,11 @@
 {
-  "updated_at": "2026-11-27 14:08",
+  "updated_at": "2026-11-28 08:04",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
     "시·군청 게시판"
   ],
   "jobs": [
-    {
-      "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "nara-400513",
-      "source": "나라일터",
-      "org": "국립경국대학교",
-      "title": "2026년 10차 국립경국대학교 글로컬대학 기간제 계약직원 공개채용 채용 공고",
-      "region": "안동",
-      "start": "2026-11-23",
-      "end": "2026-11-27",
-      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400513&searchJobsecode=020&menuNo=401&selMenuNo=400",
-      "first_seen": "2026-11-25"
-    },
     {
       "category": [
         "관공서 기간제·공무직"
@@ -78,6 +64,51 @@
     },
     {
       "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "cleaneye-81784",
+      "source": "클린아이 잡플러스",
+      "org": "한국국학진흥원",
+      "title": "한국국학진흥원 1월 계약직원 채용 공고(27.1.1.임용예정)",
+      "region": "안동",
+      "start": "2026-11-27",
+      "end": "2026-12-07",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81784",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "category": [
+        "사회복지",
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65702&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시 지역아동센터 아동복지교사(기간제) 채용 공고",
+      "region": "안동",
+      "start": "2026-11-27",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65702&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-28"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65684&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "농업기술센터 기간제 근로자(조직배양 업무보조 및 온실관리)채용 공고",
+      "region": "안동",
+      "start": "2026-11-27",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65684&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-28"
+    },
+    {
+      "category": [
         "사회복지",
         "관공서 기간제·공무직"
       ],
@@ -91,6 +122,21 @@
       "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65675&isLinkage=Y&mId=0401020100",
       "sticky": true,
       "first_seen": "2026-11-27"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65690&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시립어린이도서관 기간제근로자(도서관 운영보조) 공개 채용 재공고",
+      "region": "안동",
+      "start": "2026-11-27",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65690&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-28"
     },
     {
       "category": [
@@ -382,37 +428,6 @@
     },
     {
       "category": [
-        "관공서 기간제·공무직"
-      ],
-      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32152&dn=",
-      "source": "예천군청 채용공고",
-      "org": "예천군청",
-      "title": "2027년도 체육사업소 시설관리팀 기간제 근로자 채용 공고",
-      "region": "예천",
-      "start": "2026-11-26",
-      "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32152&dn=",
-      "sticky": true,
-      "first_seen": "2026-11-26"
-    },
-    {
-      "category": [
-        "사회복지",
-        "관공서 기간제·공무직"
-      ],
-      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32105&dn=",
-      "source": "예천군청 채용공고",
-      "org": "예천군청",
-      "title": "2027년 아동보호전담요원(기간제근로자)채용 공고",
-      "region": "예천",
-      "start": "2026-11-20",
-      "end": null,
-      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32105&dn=",
-      "sticky": true,
-      "first_seen": "2026-11-20"
-    },
-    {
-      "category": [
         "사회복지"
       ],
       "id": "board-www.ycg.kr/open.content/ko/participate/recruit/?i=190389",
@@ -470,6 +485,37 @@
       "url": "https://www.ycg.kr/open.content/ko/participate/recruit/?i=189967&p=2",
       "sticky": true,
       "first_seen": "2026-11-25"
+    },
+    {
+      "category": [
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32152&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2027년도 체육사업소 시설관리팀 기간제 근로자 채용 공고",
+      "region": "예천",
+      "start": "2026-11-26",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32152&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-26"
+    },
+    {
+      "category": [
+        "사회복지",
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32105&dn=",
+      "source": "예천군청 채용공고",
+      "org": "예천군청",
+      "title": "2027년 아동보호전담요원(기간제근로자)채용 공고",
+      "region": "예천",
+      "start": "2026-11-20",
+      "end": null,
+      "url": "https://www.ycg.kr/open.content/ko/administrative/news/recruitment/?id=32105&dn=",
+      "sticky": true,
+      "first_seen": "2026-11-20"
     },
     {
       "category": [
