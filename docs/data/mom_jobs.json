@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 08:04",
+  "updated_at": "2026-11-27 14:08",
   "sources": [
     "나라일터",
     "클린아이 잡플러스",
@@ -75,6 +75,22 @@
       "end": "2026-12-07",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400633&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-26"
+    },
+    {
+      "category": [
+        "사회복지",
+        "관공서 기간제·공무직"
+      ],
+      "id": "board-www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65675&isLinkage=Y&mId=0401020100",
+      "source": "안동시청 고시공고",
+      "org": "안동시청",
+      "title": "2027년 안동시 취업상담 업무보조 기간제근로자 채용 공고",
+      "region": "안동",
+      "start": "2026-11-27",
+      "end": null,
+      "url": "https://www.andong.go.kr/portal/saeol/gosi/view.do?notAncmtMgtNo=65675&isLinkage=Y&mId=0401020100",
+      "sticky": true,
+      "first_seen": "2026-11-27"
     },
     {
       "category": [

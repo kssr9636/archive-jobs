@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 07:59",
+  "updated_at": "2026-11-27 14:04",
   "sources": [
     "클린아이 잡플러스",
     "잡알리오",
@@ -860,6 +860,25 @@
     },
     {
       "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95864",
+      "source": "아트모아",
+      "org": "(재)용인문화재단",
+      "title": "2027 꿈의 무용단 '용인' 주강사(교육개발 참여) 모집",
+      "hire_type": "프리랜서",
+      "status": "",
+      "region": "경기 용인시",
+      "headcount": "",
+      "start": "2026-11-27",
+      "end": "2026-12-04",
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95864",
+      "sticky": true,
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
         "청년인턴"
       ],
       "id": "cleaneye-81482",
@@ -874,6 +893,25 @@
       "end": "2026-12-04",
       "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81482",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-400723",
+      "source": "나라일터",
+      "org": "광주교육대학교",
+      "title": "광주교육대학교 2026년 제16회 단시간 기간제근로자(사서보조) 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "",
+      "headcount": "",
+      "start": "2026-11-27",
+      "end": "2026-12-04",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400723&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
@@ -1336,6 +1374,25 @@
     },
     {
       "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "nara-400720",
+      "source": "나라일터",
+      "org": "광주교육대학교",
+      "title": "광주교육대학교 2026년 제15회 앵커사업 기간제근로자(사무원·학예사) 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "",
+      "headcount": "",
+      "start": "2026-12-01",
+      "end": "2026-12-07",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400720&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
         "기록물"
       ],
       "id": "alio-307334",
@@ -1368,6 +1425,24 @@
       "end": "2026-12-07",
       "url": "https://www.ipab.or.kr/kor/CMS/Board/Board.do?mCode=MN015&mode=view&mgr_seq=50&board_seq=8262",
       "first_seen": "2026-11-23",
+      "focus": false
+    },
+    {
+      "category": [
+        "박물관·역사관·문학관"
+      ],
+      "id": "cleaneye-81728",
+      "source": "클린아이 잡플러스",
+      "org": "김대중노벨평화상기념관",
+      "title": "(재)김대중노벨평화상기념관 계약직 공개 채용 재공고(2026-014호)",
+      "hire_type": "일반계약직",
+      "status": "모집중",
+      "region": "전남광주통합특별시",
+      "headcount": "1",
+      "start": "2026-11-27",
+      "end": "2026-12-07",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81728",
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
@@ -1406,6 +1481,26 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95841",
       "sticky": true,
       "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
+        "관심기관",
+        "사서·도서관"
+      ],
+      "id": "nara-400706",
+      "source": "나라일터",
+      "org": "문화체육관광부 국립중앙도서관 국립세종도서관",
+      "title": "국립세종도서관 서비스이용과 공무직근로자 채용 공고",
+      "hire_type": "국가기관",
+      "status": "",
+      "region": "세종",
+      "headcount": "",
+      "start": "2026-12-01",
+      "end": "2026-12-07",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400706&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
@@ -1745,6 +1840,61 @@
     },
     {
       "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81725",
+      "source": "클린아이 잡플러스",
+      "org": "화성시인재육성재단",
+      "title": "화성시인재육성재단 2026년 제12차 직원 공개채용(도서관실무/장애인)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "경기도",
+      "headcount": "2",
+      "start": "2026-12-02",
+      "end": "2026-12-08",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81725",
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "cleaneye-81727",
+      "source": "클린아이 잡플러스",
+      "org": "화성시인재육성재단",
+      "title": "화성시인재육성재단 2026년 제12차 직원 공개채용(도서관실무/주말초단)",
+      "hire_type": "기간제",
+      "status": "모집예정",
+      "region": "경기도",
+      "headcount": "1",
+      "start": "2026-12-02",
+      "end": "2026-12-08",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81727",
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
+        "사서·도서관"
+      ],
+      "id": "nara-400741",
+      "source": "나라일터",
+      "org": "화성시인재육성재단",
+      "title": "2026년 제12차 기간제 직원 공개채용(도서관/행정/목공/도예/영상/시설/장애인)",
+      "hire_type": "공공기관",
+      "status": "",
+      "region": "서울",
+      "headcount": "",
+      "start": "2026-12-02",
+      "end": "2026-12-08",
+      "note": "",
+      "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400741&searchJobsecode=020&menuNo=401&selMenuNo=400",
+      "first_seen": "2026-11-27",
+      "focus": false
+    },
+    {
+      "category": [
         "박물관·역사관·문학관"
       ],
       "id": "nara-400392",
@@ -1819,6 +1969,24 @@
       "note": "",
       "url": "https://www.gojobs.go.kr/apmView.do?empmnsn=400548&searchJobsecode=020&menuNo=401&selMenuNo=400",
       "first_seen": "2026-11-26",
+      "focus": false
+    },
+    {
+      "category": [
+        "기록물"
+      ],
+      "id": "cleaneye-81743",
+      "source": "클린아이 잡플러스",
+      "org": "인천광역시연수구시설안전관리공단",
+      "title": "2026년 제2회 직무중심 직원채용 공고",
+      "hire_type": "일반정규직",
+      "status": "모집예정",
+      "region": "인천광역시",
+      "headcount": "1",
+      "start": "2026-11-30",
+      "end": "2026-12-09",
+      "url": "https://job.cleaneye.go.kr/user/ypCareersData.do?idx=81743",
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
@@ -2268,6 +2436,25 @@
       "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95832",
       "sticky": true,
       "first_seen": "2026-11-25",
+      "focus": false
+    },
+    {
+      "category": [
+        "문화재단"
+      ],
+      "id": "artmore-95866",
+      "source": "아트모아",
+      "org": "재단법인 파마리서치문화재단",
+      "title": "파마리서치문화재단 운영·홍보팀 경력직 채용",
+      "hire_type": "계약직",
+      "status": "",
+      "region": "경기 성남시",
+      "headcount": "",
+      "start": "2026-11-27",
+      "end": null,
+      "url": "https://www.artmore.kr/sub/recruit/search_view.do?rec_idx=95866",
+      "sticky": true,
+      "first_seen": "2026-11-27",
       "focus": false
     },
     {
